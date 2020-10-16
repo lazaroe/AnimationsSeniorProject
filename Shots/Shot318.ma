@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Shot318.ma
-//Last modified: Wed, Oct 14, 2020 08:44:53 PM
+//Last modified: Thu, Oct 15, 2020 08:12:57 PM
 //Codeset: 1252
 file -rdi 1 -ns "Boy_Rig_Final" -rfn "Boy_Rig_FinalRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Boy/Boy_Rig_Final.ma";
@@ -46,13 +46,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "826BBA03-4EC4-4342-F4F3-11B13840E3FA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.2437674348492065 2.6060696532287224 -4.9285941039610721 ;
-	setAttr ".r" -type "double3" 336.26164732283735 -8134.2000000007774 0 ;
+	setAttr ".t" -type "double3" 4.6193774488810719 2.4548157747564998 -0.81562987786562002 ;
+	setAttr ".r" -type "double3" 277.46164731619626 -7998.5999999978558 -1.6091255071898091e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "407C4276-4CD5-5753-8C7F-FD912441A281";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 5.7807577992471355;
+	setAttr ".coi" 2.2789183197171567;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -292,7 +292,7 @@ createNode camera -n "InitialCameraBoyShape" -p "InitialCameraBoy";
 	setAttr ".man" -type "string" "camera1_mask";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode fosterParent -n "_House_setupRNfosterParent1";
-	rename -uid "E05E3FCC-4ABB-A7A2-AD28-48AF7E1EE4A0";
+	rename -uid "C6186FA0-405A-B3CA-01CA-9BBF06F40A2A";
 createNode transform -n "Closed_cardboard_box9" -p "_House_setupRNfosterParent1";
 	rename -uid "07EF092A-46FE-2FF0-2C53-8B9774B0837E";
 	setAttr ".t" -type "double3" -369.92829005460186 525 -13.837936918604598 ;
@@ -334,7 +334,7 @@ createNode mesh -n "Closed_cardboard_box9Shape" -p "Closed_cardboard_box9";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode fosterParent -n "Father_Paper_Rig_FinalRNfosterParent1";
-	rename -uid "10029A17-4B47-DAE8-D9B1-E5B8F6295E2B";
+	rename -uid "F4893676-44C7-81DC-EC15-4496372BAAE0";
 createNode parentConstraint -n "Hand_Placements_02_parentConstraint1" -p "Father_Paper_Rig_FinalRNfosterParent1";
 	rename -uid "7C01C85C-4D87-DE89-7CBF-C9B3FFA106EF";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FK_L_Arm_jnt_3_CtrlW0" -dv 1 -min 
@@ -353,30 +353,30 @@ createNode parentConstraint -n "Hand_Placements_02_parentConstraint1" -p "Father
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 9.6117379204475135 -1.988892590089524 -1.9153489527321881 ;
 	setAttr ".tg[0].tor" -type "double3" -31.37960233006568 4.2164798243400767 92.928228468012279 ;
-	setAttr ".lr" -type "double3" -8.9683111409247811 16.43027356431968 -102.88250572907127 ;
+	setAttr ".lr" -type "double3" -8.9683111409247758 16.430273564319673 -102.8825057290712 ;
 	setAttr ".rst" -type "double3" 571.81675438333878 46.351516427061448 -106.40814484584344 ;
 	setAttr ".rsrr" -type "double3" 77.602071581207696 -41.053993928578635 -94.270535151427225 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A3EA7BB6-4E02-5152-1C53-698ACEC4B821";
+	rename -uid "3CAE110B-499D-AD36-DF38-F8898B2C64B8";
 	setAttr -s 120 ".lnk";
 	setAttr -s 120 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "171DFD70-461F-50D8-0524-04B75CB1777A";
+	rename -uid "C89AB7E0-4E73-9933-5D23-BF96B4C626D6";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 5 0 1 2 3 4 ;
 	setAttr -s 5 ".bspr";
 	setAttr -s 5 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D594540B-4B88-6F3C-8EEC-1DB8BFE4EDC2";
+	rename -uid "87E5DDAD-497C-9181-EB87-14A9D19C8A2C";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "F731F838-472B-2D9C-2316-7081EADEACB6";
+	rename -uid "312A20BA-427D-0E8D-D81D-79B158BADF1F";
 	setAttr ".cdl" 3;
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
 	setAttr -s 4 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D882DF5A-40DB-D549-DB04-C093B374D8F3";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "636460E2-4D78-A65B-A222-BABB4B9D9E3A";
+	rename -uid "39F3702E-445A-8459-151D-46BED325CA33";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "919D8F7F-4242-88FD-A50E-9784DA5F814C";
 	setAttr ".g" yes;
@@ -729,7 +729,7 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
-		"rotate" " -type \"double3\" 1.74309604100521076 0.91335268626445609 -1.15822700045197591"
+		"rotate" " -type \"double3\" 1.74309604100521098 0.91335268626445609 -1.15822700045197591"
 		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
 		"rotateX" " -av"
@@ -912,7 +912,7 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl" 
 		"FallowHip" " -av -k 1 0"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
-		"rotate" " -type \"double3\" 63.07567957322875429 -0.7012802382483081 -1.11841014521672788"
+		"rotate" " -type \"double3\" 63.07567957322875429 -0.7012802382483081 -1.1184101452167281"
 		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
 		"rotateX" " -av"
@@ -2185,7 +2185,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
-		"rotate" " -type \"double3\" 12.32253433154776268 -6.71010071092261384 12.7782919053622912"
+		"rotate" " -type \"double3\" 12.32253433154776268 -6.71010071092261384 12.77829190536229298"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
 		"rotateX" " -av"
@@ -4532,7 +4532,7 @@ createNode animCurveTA -n "COG_rotateZ";
 	setAttr -s 20 ".ktv[0:19]"  14 0 26 0 37 0 47 0 56 0 218 0 242 -1.1582270004519717
 		 246 -1.1582270004519712 249 -1.1582270004519744 253 -1.1582270004519746 257 -1.1582270004519748
 		 260 -1.1582270004519748 264 -1.158227000451975 269 -1.1582270004519752 274 -1.1582270004519755
-		 278 -1.1582270004519757 281 -1.1582270004519759 285 -1.1582270004519759 289 -1.1582270004519759
+		 278 -1.1582270004519759 281 -1.1582270004519759 285 -1.1582270004519759 289 -1.1582270004519759
 		 295 -1.1582270004519761;
 	setAttr -s 20 ".kit[5:19]"  1 18 18 18 18 18 18 18 
 		18 18 18 18 18 18 18;
@@ -7484,8 +7484,8 @@ createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl_rotateZ1";
 	rename -uid "97F51C31-4650-F261-43C9-18BCA749F14D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 9 ".ktv[0:8]"  117 0 236 0 242 10.89829770492603 253 0.29471811703946166
-		 261 7.4451624962400214 267 -3.3462789203925869 276 10.419231588317901 284 -1.1184101452167279
+	setAttr -s 9 ".ktv[0:8]"  117 0 236 0 242 10.89829770492603 253 0.29471811703946171
+		 261 7.4451624962400214 267 -3.3462789203925869 276 10.419231588317901 284 -1.1184101452167281
 		 293 10.237934897474803;
 createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl_translateX1";
 	rename -uid "842ADFA9-42EC-0818-E772-20BFCB2A2CF8";
@@ -7535,8 +7535,8 @@ createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl1_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 10 ".ktv[0:9]"  129 0 236 0 242 3.8137459182823044 255 2.9865408656607406
-		 259 1.7579585215645728 263 1.1285630144635275 268 2.703483376520897 277 1.907569320361443
-		 285 1.2127646248147148 291 2.4944243551344929;
+		 259 1.7579585215645728 263 1.1285630144635275 268 2.7034833765208974 277 1.907569320361443
+		 285 1.2127646248147148 291 2.4944243551344933;
 createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl1_rotateZ";
 	rename -uid "BC713EAB-4640-FCDE-4660-5DB2F38B91D4";
 	setAttr ".tan" 18;
@@ -10906,7 +10906,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
-	setAttr -s 5 ".sol";
+	setAttr -s 7 ".sol";
 connectAttr "COG_L_Arm.o" "Boy_Rig_FinalRN.phl[1]";
 connectAttr "COG_R_Arm.o" "Boy_Rig_FinalRN.phl[2]";
 connectAttr "COG_L_Leg.o" "Boy_Rig_FinalRN.phl[3]";
