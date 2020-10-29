@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Autodesk_Cache_File>
+  <cacheType Type="OneFilePerFrame" Format="mcx"/>
+  <time Range="250-37500"/>
+  <cacheTimePerFrame TimePerFrame="250"/>
+  <cacheVersion Version="2.0"/>
+  <extra>C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Shots/Shot314.ma</extra>
+  <extra>maya 2019</extra>
+  <extra>e20la</extra>
+  <Channels>
+    <channel0 ChannelName="Tie_retopoShapeDeformed" ChannelType="FloatVectorArray" ChannelInterpretation="positions" SamplingType="Regular" SamplingRate="250" StartTime="250" EndTime="37500"/>
+  </Channels>
+</Autodesk_Cache_File>
