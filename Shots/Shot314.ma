@@ -1,15 +1,13 @@
 //Maya ASCII 2019 scene
 //Name: Shot314.ma
-//Last modified: Mon, Nov 16, 2020 08:57:44 AM
+//Last modified: Wed, Dec 09, 2020 10:16:48 PM
 //Codeset: 1252
 file -rdi 1 -ns "Dad_Rig_Final" -rfn "Dad_Rig_FinalRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Dad/Dad_Rig_Final.ma";
 file -rdi 1 -ns "Boy_Rig_Final" -rfn "Boy_Rig_FinalRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Boy/Boy_Rig_Final.ma";
 file -rdi 1 -ns "_House_setup" -rfn "_House_setupRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Rooms/09_House setup.ma";
-file -rdi 2 -ns "Ladder_Rig_Final" -dr 1 -rfn "_House_setup:Ladder_Rig_FinalRN"
-		 -op "v=0;" -typ "mayaAscii" "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Items/Attic Latter/Ladder_Rig_Final.ma";
+		 "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Rooms/Bilton Project Folder//House/Final_House_Resize.ma";
 file -rdi 1 -ns "Ladder_Rig_Final" -dr 1 -rfn "Ladder_Rig_FinalRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Items/Attic Latter/Ladder_Rig_Final.ma";
 file -rdi 1 -ns "Ladder_Rig_Final" -dr 1 -rfn "Ladder_Rig_FinalRN1" -op "v=0;"
@@ -21,7 +19,7 @@ file -r -ns "Dad_Rig_Final" -dr 1 -rfn "Dad_Rig_FinalRN" -op "v=0;" -typ "mayaAs
 file -r -ns "Boy_Rig_Final" -dr 1 -rfn "Boy_Rig_FinalRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Boy/Boy_Rig_Final.ma";
 file -r -ns "_House_setup" -dr 1 -rfn "_House_setupRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Rooms/09_House setup.ma";
+		 "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Rooms/Bilton Project Folder//House/Final_House_Resize.ma";
 file -r -ns "Ladder_Rig_Final" -dr 1 -rfn "Ladder_Rig_FinalRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Items/Attic Latter/Ladder_Rig_Final.ma";
 file -r -ns "Ladder_Rig_Final" -dr 1 -rfn "Ladder_Rig_FinalRN1" -op "v=0;" -typ "mayaAscii"
@@ -41,13 +39,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "4545CD73-4181-47A8-0722-40A44B7CB06B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.4210082574141496 2.4986041951549112 -4.8165584454671251 ;
-	setAttr ".r" -type "double3" -14.138352680357421 -8082.5999999989799 0 ;
+	setAttr ".t" -type "double3" 0.43756907012034246 0.98976856318158934 -3.6523916065223401 ;
+	setAttr ".r" -type "double3" -3.9383528602583717 -7746.599999985071 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E03AC182-486E-B490-2999-C3AD12282632";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 5.5240974387870194;
+	setAttr ".coi" 4.2343619891266142;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -591,14 +589,14 @@ createNode camera -n "FollowUpShape" -p "FollowUp";
 	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
-	setAttr ".coi" 1585.8771999653381;
+	setAttr ".coi" 873.94571099645668;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
 	setAttr ".man" -type "string" "camera1_mask";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode fosterParent -n "Dad_Rig_FinalRNfosterParent1";
-	rename -uid "5190EA38-401D-67C9-A2BE-878FEC4990EA";
+	rename -uid "0B88E42D-41C5-0FA7-F61B-A188C0C20231";
 createNode mesh -n "Tie_retopoShapeDeformed" -p "Dad_Rig_FinalRNfosterParent1";
 	rename -uid "7B154612-4AB6-9CFE-FF45-9A96D8CE2CF6";
 	setAttr -k off ".v";
@@ -612,7 +610,7 @@ createNode mesh -n "Tie_retopoShapeDeformed" -p "Dad_Rig_FinalRNfosterParent1";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode fosterParent -n "Boy_Rig_FinalRNfosterParent1";
-	rename -uid "5A162B47-4133-8BC6-0302-B683F9D6542D";
+	rename -uid "42B5A5DB-4863-78AC-B190-FE9B7D4F3AC4";
 createNode mesh -n "Cape_RetopoShapeDeformed" -p "Boy_Rig_FinalRNfosterParent1";
 	rename -uid "BA6721F1-4C5B-361B-5C03-9D896F58E62B";
 	setAttr -k off ".v";
@@ -629,25 +627,25 @@ createNode mesh -n "Cape_RetopoShapeDeformed" -p "Boy_Rig_FinalRNfosterParent1";
 	setAttr ".vcs" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "5E0B109B-480B-F5A4-7FEE-0ABC3950E0E9";
-	setAttr -s 110 ".lnk";
-	setAttr -s 110 ".slnk";
+	rename -uid "4FAA24EB-4785-5B5F-D6A4-0F9753F14D7A";
+	setAttr -s 229 ".lnk";
+	setAttr -s 229 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "04F23C60-4641-8418-4A2B-F6B9D9553D29";
-	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 0 1 ;
-	setAttr -s 2 ".bspr";
-	setAttr -s 2 ".obsv";
+	rename -uid "6346BD19-45C1-7897-66A0-69899562F656";
+	setAttr ".bsdt[0].bscd" -type "Int32Array" 3 0 1 2 ;
+	setAttr -s 3 ".bspr";
+	setAttr -s 3 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "7961440E-4AE1-D046-C726-A49E643BD0A9";
+	rename -uid "C01EA2ED-4ED6-59E9-D34F-69A63BD528B7";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "17793FAB-4507-5DEC-C5A2-E7B8AAA87724";
+	rename -uid "96A3D071-48FA-781E-F69E-B7AA82B07A50";
 	setAttr ".cdl" 1;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "65B8B624-4263-9A9A-2A2D-BB9874C9BFF7";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "06E619CA-4D17-F3C6-9D3B-408035E0644D";
+	rename -uid "161A1EEA-4C31-733A-92F8-DA80C89CFE50";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "32D609CD-4FC1-62A8-BBA4-66A28D0F0DE8";
 	setAttr ".g" yes;
@@ -1255,7 +1253,8 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
 		"visibility" " -av 1"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
-		"translate" " -type \"double3\" 6.28407088263794922 -0.52925854831418828 0"
+		"translate" " -type \"double3\" 196.69080717429176275 -28.67497748063147611 -1.28056762507780286"
+		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
 		"translateX" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
@@ -1263,7 +1262,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
-		"rotate" " -type \"double3\" 0 0 -5.68785858194139582"
+		"rotate" " -type \"double3\" 0 0 -10.15637958865823798"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
 		"rotateX" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG" 
@@ -1293,16 +1292,15 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_1_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_1_Ctrl" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_1_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_1_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 1.66752795175472168"
+		"rotate" " -type \"double3\" 0 0 2.16885163478975773"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_1_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_1_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_2_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_2_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_2_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -11.15917353104540588"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_2_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_2_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_2_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl" 
-		"translate" " -type \"double3\" 0.12374819415020426 -0.23069191233377903 0.033817326654821317"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl" 
 		"translateX" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl" 
@@ -1310,15 +1308,15 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -22.15336348549169898"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Index_jnt_3_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Middle_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_L_Middle_jnt_1_Ctrl_Offset|Dad_Rig_Final:RK_L_Middle_jnt_1_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -8.93654501547791646"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Middle_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_L_Middle_jnt_1_Ctrl_Offset|Dad_Rig_Final:RK_L_Middle_jnt_1_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Middle_jnt_2_Ctrl_Grp|Dad_Rig_Final:RK_L_Middle_jnt_2_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Middle_jnt_2_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -27.2563974456561553"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Middle_jnt_2_Ctrl_Grp|Dad_Rig_Final:RK_L_Middle_jnt_2_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Middle_jnt_2_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Ring_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_L_Ring_jnt_1_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Ring_jnt_1_Ctrl" 
@@ -1326,7 +1324,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Ring_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_L_Ring_jnt_1_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Ring_jnt_1_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Ring_jnt_2_Ctrl_Grp|Dad_Rig_Final:RK_L_Ring_jnt_2_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Ring_jnt_2_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -27.2563974456561553"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Ring_jnt_2_Ctrl_Grp|Dad_Rig_Final:RK_L_Ring_jnt_2_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Ring_jnt_2_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_Fingers_Ctrl_Grp|Dad_Rig_Final:RK_L_Pinky_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_L_Pinky_jnt_1_Ctrl_Grp_Offset|Dad_Rig_Final:RK_L_Pinky_jnt_1_Ctrl" 
@@ -1495,7 +1493,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
-		"rotate" " -type \"double3\" 9.15406833310907508 12.91213347317031968 -3.50946290152953511"
+		"rotate" " -type \"double3\" 1.92964844303868621 16.24789381543986266 -20.7932505054283574"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
 		"rotateX" " -av"
@@ -1510,17 +1508,17 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
 		"Rot_Lock" " -av -k 1 1"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
-		"Fist" " -av -k 1 1"
+		"Fist" " -av -k 1 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
-		"Index" " -av -k 1 1.09"
+		"Index" " -av -k 1 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
-		"Middle" " -av -k 1 1.09"
+		"Middle" " -av -k 1 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
-		"Ring" " -av -k 1 1.09"
+		"Ring" " -av -k 1 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
-		"Pinky" " -av -k 1 1.09"
+		"Pinky" " -av -k 1 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:L_FK_Arm|Dad_Rig_Final:L_FK_Arm_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_L_Arm_jnt_3_Ctrl" 
-		"Thumb" " -av -k 1 1.09"
+		"Thumb" " -av -k 1 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:R_FK_Arm|Dad_Rig_Final:R_FK_Arm_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:R_FK_Arm|Dad_Rig_Final:R_FK_Arm_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl" 
@@ -1542,7 +1540,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:R_FK_Arm|Dad_Rig_Final:R_FK_Arm_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl" 
 		"Rot_Lock" " -av -k 1 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:FK_Ctrl_Grp|Dad_Rig_Final:R_FK_Arm|Dad_Rig_Final:R_FK_Arm_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Grp|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl_Rot_Offset|Dad_Rig_Final:FK_R_Arm_jnt_3_Ctrl" 
-		"Fist" " -av -k 1 0.16618075801749166"
+		"Fist" " -av -k 1 3"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:L_IK_Arm|Dad_Rig_Final:L_IK_Arm_Offset|Dad_Rig_Final:IK_L_Arm_2_Grp|Dad_Rig_Final:IK_L_Arm_2_Ctrl_Offset|Dad_Rig_Final:IK_L_Arm_2_Ctrl" 
 		"translate" " -type \"double3\" 10.43791044198809459 -1.84310936670776071 -49.9783111229416761"
 		
@@ -1553,7 +1551,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:L_IK_Arm|Dad_Rig_Final:L_IK_Arm_Offset|Dad_Rig_Final:IK_L_Arm_2_Grp|Dad_Rig_Final:IK_L_Arm_2_Ctrl_Offset|Dad_Rig_Final:IK_L_Arm_2_Ctrl" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:L_IK_Arm|Dad_Rig_Final:L_IK_Arm_Offset|Dad_Rig_Final:IK_L_Arm_3_Grp|Dad_Rig_Final:IK_L_Arm_3" 
-		"translate" " -type \"double3\" 22.73275321241160896 29.11743442277061078 14.10508208042388745"
+		"translate" " -type \"double3\" 24.14791911670239344 29.35339463937079429 184.13803664974253138"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:L_IK_Arm|Dad_Rig_Final:L_IK_Arm_Offset|Dad_Rig_Final:IK_L_Arm_3_Grp|Dad_Rig_Final:IK_L_Arm_3" 
 		"translateX" " -av"
@@ -1604,7 +1602,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:R_IK_Arm|Dad_Rig_Final:R_IK_Arm_Offset|Dad_Rig_Final:IK_R_Arm_2_Grp|Dad_Rig_Final:IK_R_Arm_2_Ctrl_Offset|Dad_Rig_Final:IK_R_Arm_PV_Ctrl" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:R_IK_Arm|Dad_Rig_Final:R_IK_Arm_Offset|Dad_Rig_Final:IK_R_Arm_3_Grp|Dad_Rig_Final:IK_R_Arm_3" 
-		"translate" " -type \"double3\" -182.24490968361263299 -53.98826009316454133 32.23771447433078663"
+		"translate" " -type \"double3\" -193.56030756150570937 -55.88098917139694066 162.85312806422521703"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:R_IK_Arm|Dad_Rig_Final:R_IK_Arm_Offset|Dad_Rig_Final:IK_R_Arm_3_Grp|Dad_Rig_Final:IK_R_Arm_3" 
 		"translateX" " -av"
@@ -1613,7 +1611,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:R_IK_Arm|Dad_Rig_Final:R_IK_Arm_Offset|Dad_Rig_Final:IK_R_Arm_3_Grp|Dad_Rig_Final:IK_R_Arm_3" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:R_IK_Arm|Dad_Rig_Final:R_IK_Arm_Offset|Dad_Rig_Final:IK_R_Arm_3_Grp|Dad_Rig_Final:IK_R_Arm_3" 
-		"rotate" " -type \"double3\" 435.9570779333374162 -88.40451175103446246 96.71751509254886514"
+		"rotate" " -type \"double3\" 341.79392150075364043 -42.02449550260295297 194.43409329280396491"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:R_IK_Arm|Dad_Rig_Final:R_IK_Arm_Offset|Dad_Rig_Final:IK_R_Arm_3_Grp|Dad_Rig_Final:IK_R_Arm_3" 
 		"rotateX" " -av"
@@ -1638,7 +1636,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:IK_Ctrl_Grp|Dad_Rig_Final:R_IK_Arm|Dad_Rig_Final:R_IK_Arm_Offset|Dad_Rig_Final:IK_R_Arm_3_Grp|Dad_Rig_Final:IK_R_Arm_3" 
 		"blendParent1" " -av -k 1 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Spine_jnt_2_Ctrl_Grp|Dad_Rig_Final:RK_Spine_jnt_2_Ctrl" 
-		"rotate" " -type \"double3\" 0.34889546316064701 0.33746461813915396 -8.76548800208204959"
+		"rotate" " -type \"double3\" 0.34717325566836638 0.33918629352389457 -9.05215292085230239"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Spine_jnt_2_Ctrl_Grp|Dad_Rig_Final:RK_Spine_jnt_2_Ctrl" 
 		"rotateZ" " -av"
@@ -1647,7 +1645,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Spine_jnt_2_Ctrl_Grp|Dad_Rig_Final:RK_Spine_jnt_2_Ctrl" 
 		"rotateY" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Spine_jnt_3_Ctrl_Grp|Dad_Rig_Final:RK_Spine_jnt_3_Ctrl" 
-		"rotate" " -type \"double3\" 0.3694238529822223 0.31429155536987524 -5.10904476539854091"
+		"rotate" " -type \"double3\" 0.42838787833904141 0.22816660348532711 7.24061417161289267"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Spine_jnt_3_Ctrl_Grp|Dad_Rig_Final:RK_Spine_jnt_3_Ctrl" 
 		"rotateZ" " -av"
@@ -1668,7 +1666,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Head_jnt_Ctrl_Grp|Dad_Rig_Final:RK_Head_jnt_Ctrl" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Head_jnt_Ctrl_Grp|Dad_Rig_Final:RK_Head_jnt_Ctrl" 
-		"rotate" " -type \"double3\" -8.9318923625727038 -6.36478949605306887 -6.72369990086111624"
+		"rotate" " -type \"double3\" 6.55595533132948738 5.1872613285359126 -20.81468719489780028"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Head_jnt_Ctrl_Grp|Dad_Rig_Final:RK_Head_jnt_Ctrl" 
 		"rotateX" " -av"
@@ -1718,7 +1716,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Head_jnt_Ctrl_Grp|Dad_Rig_Final:RK_Head_jnt_Ctrl|Dad_Rig_Final:group6|Dad_Rig_Final:Face_Panel|Dad_Rig_Final:group49|Dad_Rig_Final:group48|Dad_Rig_Final:L_Emotion_Mouth" 
 		"translateY" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Head_jnt_Ctrl_Grp|Dad_Rig_Final:RK_Head_jnt_Ctrl|Dad_Rig_Final:group6|Dad_Rig_Final:Face_Panel|Dad_Rig_Final:group50|Dad_Rig_Final:group48|Dad_Rig_Final:R_Emotion_EyeBrow" 
-		"translate" " -type \"double3\" 0.050516337428972616 0.15129518344565612 0.43893347215205081"
+		"translate" " -type \"double3\" 0.10038728002673221 0.035408753600880423 0.20032976774270408"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Head_jnt_Ctrl_Grp|Dad_Rig_Final:RK_Head_jnt_Ctrl|Dad_Rig_Final:group6|Dad_Rig_Final:Face_Panel|Dad_Rig_Final:group50|Dad_Rig_Final:group48|Dad_Rig_Final:R_Emotion_EyeBrow" 
 		"translateZ" " -av"
@@ -1727,7 +1725,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Head_jnt_Ctrl_Grp|Dad_Rig_Final:RK_Head_jnt_Ctrl|Dad_Rig_Final:group6|Dad_Rig_Final:Face_Panel|Dad_Rig_Final:group50|Dad_Rig_Final:group48|Dad_Rig_Final:R_Emotion_EyeBrow" 
 		"translateY" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Head_jnt_Ctrl_Grp|Dad_Rig_Final:RK_Head_jnt_Ctrl|Dad_Rig_Final:group6|Dad_Rig_Final:Face_Panel|Dad_Rig_Final:group51|Dad_Rig_Final:group48|Dad_Rig_Final:L_Emotion_EyeBrow" 
-		"translate" " -type \"double3\" -0.050516337428950522 0.15129518344566889 0.43893347215205059"
+		"translate" " -type \"double3\" -0.1003872800267272 0.035408753600901344 0.20032976774270381"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Head_jnt_Ctrl_Grp|Dad_Rig_Final:RK_Head_jnt_Ctrl|Dad_Rig_Final:group6|Dad_Rig_Final:Face_Panel|Dad_Rig_Final:group51|Dad_Rig_Final:group48|Dad_Rig_Final:L_Emotion_EyeBrow" 
 		"translateZ" " -av"
@@ -1747,7 +1745,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_R_Clav_jnt_Ctrl_Grp|Dad_Rig_Final:RK_R_Clav_jnt_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Spine_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_Spine_jnt_1_Ctrl" 
-		"rotate" " -type \"double3\" 0.39064088522147994 0.28800697220723881 -1.11893480556813785"
+		"rotate" " -type \"double3\" 0.39002357791861525 0.28889115757395373 -1.24624905262477048"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:RK_Spine_jnt_1_Ctrl_Grp|Dad_Rig_Final:RK_Spine_jnt_1_Ctrl" 
 		"rotateX" " -av"
@@ -1765,7 +1763,8 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:Master_Eye_Ctrl_Grp|Dad_Rig_Final:Master_Eye_Ctrl" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl_Grp|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl_Offset|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl" 
-		"translate" " -type \"double3\" 0.55910748572284952 0 -9.12030946966372369"
+		"translate" " -type \"double3\" -89.83863966664442557 105.25009742737503871 -26.62251604790897375"
+		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl_Grp|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl_Offset|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl" 
 		"translateX" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl_Grp|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl_Offset|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl" 
@@ -1773,7 +1772,8 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl_Grp|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl_Offset|Dad_Rig_Final:IK_L_Leg_jnt_2_Ctrl" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_3_Grp|Dad_Rig_Final:IK_L_Leg_3" 
-		"translate" " -type \"double3\" 0 5.89607451832398244 0"
+		"translate" " -type \"double3\" 2.84000466216856529 209.98890964018625027 25.24907473958169035"
+		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_3_Grp|Dad_Rig_Final:IK_L_Leg_3" 
 		"translateX" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_3_Grp|Dad_Rig_Final:IK_L_Leg_3" 
@@ -1781,7 +1781,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_3_Grp|Dad_Rig_Final:IK_L_Leg_3" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_3_Grp|Dad_Rig_Final:IK_L_Leg_3" 
-		"rotate" " -type \"double3\" 20.05212798975714961 0 0"
+		"rotate" " -type \"double3\" 10.566252646849561 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_3_Grp|Dad_Rig_Final:IK_L_Leg_3" 
 		"rotateX" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_3_Grp|Dad_Rig_Final:IK_L_Leg_3" 
@@ -1805,9 +1805,9 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_3_Grp|Dad_Rig_Final:IK_L_Leg_3|Dad_Rig_Final:L_L_Foot_Peel_Pivot_Ctrl_Grp|Dad_Rig_Final:L_L_Foot_Peel_Pivot_Ctrl|Dad_Rig_Final:L_R_Foot_Peel_Pivot_Ctrl_Grp1|Dad_Rig_Final:L_R_Foot_Peel_Pivot_Ctrl|Dad_Rig_Final:L_Heel_Pivot_Ctrl_Grp|Dad_Rig_Final:L_Heel_Pivot_Ctrl|Dad_Rig_Final:L_Toe_Pivot_Ctrl_Grp|Dad_Rig_Final:L_Toe_Pivot_Ctrl|Dad_Rig_Final:L_Toe_Tap_Ctrl_Grp|Dad_Rig_Final:L_Toe_Tap_Ctrl" 
 		"rotateZ" " -av 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:L_IK_Leg|Dad_Rig_Final:L_IK_Leg_Offset|Dad_Rig_Final:IK_L_Leg_3_Grp|Dad_Rig_Final:IK_L_Leg_3|Dad_Rig_Final:L_L_Foot_Peel_Pivot_Ctrl_Grp|Dad_Rig_Final:L_L_Foot_Peel_Pivot_Ctrl|Dad_Rig_Final:L_R_Foot_Peel_Pivot_Ctrl_Grp1|Dad_Rig_Final:L_R_Foot_Peel_Pivot_Ctrl|Dad_Rig_Final:L_Heel_Pivot_Ctrl_Grp|Dad_Rig_Final:L_Heel_Pivot_Ctrl|Dad_Rig_Final:L_Toe_Pivot_Ctrl_Grp|Dad_Rig_Final:L_Toe_Pivot_Ctrl|Dad_Rig_Final:L_Toe_Tap_Ctrl_Grp|Dad_Rig_Final:L_Toe_Tap_Ctrl|Dad_Rig_Final:L_Toe_Ctrl_Grp|Dad_Rig_Final:L_Toe_Ctrl" 
-		"rotateZ" " -av 0"
+		"rotateZ" " -av 0.17967130702511813"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_jnt_2_Ctrl_Grp|Dad_Rig_Final:IK_R_Leg_jnt_2_Ctrl_Offset|Dad_Rig_Final:IK_R_Leg_jnt_2_Ctrl" 
-		"translate" " -type \"double3\" -36.13037693383748916 -11.47215540963331115 -7.41011557052481784"
+		"translate" " -type \"double3\" -90.69943263583360249 105.25009742736813223 -12.58103302579116267"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_jnt_2_Ctrl_Grp|Dad_Rig_Final:IK_R_Leg_jnt_2_Ctrl_Offset|Dad_Rig_Final:IK_R_Leg_jnt_2_Ctrl" 
 		"translateX" " -av"
@@ -1816,7 +1816,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_jnt_2_Ctrl_Grp|Dad_Rig_Final:IK_R_Leg_jnt_2_Ctrl_Offset|Dad_Rig_Final:IK_R_Leg_jnt_2_Ctrl" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_3_Grp|Dad_Rig_Final:IK_R_Leg_3" 
-		"translate" " -type \"double3\" -3.43460070206186163 44.53709642253677004 30.53533361482624997"
+		"translate" " -type \"double3\" -4.5910546093100395 206.53161877781957401 40.81679248915580871"
 		
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_3_Grp|Dad_Rig_Final:IK_R_Leg_3" 
 		"translateX" " -av"
@@ -1825,7 +1825,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_3_Grp|Dad_Rig_Final:IK_R_Leg_3" 
 		"translateZ" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_3_Grp|Dad_Rig_Final:IK_R_Leg_3" 
-		"rotate" " -type \"double3\" -0.60641804872789951 0 0"
+		"rotate" " -type \"double3\" -6.63132697102200908 0 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_3_Grp|Dad_Rig_Final:IK_R_Leg_3" 
 		"rotateX" " -av"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_3_Grp|Dad_Rig_Final:IK_R_Leg_3" 
@@ -1849,7 +1849,7 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_3_Grp|Dad_Rig_Final:IK_R_Leg_3|Dad_Rig_Final:R_R_Foot_Peel_Pivot_Ctrl_Grp|Dad_Rig_Final:R_R_Foot_Peel_Pivot_Ctrl|Dad_Rig_Final:R_R_Foot_Peel_Pivot_Ctrl_Grp1|Dad_Rig_Final:R_R_Foot_Peel_Pivot_Ctrl|Dad_Rig_Final:R_Heel_Pivot_Ctrl_Grp|Dad_Rig_Final:R_Heel_Pivot_Ctrl|Dad_Rig_Final:R_Toe_Pivot_Ctrl_Grp|Dad_Rig_Final:R_Toe_Pivot_Ctrl|Dad_Rig_Final:R_Toe_Tap_Ctrl_Grp|Dad_Rig_Final:R_Toe_Tap_Ctrl" 
 		"rotateZ" " -av 0"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:R_IK_Leg|Dad_Rig_Final:R_Leg_Offset|Dad_Rig_Final:IK_R_Leg_3_Grp|Dad_Rig_Final:IK_R_Leg_3|Dad_Rig_Final:R_R_Foot_Peel_Pivot_Ctrl_Grp|Dad_Rig_Final:R_R_Foot_Peel_Pivot_Ctrl|Dad_Rig_Final:R_R_Foot_Peel_Pivot_Ctrl_Grp1|Dad_Rig_Final:R_R_Foot_Peel_Pivot_Ctrl|Dad_Rig_Final:R_Heel_Pivot_Ctrl_Grp|Dad_Rig_Final:R_Heel_Pivot_Ctrl|Dad_Rig_Final:R_Toe_Pivot_Ctrl_Grp|Dad_Rig_Final:R_Toe_Pivot_Ctrl|Dad_Rig_Final:R_Toe_Tap_Ctrl_Grp|Dad_Rig_Final:R_Toe_Tap_Ctrl|Dad_Rig_Final:R_Toe_Ctrl_Grp|Dad_Rig_Final:R_Toe_Ctrl" 
-		"rotateZ" " -av 0"
+		"rotateZ" " -av -10.67396765152025395"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:group33|Dad_Rig_Final:L_Offset_Elbow_Grp|Dad_Rig_Final:L_Elbow_Front_Offset_01_Grp|Dad_Rig_Final:L_Elbow_Front_Offset_02_Grp|Dad_Rig_Final:L_group32|Dad_Rig_Final:L_Elbow_Front_Offset_01" 
 		"visibility" " 1"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:Ctrl_grp|Dad_Rig_Final:group33|Dad_Rig_Final:L_Offset_Elbow_Grp|Dad_Rig_Final:L_Elbow_Front_Offset_01_Grp|Dad_Rig_Final:L_Elbow_Front_Offset_02_Grp|Dad_Rig_Final:L_group32|Dad_Rig_Final:L_Elbow_Front_Offset_01" 
@@ -1893,26 +1893,26 @@ createNode reference -n "Dad_Rig_FinalRN";
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:L_ForArm_Twist_Ctrl_Grp|Dad_Rig_Final:group58|Dad_Rig_Final:L_ForArm_Twist_Ctrl_Offset|Dad_Rig_Final:L_ForArm_Twist_Ctrl" 
 		"rotateX" " -av 32.84870489251694892"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Low_poly_dad|Dad_Rig_Final:NCloth_Componets|Dad_Rig_Final:nCloth1|Dad_Rig_Final:nClothShape1" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Low_poly_dad|Dad_Rig_Final:NCloth_Componets|Dad_Rig_Final:nRigid1|Dad_Rig_Final:nRigidShape1" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Low_poly_dad|Dad_Rig_Final:NCloth_Componets|Dad_Rig_Final:nRigid7|Dad_Rig_Final:nRigidShape7" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Low_poly_dad|Dad_Rig_Final:NCloth_Componets|Dad_Rig_Final:nRigid6|Dad_Rig_Final:nRigidShape6" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Low_poly_dad|Dad_Rig_Final:NCloth_Componets|Dad_Rig_Final:nRigid5|Dad_Rig_Final:nRigidShape5" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Low_poly_dad|Dad_Rig_Final:NCloth_Componets|Dad_Rig_Final:nRigid4|Dad_Rig_Final:nRigidShape4" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Low_poly_dad|Dad_Rig_Final:NCloth_Componets|Dad_Rig_Final:nRigid3|Dad_Rig_Final:nRigidShape3" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Low_poly_dad|Dad_Rig_Final:NCloth_Componets|Dad_Rig_Final:nRigid2|Dad_Rig_Final:nRigidShape2" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Low_poly_dad|Dad_Rig_Final:Tie_retopo_Grp|Dad_Rig_Final:Tie_retopo|Dad_Rig_Final:Tie_retopoShape" 
 		"intermediateObject" " 1"
 		2 "Dad_Rig_Final:Geo_Layer" "displayType" " 2"
 		2 "Dad_Rig_Final:Ctrl_Layer" "displayType" " 0"
-		2 "Dad_Rig_Final:Ctrl_Layer" "visibility" " 1"
+		2 "Dad_Rig_Final:Ctrl_Layer" "visibility" " 0"
 		5 4 "Dad_Rig_FinalRN" "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG.translateX" 
 		"Dad_Rig_FinalRN.placeHolderList[91]" ""
 		5 4 "Dad_Rig_FinalRN" "|Dad_Rig_Final:Transform_Grp|Dad_Rig_Final:Transform|Dad_Rig_Final:COG_Grp|Dad_Rig_Final:COG.translateY" 
@@ -2906,16 +2906,17 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".ai_translator" -type "string" "maya";
 createNode animLayer -n "BaseAnimation";
 	rename -uid "9AF004AD-4FD1-565A-1096-F099F347381B";
-	setAttr -s 2 ".cdly";
-	setAttr -s 2 ".chsl";
+	setAttr -s 3 ".cdly";
+	setAttr -s 3 ".chsl";
 	setAttr ".ovrd" yes;
 createNode displayLayer -n "Tie";
 	rename -uid "F4B36DC3-4C2C-6E85-FE07-98B89C7A0C50";
 	setAttr ".dt" 2;
+	setAttr ".v" no;
 	setAttr ".do" 1;
 createNode reference -n "Boy_Rig_FinalRN";
 	rename -uid "882F8FC7-46A5-D1D9-30ED-D181403F49D4";
-	setAttr -s 201 ".phl";
+	setAttr -s 259 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -3117,6 +3118,64 @@ createNode reference -n "Boy_Rig_FinalRN";
 	setAttr ".phl[199]" 0;
 	setAttr ".phl[200]" 0;
 	setAttr ".phl[201]" 0;
+	setAttr ".phl[202]" 0;
+	setAttr ".phl[203]" 0;
+	setAttr ".phl[204]" 0;
+	setAttr ".phl[205]" 0;
+	setAttr ".phl[206]" 0;
+	setAttr ".phl[207]" 0;
+	setAttr ".phl[208]" 0;
+	setAttr ".phl[209]" 0;
+	setAttr ".phl[210]" 0;
+	setAttr ".phl[211]" 0;
+	setAttr ".phl[212]" 0;
+	setAttr ".phl[213]" 0;
+	setAttr ".phl[214]" 0;
+	setAttr ".phl[215]" 0;
+	setAttr ".phl[216]" 0;
+	setAttr ".phl[217]" 0;
+	setAttr ".phl[218]" 0;
+	setAttr ".phl[219]" 0;
+	setAttr ".phl[220]" 0;
+	setAttr ".phl[221]" 0;
+	setAttr ".phl[222]" 0;
+	setAttr ".phl[223]" 0;
+	setAttr ".phl[224]" 0;
+	setAttr ".phl[225]" 0;
+	setAttr ".phl[226]" 0;
+	setAttr ".phl[227]" 0;
+	setAttr ".phl[228]" 0;
+	setAttr ".phl[229]" 0;
+	setAttr ".phl[230]" 0;
+	setAttr ".phl[231]" 0;
+	setAttr ".phl[232]" 0;
+	setAttr ".phl[233]" 0;
+	setAttr ".phl[234]" 0;
+	setAttr ".phl[235]" 0;
+	setAttr ".phl[236]" 0;
+	setAttr ".phl[237]" 0;
+	setAttr ".phl[238]" 0;
+	setAttr ".phl[239]" 0;
+	setAttr ".phl[240]" 0;
+	setAttr ".phl[241]" 0;
+	setAttr ".phl[242]" 0;
+	setAttr ".phl[243]" 0;
+	setAttr ".phl[244]" 0;
+	setAttr ".phl[245]" 0;
+	setAttr ".phl[246]" 0;
+	setAttr ".phl[247]" 0;
+	setAttr ".phl[248]" 0;
+	setAttr ".phl[249]" 0;
+	setAttr ".phl[250]" 0;
+	setAttr ".phl[251]" 0;
+	setAttr ".phl[252]" 0;
+	setAttr ".phl[253]" 0;
+	setAttr ".phl[254]" 0;
+	setAttr ".phl[255]" 0;
+	setAttr ".phl[256]" 0;
+	setAttr ".phl[257]" 0;
+	setAttr ".phl[258]" 0;
+	setAttr ".phl[259]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Boy_Rig_FinalRN"
 		"Boy_Rig_FinalRN" 8
@@ -3136,15 +3195,15 @@ createNode reference -n "Boy_Rig_FinalRN";
 		"cacheWidth" " 150"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Passive_Collider|Boy_Rig_Final:nRigid10|Boy_Rig_Final:nRigidShape10" 
 		"cacheWidth" " 150"
-		"Boy_Rig_FinalRN" 358
+		"Boy_Rig_FinalRN" 454
 		0 "|Boy_Rig_FinalRNfosterParent1|Cape_RetopoShapeDeformed" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Boy_geo|Boy_Rig_Final:Cape_Grp|Boy_Rig_Final:Cape_Retopo" 
 		"-s -r "
-		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform" "translate" " -type \"double3\" -178.58129403624812426 0 -5.34471696582061906"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform" "translate" " -type \"double3\" -127.32452531388889838 0 0.86400846579500845"
 		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform" "rotate" " -type \"double3\" 0 84.2310511118132581 0"
 		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
-		"translate" " -type \"double3\" 0.30459810592830239 0 -0.030773178116254612"
+		"translate" " -type \"double3\" 0.13000306218919061 0 0.99924234525167133"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
 		"translateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
@@ -3152,11 +3211,27 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 0 -0.8621140687556671"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
+		"rotateX" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
+		"rotateY" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG" 
 		"rotateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl" 
+		"translateX" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl" 
+		"translateY" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl" 
+		"translateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl" 
+		"rotateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl" 
-		"translate" " -type \"double3\" -4.17617612804970584 3.76695355178841007 0.72228094439514201"
+		"translate" " -type \"double3\" -4.18529100334851378 3.28295218731843752 0.78959203109779974"
 		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl" 
 		"translateX" " -av"
@@ -3165,7 +3240,7 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl" 
-		"rotate" " -type \"double3\" 4.01437087296435191 2.29294184858023264 -67.02122270518222535"
+		"rotate" " -type \"double3\" 4.17286997824925088 1.98075482032747763 -62.68172259003176805"
 		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl" 
 		"rotateX" " -av"
@@ -3176,7 +3251,7 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:IK_R_Arm_Offset_Ctrl|Boy_Rig_Final:IK_R_Arm_jnt_Ctrl1" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl" 
-		"translate" " -type \"double3\" -4.47241684191810229 3.81277865491333845 -0.043197958507202011"
+		"translate" " -type \"double3\" -4.31216796724078133 3.50544650971178395 -0.20324205564914793"
 		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl" 
 		"translateX" " -av"
@@ -3185,7 +3260,7 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -74.4552983315252277"
+		"rotate" " -type \"double3\" 0 0 -73.45330400515793201"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl" 
 		"rotateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl" 
@@ -3204,10 +3279,54 @@ createNode reference -n "Boy_Rig_FinalRN";
 		"PV_Fallow" " -av -k 1 0"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl" 
 		"FallowRoot" " -av -k 1 1"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl" 
+		"translateX" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl" 
+		"translateY" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl" 
+		"translateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl" 
+		"rotateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
+		"rotate" " -type \"double3\" 64.9763999387332376 0.99286617240358788 -0.46359345675170965"
+		
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
+		"rotateX" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
+		"rotateY" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
+		"rotateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1" 
+		"rotate" " -type \"double3\" 16.5902586901824165 0 0"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1" 
+		"rotateX" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1" 
+		"rotateY" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1" 
+		"rotateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1" 
+		"rotate" " -type \"double3\" 20.20525262924893539 0 0"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1" 
+		"rotateX" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1" 
+		"rotateY" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1" 
+		"rotateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
+		"rotate" " -type \"double3\" 61.41860133295518409 -4.02419624353408967 2.21390758002634014"
+		
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
+		"rotateX" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
+		"rotateY" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl" 
+		"rotateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IKSwitch_Grp|Boy_Rig_Final:L_Arm_IK_Switch_Grp|Boy_Rig_Final:L_Arm_IK_Switch" 
-		"IK" " -k 1 1"
-		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IKSwitch_Grp|Boy_Rig_Final:R_Arm_IK_Switch_Grp|Boy_Rig_Final:R_Arm_IK_Switch" 
-		"IK" " -k 1 1"
+		"IK" " -av -k 1 0"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl" 
 		"visibility" " -av 1"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl" 
@@ -3219,7 +3338,7 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -0.42722601956824385"
+		"rotate" " -type \"double3\" 0 0 1.91801271086928815"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl" 
 		"rotateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl" 
@@ -3245,7 +3364,7 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -0.42722601956824385"
+		"rotate" " -type \"double3\" 0 0 1.91801271086928815"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl" 
 		"rotateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl" 
@@ -3276,7 +3395,7 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1" 
-		"rotate" " -type \"double3\" 0 0 -0.42722601956824385"
+		"rotate" " -type \"double3\" 0 0 1.91801271086928815"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1" 
 		"rotateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1" 
@@ -3296,7 +3415,11 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1" 
 		"Rotate" " -av -k 1 0"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 0 18.33380507594718622"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl" 
+		"rotateX" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl" 
+		"rotateY" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose" 
@@ -3308,15 +3431,16 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose" 
-		"rotate" " -type \"double3\" -0.2535344520543058 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose" 
 		"rotateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Blink_Box_Grp|Boy_Rig_Final:R_Upper_Blink" 
-		"translateY" " -av 0"
+		"translateY" " -av -0.31574449108601754"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Blink_Box_Grp|Boy_Rig_Final:R_Lower_Blink" 
-		"translateY" " -av 0"
+		"translateY" " -av 1.70793301993875946"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.0076979337281192044 0.48944716841805491 0.14878968891881497"
+		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1" 
 		"translateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1" 
@@ -3332,11 +3456,12 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol" 
-		"rotate" " -type \"double3\" -0.2535344520543058 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol" 
 		"rotateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.012484289679212139 0.79377147803765968 0.24130287988304308"
+		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1" 
 		"translateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1" 
@@ -3352,19 +3477,20 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol" 
 		"translateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol" 
-		"rotate" " -type \"double3\" -0.2535344520543058 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol" 
 		"rotateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Blink_Box_Grp|Boy_Rig_Final:L_Upper_Blink" 
-		"translateY" " -av 0"
+		"translateY" " -av -0.31574449108601754"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Blink_Box_Grp|Boy_Rig_Final:L_Lower_Blink" 
-		"translateY" " -av 0"
+		"translateY" " -av 1.70793301993875946"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:W_Grp|Boy_Rig_Final:W_Shape" 
-		"translateX" " -av 0"
+		"translateX" " -av 1.12746924740517174"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow" 
 		"visibility" " -av 1"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow" 
-		"translate" " -type \"double3\" 0 -1.0544031953400177 0.01572548209786943"
+		"translate" " -type \"double3\" -0.048217709625456878 1.74398781122550317 0.75443714098905634"
+		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow" 
 		"translateY" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow" 
@@ -3390,7 +3516,8 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow" 
 		"visibility" " -av 1"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow" 
-		"translate" " -type \"double3\" 0 -1.0544031953400177 0.01572548209786943"
+		"translate" " -type \"double3\" 0.031030399603261715 0.6550860820752733 0.40967771765881361"
+		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow" 
 		"translateY" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow" 
@@ -3414,11 +3541,12 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow" 
 		"scaleZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 2.34538502870448973"
+		"rotate" " -type \"double3\" 0 0 0.033467354262643488"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl" 
-		"rotate" " -type \"double3\" 4.58121901182982239 0 0"
+		"rotate" " -type \"double3\" 3.60265084230531496 7.96570375819561871 0.3618164388611454"
+		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl" 
 		"rotateY" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl" 
@@ -3426,15 +3554,27 @@ createNode reference -n "Boy_Rig_FinalRN";
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl" 
 		"rotateZ" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl" 
-		"Hand" " -av -k 1 2"
+		"Hand" " -av -k 1 1.01909887095072271"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl" 
-		"rotate" " -type \"double3\" 14.82895194323307209 0 0"
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl" 
+		"translateX" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl" 
+		"translateY" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl" 
+		"translateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl" 
+		"rotate" " -type \"double3\" 1.7478575070929756 0 0"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl" 
+		"rotateY" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl" 
 		"rotateX" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl" 
-		"Hand" " -av -k 1 1"
+		"rotateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl" 
+		"Hand" " -av -k 1 2.34174562682215726"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl" 
-		"translate" " -type \"double3\" 0.05794921869304738 -0.01863383925908459 0.40306732774146686"
+		"translate" " -type \"double3\" 0.49949273759014001 11.75009571878396741 -8.3040105645240736"
 		
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl" 
 		"translateX" " -av"
@@ -3442,22 +3582,24 @@ createNode reference -n "Boy_Rig_FinalRN";
 		"translateY" " -av"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl" 
 		"translateZ" " -av"
+		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl" 
+		"Fallow_Head" " -av -k 1 1"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:N_Cloth_Conponets_Grp|Boy_Rig_Final:group40|Boy_Rig_Final:nCloth1|Boy_Rig_Final:nClothShape1" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:N_Cloth_Conponets_Grp|Boy_Rig_Final:group40|Boy_Rig_Final:nRigid1|Boy_Rig_Final:nRigidShape1" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:N_Cloth_Conponets_Grp|Boy_Rig_Final:group40|Boy_Rig_Final:nRigid2|Boy_Rig_Final:nRigidShape2" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:N_Cloth_Conponets_Grp|Boy_Rig_Final:group40|Boy_Rig_Final:nRigid3|Boy_Rig_Final:nRigidShape3" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:N_Cloth_Conponets_Grp|Boy_Rig_Final:group40|Boy_Rig_Final:nRigid4|Boy_Rig_Final:nRigidShape4" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:N_Cloth_Conponets_Grp|Boy_Rig_Final:group40|Boy_Rig_Final:nRigid5|Boy_Rig_Final:nRigidShape5" 
-		"cacheWidth" " 149"
+		"cacheWidth" " 180"
 		2 "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Boy_geo|Boy_Rig_Final:Cape_Grp|Boy_Rig_Final:Cape_Retopo|Boy_Rig_Final:Cape_RetopoShape" 
 		"intermediateObject" " 1"
 		2 "Boy_Rig_Final:Geo_Layer" "displayType" " 2"
-		2 "Boy_Rig_Final:Ctrl_Layer" "visibility" " 0"
+		2 "Boy_Rig_Final:Ctrl_Layer" "visibility" " 1"
 		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG.L_Arm" 
 		"Boy_Rig_FinalRN.placeHolderList[1]" ""
 		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG.R_Arm" 
@@ -3508,358 +3650,475 @@ createNode reference -n "Boy_Rig_FinalRN";
 		"Boy_Rig_FinalRN.placeHolderList[24]" ""
 		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG.visibility" 
 		"Boy_Rig_FinalRN.placeHolderList[25]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.PV_Fallow" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl.PV_Fallow" 
 		"Boy_Rig_FinalRN.placeHolderList[26]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.FallowRoot" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl.FallowHip" 
 		"Boy_Rig_FinalRN.placeHolderList[27]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[28]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[29]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[30]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[31]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[32]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Leg_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Leg_Offset|Boy_Rig_Final:IK_L_Leg_jnt_Ctrl_Grp4|Boy_Rig_Final:IK_L_Leg_Ctrl.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[33]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.PV_Fallow" 
 		"Boy_Rig_FinalRN.placeHolderList[34]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.FallowRoot" 
 		"Boy_Rig_FinalRN.placeHolderList[35]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[36]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.PV_Fallow" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[37]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.FallowRoot" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[38]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[39]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[40]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[41]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[42]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[43]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_L_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_L_Hand_Offset|Boy_Rig_Final:IK_L_Arm_Ctrl_Grp|Boy_Rig_Final:IK_L_Arm_Ctrl.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[44]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.PV_Fallow" 
 		"Boy_Rig_FinalRN.placeHolderList[45]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.FallowRoot" 
 		"Boy_Rig_FinalRN.placeHolderList[46]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[47]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[48]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[49]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[50]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[51]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[52]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[53]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[54]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Arm_Ctrl_Grp_Offset|Boy_Rig_Final:IK_R_Hand_Offset|Boy_Rig_Final:IK_R_Arm_Ctrl_Grp|Boy_Rig_Final:IK_R_Arm_Ctrl.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[55]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl.PV_Fallow" 
 		"Boy_Rig_FinalRN.placeHolderList[56]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.visibility" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl.FallowHip" 
 		"Boy_Rig_FinalRN.placeHolderList[57]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.Translate" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[58]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.Rotate" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[59]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[60]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[61]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[62]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:IK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1|Boy_Rig_Final:Master_IK_R_Leg_Ctrl_Grp1_Offset|Boy_Rig_Final:IK_R_Leg_Offset|Boy_Rig_Final:IK_R_Reg_jnt_Ctrl_Grp|Boy_Rig_Final:IK_R_Leg_Ctrl.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[63]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[64]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[65]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[66]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[67]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[68]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.visibility" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[69]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[70]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[71]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[72]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[73]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[74]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[75]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[76]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[77]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[78]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.visibility" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[79]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.Translate" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[80]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.Rotate" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[81]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.Translate" 
 		"Boy_Rig_FinalRN.placeHolderList[82]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp|Boy_Rig_Final:Master_FK_R_Arm_Grp_Offset|Boy_Rig_Final:FK_R_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.Rotate" 
 		"Boy_Rig_FinalRN.placeHolderList[83]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.Translate" 
 		"Boy_Rig_FinalRN.placeHolderList[84]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.Rotate" 
 		"Boy_Rig_FinalRN.placeHolderList[85]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[86]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[87]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[88]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[89]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[90]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.Translate" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[91]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.Rotate" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[92]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.visibility" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[93]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.FallowOffset" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl1.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[94]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.RotateOffset" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[95]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[96]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[97]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[98]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[99]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[100]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[101]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Blink_Box_Grp|Boy_Rig_Final:R_Upper_Blink.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[102]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Blink_Box_Grp|Boy_Rig_Final:R_Lower_Blink.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:FK_Master_Grp|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp|Boy_Rig_Final:Master_FK_L_Arm_Grp_Offset|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl_Grp|Boy_Rig_Final:FK_L_Arm_jnt_Ctrl.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[103]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1.FallowOffset" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IKSwitch_Grp|Boy_Rig_Final:L_Arm_IK_Switch_Grp|Boy_Rig_Final:L_Arm_IK_Switch.IK" 
 		"Boy_Rig_FinalRN.placeHolderList[104]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Master_IKSwitch_Grp|Boy_Rig_Final:R_Arm_IK_Switch_Grp|Boy_Rig_Final:R_Arm_IK_Switch.IK" 
 		"Boy_Rig_FinalRN.placeHolderList[105]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[106]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[107]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.FallowOffset" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[108]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.RotateOffset" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[109]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[110]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[111]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[112]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[113]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[114]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl_Grp|Boy_Rig_Final:RK_Hip_Ctrl.visibility" 
 		"Boy_Rig_FinalRN.placeHolderList[115]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1.FallowOffset" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.Translate" 
 		"Boy_Rig_FinalRN.placeHolderList[116]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.Rotate" 
 		"Boy_Rig_FinalRN.placeHolderList[117]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[118]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[119]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.FallowOffset" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[120]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.RotateOffset" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[121]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[122]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[123]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[124]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[125]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[126]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl_Grp1|Boy_Rig_Final:RK_Spine_jnt_Ctrl.visibility" 
 		"Boy_Rig_FinalRN.placeHolderList[127]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Blink_Box_Grp|Boy_Rig_Final:L_Upper_Blink.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[128]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Blink_Box_Grp|Boy_Rig_Final:L_Lower_Blink.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[129]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:W_Grp|Boy_Rig_Final:W_Shape.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[130]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[131]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[132]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[133]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.visibility" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[134]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[135]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[136]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.visibility" 
 		"Boy_Rig_FinalRN.placeHolderList[137]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.Translate" 
 		"Boy_Rig_FinalRN.placeHolderList[138]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1_Grp|Boy_Rig_Final:RK_Spine_jnt_Ctrl1.Rotate" 
 		"Boy_Rig_FinalRN.placeHolderList[139]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[140]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[141]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[142]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[143]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[144]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[145]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.scaleX" 
 		"Boy_Rig_FinalRN.placeHolderList[146]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.visibility" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.scaleY" 
 		"Boy_Rig_FinalRN.placeHolderList[147]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.scaleZ" 
 		"Boy_Rig_FinalRN.placeHolderList[148]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.Translate" 
 		"Boy_Rig_FinalRN.placeHolderList[149]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.Rotate" 
 		"Boy_Rig_FinalRN.placeHolderList[150]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl.visibility" 
 		"Boy_Rig_FinalRN.placeHolderList[151]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.FallowOffset" 
 		"Boy_Rig_FinalRN.placeHolderList[152]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.RotateOffset" 
 		"Boy_Rig_FinalRN.placeHolderList[153]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[154]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[155]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[156]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[157]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[158]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Nose.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[159]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.visibility" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Blink_Box_Grp|Boy_Rig_Final:R_Upper_Blink.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[160]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.RotLock" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Blink_Box_Grp|Boy_Rig_Final:R_Lower_Blink.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[161]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.Hand" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1.FallowOffset" 
 		"Boy_Rig_FinalRN.placeHolderList[162]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[163]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[164]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_EyeBrow_1.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[165]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.FallowOffset" 
 		"Boy_Rig_FinalRN.placeHolderList[166]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.RotateOffset" 
 		"Boy_Rig_FinalRN.placeHolderList[167]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[168]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[169]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[170]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[171]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.RotLock" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[172]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.Hand" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Face_Grp|Boy_Rig_Final:L_Nostrol.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[173]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1.FallowOffset" 
 		"Boy_Rig_FinalRN.placeHolderList[174]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[175]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[176]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.rotateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:R_Eyebrow_Grp|Boy_Rig_Final:group14|Boy_Rig_Final:R_EyeBrow_1.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[177]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.rotateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.FallowOffset" 
 		"Boy_Rig_FinalRN.placeHolderList[178]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.rotateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.RotateOffset" 
 		"Boy_Rig_FinalRN.placeHolderList[179]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.scaleX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[180]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.scaleY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[181]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.scaleZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.translateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[182]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Cape_Att_Ctrl_Grp|Boy_Rig_Final:Cape_Att_Ctrl.CapeSimStartFrame" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.rotateX" 
 		"Boy_Rig_FinalRN.placeHolderList[183]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.EyeLid_Fallow_Strength" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.rotateY" 
 		"Boy_Rig_FinalRN.placeHolderList[184]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.Fallow_Head" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:R_Face_Grp|Boy_Rig_Final:group25|Boy_Rig_Final:R_Nostrol.rotateZ" 
 		"Boy_Rig_FinalRN.placeHolderList[185]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.translateX" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Blink_Box_Grp|Boy_Rig_Final:L_Upper_Blink.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[186]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.translateY" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:L_Blink_Box_Grp|Boy_Rig_Final:L_Lower_Blink.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[187]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.translateZ" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:W_Grp|Boy_Rig_Final:W_Shape.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[188]" ""
-		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Boy_geo|Boy_Rig_Final:Cape_Grp|Boy_Rig_Final:Cape_Retopo.drawOverride" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.translateY" 
 		"Boy_Rig_FinalRN.placeHolderList[189]" ""
-		5 3 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Boy_geo|Boy_Rig_Final:Cape_Grp|Boy_Rig_Final:Cape_Retopo|Boy_Rig_Final:Cape_RetopoShape.worldMesh" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.translateX" 
 		"Boy_Rig_FinalRN.placeHolderList[190]" ""
-		5 4 "Boy_Rig_FinalRN" "Boy_Rig_Final:lambert5SG.dagSetMembers" "Boy_Rig_FinalRN.placeHolderList[191]" 
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.translateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[191]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.visibility" 
+		"Boy_Rig_FinalRN.placeHolderList[192]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.rotateX" 
+		"Boy_Rig_FinalRN.placeHolderList[193]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.rotateY" 
+		"Boy_Rig_FinalRN.placeHolderList[194]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.rotateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[195]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.scaleX" 
+		"Boy_Rig_FinalRN.placeHolderList[196]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.scaleY" 
+		"Boy_Rig_FinalRN.placeHolderList[197]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp|Boy_Rig_Final:L_Emotion_Eyebrow.scaleZ" 
+		"Boy_Rig_FinalRN.placeHolderList[198]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.rotateY" 
+		"Boy_Rig_FinalRN.placeHolderList[199]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.rotateX" 
+		"Boy_Rig_FinalRN.placeHolderList[200]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.rotateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[201]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.translateY" 
+		"Boy_Rig_FinalRN.placeHolderList[202]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.translateX" 
+		"Boy_Rig_FinalRN.placeHolderList[203]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.translateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[204]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.visibility" 
+		"Boy_Rig_FinalRN.placeHolderList[205]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.scaleX" 
+		"Boy_Rig_FinalRN.placeHolderList[206]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.scaleY" 
+		"Boy_Rig_FinalRN.placeHolderList[207]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:Face_Panel_Grp|Boy_Rig_Final:Offset|Boy_Rig_Final:group6|Boy_Rig_Final:Face_Panel|Boy_Rig_Final:Emotion_Grp1|Boy_Rig_Final:R_Emotion_Eyebrow.scaleZ" 
+		"Boy_Rig_FinalRN.placeHolderList[208]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.translateX" 
+		"Boy_Rig_FinalRN.placeHolderList[209]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.translateY" 
+		"Boy_Rig_FinalRN.placeHolderList[210]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.translateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[211]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.rotateX" 
+		"Boy_Rig_FinalRN.placeHolderList[212]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.rotateY" 
+		"Boy_Rig_FinalRN.placeHolderList[213]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.rotateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[214]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.scaleX" 
+		"Boy_Rig_FinalRN.placeHolderList[215]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.scaleY" 
+		"Boy_Rig_FinalRN.placeHolderList[216]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.scaleZ" 
+		"Boy_Rig_FinalRN.placeHolderList[217]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl_Grp|Boy_Rig_Final:RK_Head_Ctrl|Boy_Rig_Final:RK_Mouth_Ctrl_Grp|Boy_Rig_Final:RK_Mouth_Ctrl.visibility" 
+		"Boy_Rig_FinalRN.placeHolderList[218]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.RotLock" 
+		"Boy_Rig_FinalRN.placeHolderList[219]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.Hand" 
+		"Boy_Rig_FinalRN.placeHolderList[220]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.translateX" 
+		"Boy_Rig_FinalRN.placeHolderList[221]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.translateY" 
+		"Boy_Rig_FinalRN.placeHolderList[222]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.translateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[223]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.rotateY" 
+		"Boy_Rig_FinalRN.placeHolderList[224]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.rotateX" 
+		"Boy_Rig_FinalRN.placeHolderList[225]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.rotateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[226]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.scaleX" 
+		"Boy_Rig_FinalRN.placeHolderList[227]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.scaleY" 
+		"Boy_Rig_FinalRN.placeHolderList[228]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_R_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl_RotRock_Offset|Boy_Rig_Final:FK_R_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_R_Wrist_jnt_Ctrl.scaleZ" 
+		"Boy_Rig_FinalRN.placeHolderList[229]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.RotLock" 
+		"Boy_Rig_FinalRN.placeHolderList[230]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.Hand" 
+		"Boy_Rig_FinalRN.placeHolderList[231]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.translateX" 
+		"Boy_Rig_FinalRN.placeHolderList[232]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.translateY" 
+		"Boy_Rig_FinalRN.placeHolderList[233]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.translateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[234]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.rotateY" 
+		"Boy_Rig_FinalRN.placeHolderList[235]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.rotateX" 
+		"Boy_Rig_FinalRN.placeHolderList[236]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.rotateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[237]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.scaleX" 
+		"Boy_Rig_FinalRN.placeHolderList[238]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.scaleY" 
+		"Boy_Rig_FinalRN.placeHolderList[239]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Ctrl_Grp|Boy_Rig_Final:Wrists_Ctrl_Grp|Boy_Rig_Final:_L_Wrist_jnt_Ctrl2_Grp|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_IK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl_RotLock_Offset|Boy_Rig_Final:FK_L_Wrist_jnt_Ctrl_FK_Offset|Boy_Rig_Final:IK_L_Wrist_jnt_Ctrl.scaleZ" 
+		"Boy_Rig_FinalRN.placeHolderList[240]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:COG|Boy_Rig_Final:Cape_Att_Ctrl_Grp|Boy_Rig_Final:Cape_Att_Ctrl.CapeSimStartFrame" 
+		"Boy_Rig_FinalRN.placeHolderList[241]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.EyeLid_Fallow_Strength" 
+		"Boy_Rig_FinalRN.placeHolderList[242]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.Fallow_Head" 
+		"Boy_Rig_FinalRN.placeHolderList[243]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.translateX" 
+		"Boy_Rig_FinalRN.placeHolderList[244]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.translateY" 
+		"Boy_Rig_FinalRN.placeHolderList[245]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Transform|Boy_Rig_Final:COG_Grp|Boy_Rig_Final:Eye_Ctrl_Offset_Grp|Boy_Rig_Final:Eye_Ctrl_Grp|Boy_Rig_Final:Eye_Ctrl.translateZ" 
+		"Boy_Rig_FinalRN.placeHolderList[246]" ""
+		5 4 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Boy_geo|Boy_Rig_Final:Cape_Grp|Boy_Rig_Final:Cape_Retopo.drawOverride" 
+		"Boy_Rig_FinalRN.placeHolderList[247]" ""
+		5 3 "Boy_Rig_FinalRN" "|Boy_Rig_Final:Transform_Grp|Boy_Rig_Final:Boy_geo|Boy_Rig_Final:Cape_Grp|Boy_Rig_Final:Cape_Retopo|Boy_Rig_Final:Cape_RetopoShape.worldMesh" 
+		"Boy_Rig_FinalRN.placeHolderList[248]" ""
+		5 4 "Boy_Rig_FinalRN" "Boy_Rig_Final:lambert5SG.dagSetMembers" "Boy_Rig_FinalRN.placeHolderList[249]" 
 		""
 		5 3 "Boy_Rig_FinalRN" "Boy_Rig_Final:wrap1Set.memberWireframeColor" 
-		"Boy_Rig_FinalRN.placeHolderList[192]" ""
+		"Boy_Rig_FinalRN.placeHolderList[250]" ""
 		5 0 "Boy_Rig_FinalRN" "Boy_Rig_Final:wrap1GroupId.message" "Boy_Rig_Final:wrap1Set.groupNodes" 
-		"Boy_Rig_FinalRN.placeHolderList[193]" "Boy_Rig_FinalRN.placeHolderList[194]" ""
-		5 4 "Boy_Rig_FinalRN" "Boy_Rig_Final:wrap1Set.dagSetMembers" "Boy_Rig_FinalRN.placeHolderList[195]" 
+		"Boy_Rig_FinalRN.placeHolderList[251]" "Boy_Rig_FinalRN.placeHolderList[252]" ""
+		5 4 "Boy_Rig_FinalRN" "Boy_Rig_Final:wrap1Set.dagSetMembers" "Boy_Rig_FinalRN.placeHolderList[253]" 
 		""
-		5 3 "Boy_Rig_FinalRN" "Boy_Rig_Final:wrap1GroupId.groupId" "Boy_Rig_FinalRN.placeHolderList[196]" 
+		5 3 "Boy_Rig_FinalRN" "Boy_Rig_Final:wrap1GroupId.groupId" "Boy_Rig_FinalRN.placeHolderList[254]" 
 		""
 		5 3 "Boy_Rig_FinalRN" "Boy_Rig_Final:tweakSet65.memberWireframeColor" 
-		"Boy_Rig_FinalRN.placeHolderList[197]" ""
+		"Boy_Rig_FinalRN.placeHolderList[255]" ""
 		5 0 "Boy_Rig_FinalRN" "Boy_Rig_Final:groupId152.message" "Boy_Rig_Final:tweakSet65.groupNodes" 
-		"Boy_Rig_FinalRN.placeHolderList[198]" "Boy_Rig_FinalRN.placeHolderList[199]" ""
-		5 4 "Boy_Rig_FinalRN" "Boy_Rig_Final:tweakSet65.dagSetMembers" "Boy_Rig_FinalRN.placeHolderList[200]" 
+		"Boy_Rig_FinalRN.placeHolderList[256]" "Boy_Rig_FinalRN.placeHolderList[257]" ""
+		5 4 "Boy_Rig_FinalRN" "Boy_Rig_Final:tweakSet65.dagSetMembers" "Boy_Rig_FinalRN.placeHolderList[258]" 
 		""
-		5 3 "Boy_Rig_FinalRN" "Boy_Rig_Final:groupId152.groupId" "Boy_Rig_FinalRN.placeHolderList[201]" 
+		5 3 "Boy_Rig_FinalRN" "Boy_Rig_Final:groupId152.groupId" "Boy_Rig_FinalRN.placeHolderList[259]" 
 		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode displayLayer -n "Cape";
 	rename -uid "E4455D9F-4B29-48B6-131C-9F9B472F226A";
+	setAttr ".v" no;
 	setAttr ".do" 2;
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "00175CB3-42A9-9D21-E0EA-B884178A2515";
@@ -3867,17 +4126,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"FollowUp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1303\n            -height 686\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 649\n            -height 319\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 646\n            -height 319\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 649\n            -height 319\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 646\n            -height 319\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 649\n            -height 319\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
 		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
-		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 646\n            -height 319\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1309\n            -height 686\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"<function selCom at 0x7f29c5c04aa0>\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
 		+ "            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n"
@@ -3904,14 +4163,14 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
 		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
 		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n"
-		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Top View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"FollowUp\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1303\\n    -height 686\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"FollowUp\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1303\\n    -height 686\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1309\\n    -height 686\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1309\\n    -height 686\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "95B017DA-46DF-843A-3BC2-D6A9E3351C75";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 149 -ast 1 -aet 180 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 180 -ast 1 -aet 180 ";
 	setAttr ".st" 6;
 createNode animCurveTL -n "IK_R_Arm_PV_Ctrl_translateX";
 	rename -uid "84AB1564-4F76-EB04-8B22-FBA18C75283E";
@@ -4290,63 +4549,74 @@ createNode animCurveTL -n "IK_L_Arm_Ctrl_translateX";
 	rename -uid "C00A76DB-47AA-5A1E-1DB0-8CAED5553340";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 -4.1136088139952358 83 -4.1782218976770835
-		 109 -4.2232372970684491 127 -4.1867743181533861 151 -4.1838302630403126;
+	setAttr -s 9 ".ktv[0:8]"  1 -4.1136088139952358 83 -4.1782218976770835
+		 109 -4.2232372970684491 127 -4.1867743181533861 151 -4.1838302630403126 164 -4.3280402093616788
+		 177 -4.4120427901059713 188 -4.4456857462210895 200 -4.2081066541327452;
 createNode animCurveTL -n "IK_L_Arm_Ctrl_translateY";
 	rename -uid "545BD43C-480C-445E-3F55-229C8AE7999C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 4.0643690547397453 83 3.7509174175026265
-		 109 3.1857999510467834 127 3.2894129694971834 151 3.2317911289559036;
+	setAttr -s 9 ".ktv[0:8]"  1 4.0643690547397453 83 3.7509174175026265
+		 109 3.1857999510467834 127 3.2894129694971834 151 3.2317911289559036 164 3.5488479166502152
+		 177 3.3679961603826736 188 2.9839184481370311 200 2.7707821593442263;
 createNode animCurveTL -n "IK_L_Arm_Ctrl_translateZ";
 	rename -uid "084F4C07-4410-D3E8-AF5A-468D655DD6D6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0.96745141885066888 83 0.72184975795024209
-		 109 0.75832352852411689 127 0.76440203200689671 151 0.96075025928881586;
+	setAttr -s 9 ".ktv[0:8]"  1 0.96745141885066888 83 0.72184975795024209
+		 109 0.75832352852411689 127 0.76440203200689671 151 0.96075025928881586 164 -0.37123992790925325
+		 177 0.38853804889329491 188 4.7175443442163854 200 4.3061091265133724;
 createNode animCurveTA -n "IK_L_Arm_Ctrl_rotateX";
 	rename -uid "E6C3DACB-4214-0F4C-1816-42BB65278671";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 4.0143708729643519 83 4.0143708729643519
-		 109 4.0791097751025829 127 4.1318707218767292 151 4.3303478665887853;
+	setAttr -s 9 ".ktv[0:8]"  1 4.0143708729643519 83 4.0143708729643519
+		 109 4.0791097751025829 127 4.1318707218767292 151 4.3303478665887853 164 -11.038875450421203
+		 177 -0.86627416776204169 188 -18.132518791204181 200 25.430055572654272;
 createNode animCurveTA -n "IK_L_Arm_Ctrl_rotateY";
 	rename -uid "9626E2B8-45F2-0509-B099-8AACE344F0AD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 2.2929418485802326 83 2.2929418485802326
-		 109 2.1755487700206104 127 2.0734631357124376 151 1.6177830038105669;
+	setAttr -s 9 ".ktv[0:8]"  1 2.2929418485802326 83 2.2929418485802326
+		 109 2.1755487700206104 127 2.0734631357124376 151 1.6177830038105669 164 1.6177830038105618
+		 177 1.6177830038105656 188 1.6177830038105609 200 4.1661565597798331;
 createNode animCurveTA -n "IK_L_Arm_Ctrl_rotateZ";
 	rename -uid "06ECDDCC-4CCB-1D95-953D-6487D38D8C04";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 -67.021222705182225 83 -67.021222705182225
-		 109 -65.360731428990206 127 -63.937569517745864 151 -57.78092499633722;
+	setAttr -s 9 ".ktv[0:8]"  1 -67.021222705182225 83 -67.021222705182225
+		 109 -65.360731428990206 127 -63.937569517745864 151 -57.78092499633722 164 -57.780924996337234
+		 177 -57.78092499633722 188 -57.780924996337234 200 -63.110733132848821;
 createNode animCurveTU -n "IK_L_Arm_Ctrl_scaleX";
 	rename -uid "DCB65E86-4A9D-187A-FD20-C4A0E168FEF4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 83 1 109 1 127 1 151 1;
+	setAttr -s 9 ".ktv[0:8]"  1 1 83 1 109 1 127 1 151 1 164 1 177 1 188 1
+		 200 1;
 createNode animCurveTU -n "IK_L_Arm_Ctrl_scaleY";
 	rename -uid "6F8F81FE-48E4-198F-39DC-7A952693296E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 83 1 109 1 127 1 151 1;
+	setAttr -s 9 ".ktv[0:8]"  1 1 83 1 109 1 127 1 151 1 164 1 177 1 188 1
+		 200 1;
 createNode animCurveTU -n "IK_L_Arm_Ctrl_scaleZ";
 	rename -uid "E10517D3-4B91-3811-D0F3-569A02F5DA27";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 83 1 109 1 127 1 151 1;
+	setAttr -s 9 ".ktv[0:8]"  1 1 83 1 109 1 127 1 151 1 164 1 177 1 188 1
+		 200 1;
 createNode animCurveTU -n "IK_L_Arm_Ctrl_PV_Fallow";
 	rename -uid "848F36A7-41B1-9FCC-9708-768B402E2016";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 83 0 109 0 127 0 151 0;
+	setAttr -s 9 ".ktv[0:8]"  1 0 83 0 109 0 127 0 151 0 164 0 177 0 188 0
+		 200 0;
 createNode animCurveTU -n "IK_L_Arm_Ctrl_FallowRoot";
 	rename -uid "29FA4FE1-4982-167E-02AB-B6AA3F660E17";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 83 1 109 1 127 1 151 1;
+	setAttr -s 9 ".ktv[0:8]"  1 1 83 1 109 1 127 1 151 1 164 1 177 1 188 1
+		 200 1;
 createNode polyCube -n "polyCube1";
 	rename -uid "72A6D577-4339-4025-43BE-7C9816047222";
 	setAttr ".cuv" 4;
@@ -4448,572 +4718,604 @@ createNode animCurveTA -n "COG_rotateX";
 	rename -uid "EF228C68-4AF8-7E0F-AE2A-7B9B088CB0A5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 0 4 0.50365126556247897 9 1.6645539056527678
+	setAttr -s 27 ".ktv[0:26]"  1 0 4 0.50365126556247897 9 1.6645539056527678
 		 13 2.6159250344952882 16 3.2819689887670238 18 3.0388601747842809 28 0 38 0 46 0
 		 55 0 61 0 66 0 73 0 78 0 83 0 88 0 92 0 100 0 103 0 110 0 114 0 118 0 123 0 127 0
-		 133 0 137 0;
-	setAttr -s 26 ".kit[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kot[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kix[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		 133 0 137 0 180 0;
+	setAttr -s 27 ".kit[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kot[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kix[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "COG_rotateY";
 	rename -uid "45659219-461E-BA9E-F959-AD8DD17BC59F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 0 4 -0.16702966951374021 9 -0.6293709276372208
+	setAttr -s 27 ".ktv[0:26]"  1 0 4 -0.16702966951374021 9 -0.6293709276372208
 		 13 -1.0408879162584102 16 -1.457646371780033 18 -1.3496725664629936 28 0 38 0 46 0
 		 55 0 61 0 66 0 73 0 78 0 83 0 88 0 92 0 100 0 103 0 110 0 114 0 118 0 123 0 127 0
-		 133 0 137 0;
-	setAttr -s 26 ".kit[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kot[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kix[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		 133 0 137 0 180 0;
+	setAttr -s 27 ".kit[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kot[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kix[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "COG_rotateZ";
 	rename -uid "AE086715-4B0D-D0DD-2F44-3EB46DEF48A2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 -0.026838718554657248 4 0.78511991214201748
+	setAttr -s 27 ".ktv[0:26]"  1 -0.026838718554657248 4 0.78511991214201748
 		 9 -1.2541267500071946 13 -2.7127878918739254 16 -2.328251096755785 18 -2.3746373498825579
 		 28 -1.2488719716300647 38 -2.9544655139672211 46 -2.8712275094650779 55 4.325215194202463
 		 61 -0.20493379206899875 66 -7.2051959915211601 73 -9.7613716496736629 78 -10.665893144001656
 		 83 -2.9837410420568027 88 -9.1809656377045581 92 -8.5408934576827686 100 -10.156379588658238
 		 103 -10.156379588658238 110 -10.156379588658238 114 -10.156379588658238 118 -10.156379588658238
-		 123 -10.156379588658238 127 -10.156379588658238 133 -10.156379588658238 137 -10.156379588658238;
-	setAttr -s 26 ".kit[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kot[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kix[7:25]"  1 0.99991453320873114 1 0.91562628805835389 
-		0.94861233388816346 0.99278244327113563 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[7:25]"  0 0.013073877694287174 0 -0.40203047224865984 
-		-0.3164405789326829 -0.11992923051781051 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[7:25]"  1 0.99991453320873125 1 0.91562628805835389 
-		0.94861233388816346 0.99278244327113574 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[7:25]"  0 0.013073877694287176 0 -0.40203047224865984 
-		-0.3164405789326829 -0.11992923051781053 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		 123 -10.156379588658238 127 -10.156379588658238 133 -10.156379588658238 137 -10.156379588658238
+		 180 -10.156379588658238;
+	setAttr -s 27 ".kit[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kot[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kix[7:26]"  1 0.99991453320873114 1 0.91562628805835389 
+		0.94861233388816346 0.99278244327113563 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0.013073877694287174 0 -0.40203047224865984 
+		-0.3164405789326829 -0.11992923051781051 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[7:26]"  1 0.99991453320873125 1 0.91562628805835389 
+		0.94861233388816346 0.99278244327113574 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[7:26]"  0 0.013073877694287176 0 -0.40203047224865984 
+		-0.3164405789326829 -0.11992923051781053 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "COG_visibility";
 	rename -uid "011E7A4E-4ABF-8C58-332F-D5BDCB365EE2";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 1 4 1 9 1 13 1 16 1 18 1 28 1 38 1 46 1
+	setAttr -s 27 ".ktv[0:26]"  1 1 4 1 9 1 13 1 16 1 18 1 28 1 38 1 46 1
 		 55 1 61 1 66 1 73 1 78 1 83 1 88 1 92 1 100 1 103 1 110 1 114 1 118 1 123 1 127 1
-		 133 1 137 1;
-	setAttr -s 26 ".kit[0:25]"  9 9 9 9 9 9 9 1 
+		 133 1 137 1 180 1;
+	setAttr -s 27 ".kit[0:26]"  9 9 9 9 9 9 9 1 
 		9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-		9;
-	setAttr -s 26 ".kix[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		9 9;
+	setAttr -s 27 ".kix[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "COG_translateX";
 	rename -uid "534D5894-4E06-20FC-C8EE-B3A24ACCC893";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 -0.8658768698251269 4 -2.0247723687792551
+	setAttr -s 27 ".ktv[0:26]"  1 -0.8658768698251269 4 -2.0247723687792551
 		 9 5.9187786489765042 13 3.3622256714609939 16 -0.69013811454101359 18 -0.64737521624313243
 		 28 -0.4301234599357201 38 -0.39599206724543085 46 -0.53245060703573099 55 -0.46799976585788494
 		 61 -1.1210184535191487 66 -6.123679447462278 73 -0.45634327350990739 78 -0.66815711305551506
 		 83 14.55624983922413 88 39.792783295051869 92 43.758202862607028 100 79.588615663379016
 		 103 76.959467119447027 110 115.30999707722607 114 120.84928373195862 118 147.66375343410758
-		 123 158.5131866262837 127 161.65594948856187 133 199.19383134868946 137 199.289469360326;
-	setAttr -s 26 ".kit[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kot[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kix[7:25]"  1 1 1 0.12658591878961437 1 1 1 0.010297451584931259 
+		 123 158.5131866262837 127 161.65594948856187 133 199.19383134868946 137 199.289469360326
+		 180 275.16895119719823;
+	setAttr -s 27 ".kit[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kot[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kix[7:26]"  1 1 1 0.12658591878961437 1 1 1 0.010297451584931259 
 		0.014008632171529948 0.01400863217152995 1 1 0.010442247873604121 0.01030222394841024 
 		0.0099559893001123986 0.026791033693335197 0.017674536652264088 0.50229648244471847 
-		1;
-	setAttr -s 26 ".kiy[7:25]"  0 0 0 -0.99195564677267156 0 0 0 0.99994697983985936 
+		0.50229648244471847 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0 0 -0.99195564677267156 0 0 0 0.99994697983985936 
 		0.99990187429801469 0.99990187429801469 0 0 0.99994547824336222 0.99994693068268226 
-		0.99995043791032767 0.99964105583636498 0.99984379317677818 0.86469546299472544 0;
-	setAttr -s 26 ".kox[7:25]"  1 1 1 0.12658591878961437 1 1 1 0.010297451584931257 
+		0.99995043791032767 0.99964105583636498 0.99984379317677818 0.86469546299472544 0.86469546299472544 
+		0;
+	setAttr -s 27 ".kox[7:26]"  1 1 1 0.12658591878961437 1 1 1 0.010297451584931257 
 		0.01400863217152995 0.01400863217152995 1 1 0.010442247873604121 0.01030222394841024 
 		0.0099559893001123986 0.026791033693335197 0.017674536652264084 0.50229648244471847 
-		1;
-	setAttr -s 26 ".koy[7:25]"  0 0 0 -0.99195564677267156 0 0 0 0.99994697983985925 
+		0.50229648244471847 1;
+	setAttr -s 27 ".koy[7:26]"  0 0 0 -0.99195564677267156 0 0 0 0.99994697983985925 
 		0.99990187429801469 0.99990187429801469 0 0 0.99994547824336211 0.99994693068268226 
-		0.99995043791032767 0.99964105583636487 0.99984379317677807 0.86469546299472544 0;
+		0.99995043791032767 0.99964105583636487 0.99984379317677807 0.86469546299472544 0.86469546299472533 
+		0;
 createNode animCurveTL -n "COG_translateY";
 	rename -uid "6E9E5FA2-4749-21BE-75EE-5885D7A71887";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 -2.9519314468991777 4 -7.9898854848019933
+	setAttr -s 27 ".ktv[0:26]"  1 -2.9519314468991777 4 -7.9898854848019933
 		 9 -10.646598848265931 13 -10.751892045064352 16 -8.1942499453242839 18 -5.6343475114389685
 		 28 -1.4383172150399708 38 -1.0261853528542417 46 -2.7513778524283921 55 -1.8849981337185926
 		 61 -1.0544502203225232 66 0.51575002179871809 73 0.038434254320422703 78 0.056273691100248192
 		 83 -1.2259600190207349 88 -3.3514374858991896 92 -6.7214447845065992 100 -16.259172774296925
 		 103 -14.177756870992065 110 -14.678837123086042 114 -14.728797030701427 118 -16.99676264155643
-		 123 -18.103655735626035 127 -19.617257911763591 133 -30.233630927016478 137 -33.008139587644081;
-	setAttr -s 26 ".kit[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kot[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kix[7:25]"  1 1 0.34561583422877684 0.18752585377020706 
+		 123 -18.103655735626035 127 -19.617257911763591 133 -30.233630927016478 137 -33.008139587644081
+		 180 -39.39887978676753;
+	setAttr -s 27 ".kit[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kot[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kix[7:26]"  1 1 0.34561583422877684 0.18752585377020706 
 		1 1 1 0.12136782700920715 0.068079519413893202 0.038707432566422624 1 1 0.74356090497120764 
 		0.74356090497120753 0.11043609312034507 0.14165959039490145 0.036679500087100261 
-		0.031100648747821698 1;
-	setAttr -s 26 ".kiy[7:25]"  0 0 0.93837609471381278 0.98225966738320003 
+		0.031100648747821698 0.20895281425443654 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0 0.93837609471381278 0.98225966738320003 
 		0 0 0 -0.99260760150578298 -0.99767989808173119 -0.99925058652177712 0 0 -0.66866821413792266 
 		-0.66866821413792266 -0.99388322721349631 -0.9899154309581949 -0.999327080726506 
-		-0.99951625782048414 0;
-	setAttr -s 26 ".kox[7:25]"  1 1 0.3456158342287769 0.18752585377020703 
+		-0.99951625782048414 -0.97792572387433963 0;
+	setAttr -s 27 ".kox[7:26]"  1 1 0.3456158342287769 0.18752585377020703 
 		1 1 1 0.12136782700920716 0.068079519413893189 0.038707432566422624 1 1 0.74356090497120753 
 		0.74356090497120753 0.11043609312034509 0.14165959039490145 0.036679500087100261 
-		0.031100648747821702 1;
-	setAttr -s 26 ".koy[7:25]"  0 0 0.93837609471381289 0.98225966738320003 
+		0.031100648747821702 0.20895281425443654 1;
+	setAttr -s 27 ".koy[7:26]"  0 0 0.93837609471381289 0.98225966738320003 
 		0 0 0 -0.99260760150578298 -0.99767989808173108 -0.99925058652177712 0 0 -0.66866821413792266 
 		-0.66866821413792266 -0.99388322721349642 -0.98991543095819501 -0.99932708072650589 
-		-0.99951625782048414 0;
+		-0.99951625782048414 -0.97792572387433963 0;
 createNode animCurveTL -n "COG_translateZ";
 	rename -uid "4530CAC0-489C-B68E-2AAA-38A2A51D5D14";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 -0.33903430074267193 4 -0.91460126899577954
+	setAttr -s 27 ".ktv[0:26]"  1 -0.33903430074267193 4 -0.91460126899577954
 		 9 -1.1341255768876886 13 -1.1733625109710693 16 -0.9249487375368447 18 -0.63762420013295584
 		 28 -0.16527082967812187 38 -0.11875576855857044 46 -0.30187675733009756 55 -0.21569359493471177
 		 61 -0.12876791920382666 66 0 73 9.137655704950231e-16 78 0 83 0 88 0 92 -0.34028662651196229
 		 100 -1.0710671947045682 103 -4.7335492477464651 110 -0.55673404242956759 114 -1.6975356425628316
 		 118 -4.1622304576655651 123 -2.1278948021803354 127 -0.67274647449207436 133 -1.4151156787257873
-		 137 -1.8183779625070671;
-	setAttr -s 26 ".kit[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kot[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kix[7:25]"  1 1 0.96371736366691729 0.90481313439646993 
+		 137 -1.8183779625070671 180 -1.8183779625070395;
+	setAttr -s 27 ".kit[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kot[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kix[7:26]"  1 1 0.96371736366691729 0.90481313439646993 
 		1 1 1 1 1 0.42300261980122061 0.15031687613654637 1 1 0.092058850639716333 1 0.10685051513792843 
-		1 0.34179624021061827 1;
-	setAttr -s 26 ".kiy[7:25]"  0 0 0.26692478897038879 0.42580886771371429 
+		1 0.34179624021061827 1 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0 0.26692478897038879 0.42580886771371429 
 		0 0 0 0 0 -0.90612845868635206 -0.98863786936802589 0 0 -0.99575356791672831 0 0.99427509644703438 
-		0 -0.93977408464901047 0;
-	setAttr -s 26 ".kox[7:25]"  1 1 0.96371736366691729 0.90481313439647004 
+		0 -0.93977408464901047 0 0;
+	setAttr -s 27 ".kox[7:26]"  1 1 0.96371736366691729 0.90481313439647004 
 		1 1 1 1 1 0.42300261980122056 0.1503168761365464 1 1 0.092058850639716333 1 0.10685051513792843 
-		1 0.34179624021061827 1;
-	setAttr -s 26 ".koy[7:25]"  0 0 0.26692478897038879 0.42580886771371435 
+		1 0.34179624021061827 1 1;
+	setAttr -s 27 ".koy[7:26]"  0 0 0.26692478897038879 0.42580886771371435 
 		0 0 0 0 0 -0.90612845868635195 -0.98863786936802611 0 0 -0.99575356791672831 0 0.99427509644703427 
-		0 -0.93977408464901047 0;
+		0 -0.93977408464901047 0 0;
 createNode animCurveTU -n "COG_scaleX";
 	rename -uid "EC52BA46-4254-0908-2E41-1D907C4AF4E4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 1 4 1 9 1 13 1 16 1 18 1 28 1 38 1 46 1
+	setAttr -s 27 ".ktv[0:26]"  1 1 4 1 9 1 13 1 16 1 18 1 28 1 38 1 46 1
 		 55 1 61 1 66 1 73 1 78 1 83 1 88 1 92 1 100 1 103 1 110 1 114 1 118 1 123 1 127 1
-		 133 1 137 1;
-	setAttr -s 26 ".kit[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kot[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kix[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		 133 1 137 1 180 1;
+	setAttr -s 27 ".kit[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kot[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kix[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "COG_scaleY";
 	rename -uid "A7D82AC6-483E-7F0E-EE7A-AD9E374BBA2E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 1 4 1 9 1 13 1 16 1 18 1 28 1 38 1 46 1
+	setAttr -s 27 ".ktv[0:26]"  1 1 4 1 9 1 13 1 16 1 18 1 28 1 38 1 46 1
 		 55 1 61 1 66 1 73 1 78 1 83 1 88 1 92 1 100 1 103 1 110 1 114 1 118 1 123 1 127 1
-		 133 1 137 1;
-	setAttr -s 26 ".kit[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kot[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kix[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		 133 1 137 1 180 1;
+	setAttr -s 27 ".kit[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kot[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kix[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "COG_scaleZ";
 	rename -uid "EC966537-4D41-51A5-AF7F-41AFD5689A23";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 1 4 1 9 1 13 1 16 1 18 1 28 1 38 1 46 1
+	setAttr -s 27 ".ktv[0:26]"  1 1 4 1 9 1 13 1 16 1 18 1 28 1 38 1 46 1
 		 55 1 61 1 66 1 73 1 78 1 83 1 88 1 92 1 100 1 103 1 110 1 114 1 118 1 123 1 127 1
-		 133 1 137 1;
-	setAttr -s 26 ".kit[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kot[7:25]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 18;
-	setAttr -s 26 ".kix[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[7:25]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[7:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		 133 1 137 1 180 1;
+	setAttr -s 27 ".kit[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kot[7:26]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 18;
+	setAttr -s 27 ".kix[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[7:26]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[7:26]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "IK_L_Leg_3_translateX";
 	rename -uid "0998B29D-424E-8A01-C03C-BFB71736AD67";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 0 81 0 85 -0.01842073950128419 90 2.1995825900545949
+	setAttr -s 17 ".ktv[0:16]"  75 0 81 0 85 -0.01842073950128419 90 2.1995825900545949
 		 92 3.4693400020153899 94 3.4693400020153873 97 3.4693400020153904 99 3.4693400020153882
 		 105 3.469340002015382 108 2.4401932672222557 112 2.7980727210800538 114 3.9105624352506561
-		 126 3.9105624352506561 129 2.8278387422632689 136 2.9823909840231417 139 3.9105624352506583;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 0.16761976213269653 1 1 1 0.5324663308247094 
-		1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0.98585172076868544 0 0 0 0.8464511837891604 
-		0;
-	setAttr -s 16 ".kox[8:15]"  1 1 0.16761976213269653 1 1 1 0.5324663308247094 
-		1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0.98585172076868544 0 0 0 0.8464511837891604 
-		0;
+		 126 3.9105624352506561 129 2.8278387422632689 136 2.9823909840231417 139 3.9105624352506583
+		 180 3.9105624352506605;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 0.16761976213269653 1 1 1 0.5324663308247094 
+		1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0.98585172076868544 0 0 0 0.8464511837891604 
+		0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 0.16761976213269653 1 1 1 0.5324663308247094 
+		1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0.98585172076868544 0 0 0 0.8464511837891604 
+		0 0;
 createNode animCurveTL -n "IK_L_Leg_3_translateY";
 	rename -uid "9E1A4578-44A5-42F3-E034-24B9E9ED282B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 0 81 5.8960745183239824 85 37.772091083415361
+	setAttr -s 17 ".ktv[0:16]"  75 0 81 5.8960745183239824 85 37.772091083415361
 		 90 87.820251735055592 92 88.211312289953014 94 89.448486496539203 97 88.388926531605847
 		 99 90.666085829088473 105 91.000278272799434 108 111.9036941697248 112 172.35190235164336
 		 114 169.22683781940785 126 169.22683781940785 129 180.80658139576425 136 243.49405087998565
-		 139 247.25852767113025;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 0.0035852362559856614 1 1 1 0.0056102833551240107 
-		0.01106770394406914 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0.99999357301984149 0 0 0 0.99998426223649894 
-		0.99993875108898866 0;
-	setAttr -s 16 ".kox[8:15]"  1 0.0035852362559856609 1 1 1 0.0056102833551240107 
-		0.011067703944069142 1;
-	setAttr -s 16 ".koy[8:15]"  0 0.99999357301984126 0 0 0 0.99998426223649894 
-		0.99993875108898866 0;
+		 139 247.25852767113025 180 310.81677065252052;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 0.0035852362559856614 1 1 1 0.0056102833551240107 
+		0.01106770394406914 0.027221923494439471 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0.99999357301984149 0 0 0 0.99998426223649894 
+		0.99993875108898866 0.99962941477392664 0;
+	setAttr -s 17 ".kox[8:16]"  1 0.0035852362559856609 1 1 1 0.0056102833551240107 
+		0.011067703944069142 0.027221923494439471 1;
+	setAttr -s 17 ".koy[8:16]"  0 0.99999357301984126 0 0 0 0.99998426223649894 
+		0.99993875108898866 0.99962941477392664 0;
 createNode animCurveTL -n "IK_L_Leg_3_translateZ";
 	rename -uid "335C7E8A-45CF-C1C6-183C-188DC7DC2DCA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 0 81 0 85 -0.16376967074096987 90 19.555399310423631
+	setAttr -s 17 ".ktv[0:16]"  75 0 81 0 85 -0.16376967074096987 90 19.555399310423631
 		 92 30.844183523635355 94 30.844183523635355 97 30.844183523635376 99 30.844183523635355
 		 105 30.844183523635355 108 21.694549661785576 112 24.876278621102383 114 34.766873631133429
-		 126 34.766873631133429 129 25.140913571729932 136 26.514961000365236 139 34.766873631133407;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 0.019120876702370417 1 1 1 0.070579633837458258 
-		1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0.99981717932536684 0 0 0 0.99750614799477322 
-		0;
-	setAttr -s 16 ".kox[8:15]"  1 1 0.019120876702370414 1 1 1 0.070579633837458258 
-		1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0.99981717932536684 0 0 0 0.99750614799477322 
-		0;
+		 126 34.766873631133429 129 25.140913571729932 136 26.514961000365236 139 34.766873631133407
+		 180 34.766873631133407;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 0.019120876702370417 1 1 1 0.070579633837458258 
+		1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0.99981717932536684 0 0 0 0.99750614799477322 
+		0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 0.019120876702370414 1 1 1 0.070579633837458258 
+		1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0.99981717932536684 0 0 0 0.99750614799477322 
+		0 0;
 createNode animCurveTA -n "IK_L_Leg_3_rotateX";
 	rename -uid "22FDA825-4947-D9B5-4E25-C09C2F3E660C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 0 81 20.05212798975715 85 62.198197240134569
+	setAttr -s 17 ".ktv[0:16]"  75 0 81 20.05212798975715 85 62.198197240134569
 		 90 10.156672353247941 92 -9.2536700840016834 94 -6.2029297733237367 97 -7.6734791050170381
 		 99 -1.483979893834775 105 -0.20748327873353567 108 37.219725384033552 112 9.9130518580987825
-		 114 0 126 -8.5991099628769057 129 21.479321512361928 136 -6.247957160754722 139 0;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 0.35916836438051997 0.87477784789387336 
-		1 1 1 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 -0.93327278221762267 -0.48452421697389231 
-		0 0 0 0;
-	setAttr -s 16 ".kox[8:15]"  1 1 0.35916836438051997 0.87477784789387336 
-		1 1 1 1;
-	setAttr -s 16 ".koy[8:15]"  0 0 -0.93327278221762267 -0.48452421697389236 
-		0 0 0 0;
+		 114 0 126 -8.5991099628769057 129 21.479321512361928 136 -6.247957160754722 139 0
+		 180 0;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 0.35916836438051997 0.87477784789387336 
+		1 1 1 1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 -0.93327278221762267 -0.48452421697389231 
+		0 0 0 0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 0.35916836438051997 0.87477784789387336 
+		1 1 1 1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 -0.93327278221762267 -0.48452421697389236 
+		0 0 0 0 0;
 createNode animCurveTA -n "IK_L_Leg_3_rotateY";
 	rename -uid "E50E2E04-41FF-13D7-D864-A5952A3AF6A4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 0 81 0 85 0 90 0 92 0 94 0 97 0 99 0
-		 105 0 108 0 112 0 114 0 126 0 129 0 136 0 139 0;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  75 0 81 0 85 0 90 0 92 0 94 0 97 0 99 0
+		 105 0 108 0 112 0 114 0 126 0 129 0 136 0 139 0 180 0;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "IK_L_Leg_3_rotateZ";
 	rename -uid "1708EA91-44B5-4594-C9DE-8DBD37BACE18";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 0 81 0 85 0 90 0 92 0 94 0 97 0 99 0
-		 105 0 108 0 112 0 114 0 126 0 129 0 136 0 139 0;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  75 0 81 0 85 0 90 0 92 0 94 0 97 0 99 0
+		 105 0 108 0 112 0 114 0 126 0 129 0 136 0 139 0 180 0;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Leg_3_scaleX";
 	rename -uid "A0926A6F-452A-51ED-3678-98ABC8CCF10A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
-		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
+		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1 180 1;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Leg_3_scaleY";
 	rename -uid "80941109-45F5-8BFD-494C-49A3F5A7034C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
-		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
+		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1 180 1;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Leg_3_scaleZ";
 	rename -uid "8E0C38AB-4E8A-0C86-69A3-D7AF103562B9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
-		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
+		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1 180 1;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Leg_3_PV_Fallow";
 	rename -uid "3965EC32-4A02-6EF4-DA45-D4870348C4E3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 0 81 0 85 0 90 0 92 0 94 0 97 0 99 0
-		 105 0 108 0 112 0 114 0 126 0 129 0 136 0 139 0;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  75 0 81 0 85 0 90 0 92 0 94 0 97 0 99 0
+		 105 0 108 0 112 0 114 0 126 0 129 0 136 0 139 0 180 0;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Leg_3_Root_Fallow";
 	rename -uid "DCFE9591-4B02-E26C-FA3A-77A09E87E7D3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
-		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
+		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1 180 1;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Leg_3_Stretch";
 	rename -uid "2A9C4DCE-424E-D0BE-7FCA-3DAE477D9524";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 16 ".ktv[0:15]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
-		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1;
-	setAttr -s 16 ".kit[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kot[8:15]"  1 18 18 18 18 18 18 18;
-	setAttr -s 16 ".kix[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".kiy[8:15]"  0 0 0 0 0 0 0 0;
-	setAttr -s 16 ".kox[8:15]"  1 1 1 1 1 1 1 1;
-	setAttr -s 16 ".koy[8:15]"  0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".ktv[0:16]"  75 1 81 1 85 1 90 1 92 1 94 1 97 1 99 1
+		 105 1 108 1 112 1 114 1 126 1 129 1 136 1 139 1 180 1;
+	setAttr -s 17 ".kit[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kot[8:16]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 17 ".kix[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".kiy[8:16]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 17 ".kox[8:16]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 17 ".koy[8:16]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "IK_R_Leg_3_translateX";
 	rename -uid "70FD71F2-485E-C685-BDEA-7496C3D55BAC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 0 67 -0.20099143154151433 72 -1.2552897486680421
+	setAttr -s 18 ".ktv[0:17]"  64 0 67 -0.20099143154151433 72 -1.2552897486680421
 		 75 -3.4346007020618616 93 -3.4346007020618616 96 -2.4410744070638648 99 -3.0968996696193662
 		 101 -3.0001330771272747 103 -3.7222127446988198 107 -3.7740614339602536 113 -3.7740614339602536
 		 117 -3.2811607998663117 123 -3.4155688275718585 126 -4.5910546093100395 139 -4.5910546093100395
-		 144 -4.0959023981285139 150 -4.0959023981285112;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 0.52694129561524672 1 1 
-		1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 -0.84990168312300995 0 
-		0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 0.52694129561524672 1 1 
-		1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 -0.84990168312300995 0 
-		0 0 0;
+		 144 -4.0959023981285139 150 -4.0959023981285112 180 -4.0959023981285112;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 0.52694129561524672 1 1 
+		1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 -0.84990168312300995 0 
+		0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 0.52694129561524672 1 1 
+		1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 -0.84990168312300995 0 
+		0 0 0 0;
 createNode animCurveTL -n "IK_R_Leg_3_translateY";
 	rename -uid "1635C737-4993-60ED-D662-499879831BC9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 0 67 20.561766190175799 72 52.242117060965256
+	setAttr -s 18 ".ktv[0:17]"  64 0 67 20.561766190175799 72 52.242117060965256
 		 75 44.53709642253677 93 44.53709642253677 96 80.089094561236948 99 109.20974838794419
 		 101 127.22602838190093 103 127.44212508691115 107 128.51542447128085 113 128.51542447128085
 		 117 150.67344267848813 123 204.0134388550089 126 206.53161877781957 139 206.53161877781957
-		 144 225.67212948675561 150 251.03008089116312;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 0.003865592712602315 0.0044197040763582322 
+		 144 225.67212948675561 150 251.03008089116312 180 314.58832387255336;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 0.003865592712602315 0.0044197040763582322 
 		0.12749427095292326 1 1 1 0.0055188248952227565 0.016544077601533282 1 1 0.01029943511072925 
-		1;
-	setAttr -s 17 ".kiy[4:16]"  0 0.9999925285685789 0.99999023306024215 
+		0.016867417829140561 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0.9999925285685789 0.99999023306024215 
 		0.99183930698182288 0 0 0 0.99998477116992923 0.99986313738246924 0 0 0.99994695941154799 
-		0;
-	setAttr -s 17 ".kox[4:16]"  1 0.003865592712602315 0.0044197040763582314 
+		0.99985773498822184 0;
+	setAttr -s 18 ".kox[4:17]"  1 0.003865592712602315 0.0044197040763582314 
 		0.12749427095292326 1 1 1 0.0055188248952227565 0.016544077601533282 1 1 0.01029943511072925 
-		1;
-	setAttr -s 17 ".koy[4:16]"  0 0.9999925285685789 0.99999023306024215 
+		0.016867417829140561 1;
+	setAttr -s 18 ".koy[4:17]"  0 0.9999925285685789 0.99999023306024215 
 		0.99183930698182277 0 0 0 0.99998477116992923 0.99986313738246924 0 0 0.99994695941154799 
-		0;
+		0.99985773498822184 0;
 createNode animCurveTL -n "IK_R_Leg_3_translateZ";
 	rename -uid "5DBC6B99-4F6C-0218-24A0-D5AA9060AC73";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 0 67 1.786915262713672 72 11.16015938500189
+	setAttr -s 18 ".ktv[0:17]"  64 0 67 1.786915262713672 72 11.16015938500189
 		 75 30.53533361482625 93 30.53533361482625 96 21.702383439670818 99 27.533001005532672
 		 101 26.672697162136217 103 33.092349825848665 107 33.553310840367494 113 33.553310840367494
 		 117 29.171175446293027 123 30.366130645608031 126 40.816792489155809 139 40.816792489155809
-		 144 36.41463943844736 150 36.414639438447338;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 0.069568658750338033 1 
-		1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0.99757716579705202 0 0 
-		0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 0.069568658750338033 1 
-		1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0.99757716579705202 0 0 
-		0 0;
+		 144 36.41463943844736 150 36.414639438447338 180 36.414639438447317;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 0.069568658750338033 1 
+		1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 0.99757716579705202 0 0 
+		0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 0.069568658750338033 1 
+		1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 0.99757716579705202 0 0 
+		0 0 0;
 createNode animCurveTA -n "IK_R_Leg_3_rotateX";
 	rename -uid "378665CD-4EF5-CA5F-23E0-18BE74DF2A56";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 0 67 25.374511709324587 72 24.723427291539849
+	setAttr -s 18 ".ktv[0:17]"  64 0 67 25.374511709324587 72 24.723427291539849
 		 75 -0.60641804872789951 93 -0.60641804872789951 96 33.242493165437466 99 39.327711814640551
 		 101 10.545039442632715 103 -5.9873547187023082 107 -5.9873547187023082 113 -5.9873547187023082
 		 117 34.702585030142671 123 -12.381885559685916 126 -6.6313269710220091 139 -6.6313269710220091
-		 144 20.856859268563799 150 20.856859268563799;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 0.36521532814145158 1 0.20620241326552735 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0.93092307098413452 0 -0.97850935854669918 
-		0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 0.36521532814145158 1 0.20620241326552738 
-		1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0.93092307098413452 0 -0.97850935854669918 
-		0 0 0 0 0 0 0 0 0;
+		 144 20.856859268563799 150 20.856859268563799 180 20.856859268563799;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 0.36521532814145158 1 0.20620241326552735 
+		1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0.93092307098413452 0 -0.97850935854669918 
+		0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 0.36521532814145158 1 0.20620241326552738 
+		1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0.93092307098413452 0 -0.97850935854669918 
+		0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "IK_R_Leg_3_rotateY";
 	rename -uid "1E5E87D7-46E7-DE6E-B326-56B110D2E583";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 0 67 0 72 0 75 0 93 0 96 0 99 0 101 0
+	setAttr -s 18 ".ktv[0:17]"  64 0 67 0 72 0 75 0 93 0 96 0 99 0 101 0
 		 103 -2.9164211820123946 107 -2.9164211820123946 113 -2.9164211820123946 117 0 123 0
-		 126 0 139 0 144 0 150 0;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+		 126 0 139 0 144 0 150 0 180 0;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "IK_R_Leg_3_rotateZ";
 	rename -uid "A9DA69D4-4FA4-1B91-2929-91831029D1C4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 0 67 0 72 0 75 0 93 0 96 0 99 0 101 0
+	setAttr -s 18 ".ktv[0:17]"  64 0 67 0 72 0 75 0 93 0 96 0 99 0 101 0
 		 103 -1.9560925741385045 107 -1.9560925741385045 113 -1.9560925741385045 117 0 123 0
-		 126 0 139 0 144 0 150 0;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+		 126 0 139 0 144 0 150 0 180 0;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Leg_3_scaleX";
 	rename -uid "369FBA3D-46C9-1A77-C2B2-349342B19AF5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
-		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".ktv[0:17]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
+		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1 180 1;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Leg_3_scaleY";
 	rename -uid "52FFC8DB-4A51-3469-4362-07A2690948B6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
-		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".ktv[0:17]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
+		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1 180 1;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Leg_3_scaleZ";
 	rename -uid "68BBF758-4A63-CC23-EBA9-1FBD225569AD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
-		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".ktv[0:17]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
+		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1 180 1;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Leg_3_PV_Fallow";
 	rename -uid "55E2CB85-4308-96A4-BDF4-B291DCEAF077";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 0 67 0 72 0 75 0 93 0 96 0 99 0 101 0
-		 103 0 107 0 113 0 117 0 123 0 126 0 139 0 144 0 150 0;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".ktv[0:17]"  64 0 67 0 72 0 75 0 93 0 96 0 99 0 101 0
+		 103 0 107 0 113 0 117 0 123 0 126 0 139 0 144 0 150 0 180 0;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Leg_3_Root_Fallow";
 	rename -uid "7E153014-4F5F-81EA-9833-88BD58169C6A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
-		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".ktv[0:17]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
+		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1 180 1;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Leg_3_Stretch";
 	rename -uid "9B8E068A-4164-F460-2A22-25A5F703DE66";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
-		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1;
-	setAttr -s 17 ".kit[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kot[4:16]"  1 18 18 18 1 18 1 18 
-		18 18 18 18 18;
-	setAttr -s 17 ".kix[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".kiy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 17 ".kox[4:16]"  1 1 1 1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 17 ".koy[4:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".ktv[0:17]"  64 1 67 1 72 1 75 1 93 1 96 1 99 1 101 1
+		 103 1 107 1 113 1 117 1 123 1 126 1 139 1 144 1 150 1 180 1;
+	setAttr -s 18 ".kit[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kot[4:17]"  1 18 18 18 1 18 1 18 
+		18 18 18 18 18 18;
+	setAttr -s 18 ".kix[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".kiy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 18 ".kox[4:17]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 18 ".koy[4:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "IK_L_Leg_jnt_2_Ctrl_translateX";
 	rename -uid "3F6771C5-4163-B3B3-6007-39A1DEDB64C7";
 	setAttr ".tan" 18;
@@ -5122,595 +5424,712 @@ createNode animCurveTL -n "RK_Head_Ctrl_translateX";
 	rename -uid "B23F3B93-4C70-5227-C8F0-6DA6DC3712FA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 0 145 0;
+	setAttr -s 7 ".ktv[0:6]"  89 0 145 0 159 0 169 0 176 0 183 0 193 0;
 createNode animCurveTL -n "RK_Head_Ctrl_translateY";
 	rename -uid "199BD037-4B03-3D61-EEDE-A182D158BE13";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 0 145 0;
+	setAttr -s 7 ".ktv[0:6]"  89 0 145 0 159 0 169 0 176 0 183 0 193 0;
 createNode animCurveTL -n "RK_Head_Ctrl_translateZ";
 	rename -uid "E09AC73F-4979-FBE6-4825-C4BED8603F31";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 0 145 0;
+	setAttr -s 7 ".ktv[0:6]"  89 0 145 0 159 0 169 0 176 0 183 0 193 0;
 createNode animCurveTU -n "RK_Head_Ctrl_visibility";
 	rename -uid "4D6F5CF8-4705-17B0-A711-91AB7420A321";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 1 145 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 7 ".ktv[0:6]"  89 1 145 1 159 1 169 1 176 1 183 1 193 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
 createNode animCurveTA -n "RK_Head_Ctrl_rotateX";
 	rename -uid "8F55C30D-406B-8702-494C-F791331883E8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 0 145 0;
+	setAttr -s 7 ".ktv[0:6]"  89 0 145 0 159 0 169 1.5971767807527144
+		 176 -0.63931685072535183 183 -1.5460809849334967 193 -2.2880473300060431;
 createNode animCurveTA -n "RK_Head_Ctrl_rotateY";
 	rename -uid "3B7C7936-4520-2D97-DCA0-789FA703E8DB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 0 145 0;
+	setAttr -s 7 ".ktv[0:6]"  89 0 145 0 159 0 169 -0.69956969517789713
+		 176 -1.2305215943592573 183 -3.4117687997903747 193 -6.5862431947663973;
 createNode animCurveTA -n "RK_Head_Ctrl_rotateZ";
 	rename -uid "F01F4791-47F4-1574-53FF-E697CCDBB399";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 0 145 21.235668009191141;
+	setAttr -s 7 ".ktv[0:6]"  89 0 145 21.235668009191141 159 21.235668009191141
+		 169 0.98036191610410384 176 -0.16416565513698722 183 -5.8218923306544745 193 -5.3103791828792515;
 createNode animCurveTU -n "RK_Head_Ctrl_scaleX";
 	rename -uid "AE4A6A96-4B0F-C7FF-AD5E-1ABB73F5D318";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 1 145 1;
+	setAttr -s 7 ".ktv[0:6]"  89 1 145 1 159 1 169 1 176 1 183 1 193 1;
 createNode animCurveTU -n "RK_Head_Ctrl_scaleY";
 	rename -uid "307317B2-4B48-3310-AFA8-579AEEA17C14";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 1 145 1;
+	setAttr -s 7 ".ktv[0:6]"  89 1 145 1 159 1 169 1 176 1 183 1 193 1;
 createNode animCurveTU -n "RK_Head_Ctrl_scaleZ";
 	rename -uid "3241035F-4168-1EDD-A1EA-6B97DE6102C4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 1 145 1;
+	setAttr -s 7 ".ktv[0:6]"  89 1 145 1 159 1 169 1 176 1 183 1 193 1;
 createNode animCurveTU -n "RK_Head_Ctrl_Translate";
 	rename -uid "17DF85F8-4226-81CA-D6FF-05B15FCCC890";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 1 145 1;
+	setAttr -s 7 ".ktv[0:6]"  89 1 145 1 159 1 169 1 176 1 183 1 193 1;
 createNode animCurveTU -n "RK_Head_Ctrl_Rotate";
 	rename -uid "FE23CB77-4158-9E66-5849-2A946B4FEEB9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  89 1 145 1;
+	setAttr -s 7 ".ktv[0:6]"  89 1 145 1 159 1 169 1 176 1 183 1 193 1;
 createNode animCurveTA -n "COG_rotateX1";
 	rename -uid "BCCA0432-4196-169F-9552-489852ACE949";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 0 110 0 131 0 149 0;
+	setAttr -s 10 ".ktv[0:9]"  88 0 110 0 131 0 149 0 160 0 167 0 173 2.3508563844196453
+		 180 5.5281749192701799 185 5.5281749192701799 190 5.5281749192701799;
 createNode animCurveTA -n "COG_rotateY1";
 	rename -uid "2F37B600-48FE-72FA-3D06-3CAA4D31FA4A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 0 110 0 131 0 149 0;
+	setAttr -s 10 ".ktv[0:9]"  88 0 110 0 131 0 149 0 160 0 167 3.6226702159460413
+		 173 4.9734162946224219 180 5.6032685814097558 185 5.6032685814097558 190 5.6032685814097558;
 createNode animCurveTA -n "COG_rotateZ1";
 	rename -uid "52257665-4DA1-2B46-15AA-FCB31FFAA644";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 0 110 -0.8621140687556671 131 -0.8621140687556671
-		 149 -0.8621140687556671;
+	setAttr -s 10 ".ktv[0:9]"  88 0 110 -0.8621140687556671 131 -0.8621140687556671
+		 149 -0.8621140687556671 160 -0.8621140687556671 167 -0.86211406875566687 173 -0.63186912932524375
+		 180 -0.32067976086519523 185 -0.32067976086519523 190 -0.32067976086519523;
 createNode animCurveTU -n "COG_visibility1";
 	rename -uid "E10E6B9E-467B-99CC-99F5-A6A3E29B198A";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTL -n "COG_translateX1";
 	rename -uid "F764BF74-4B4B-1BF7-73CD-50A66BE3E320";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 0.30459810592830239 110 0.75561819899567517
-		 131 0.15100693413767957 149 -0.096198976833673275;
+	setAttr -s 10 ".ktv[0:9]"  88 0.30459810592830239 110 0.75561819899567517
+		 131 0.15100693413767957 149 -0.096198976833673275 160 -0.22612882973482312 167 -0.071144283666236305
+		 173 1.5037290178597369 180 4.4226267404639215 185 6.5370773823200841 190 7.1989010169135161;
 createNode animCurveTL -n "COG_translateY1";
 	rename -uid "FCAD3009-4DAC-55C7-6151-B486DCF827A8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 0 110 0 131 0 149 0;
+	setAttr -s 10 ".ktv[0:9]"  88 0 110 0 131 0 149 0 160 0 167 0 173 -3.0599059909741309
+		 180 0 185 -2.8539231719688614 190 0;
 createNode animCurveTL -n "COG_translateZ1";
 	rename -uid "FC513163-4320-A19A-570B-858E1CBBFC73";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 -0.030773178116254612 110 -0.076339192440844555
-		 131 1 149 0.56599224990265617;
+	setAttr -s 10 ".ktv[0:9]"  88 -0.030773178116254612 110 -0.076339192440844555
+		 131 1 149 0.56599224990265617 160 -0.72007534271719087 167 0.81398782756401156 173 16.402349319173656
+		 180 45.29409115828004 185 66.223280147313091 190 72.77412207836683;
 createNode animCurveTU -n "COG_scaleX1";
 	rename -uid "457F6AD6-45A6-2496-0237-DBA1A9045537";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_scaleY1";
 	rename -uid "76166233-4E72-505C-5340-1A98B3031A0C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_scaleZ1";
 	rename -uid "5EEB681F-488A-8992-C3DD-D6BB6629C0E3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_L_Arm";
 	rename -uid "AB9166C1-45DD-BD46-6E6C-32A6BE57B8D1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_R_Arm";
 	rename -uid "1B417825-4574-8131-4953-ED9E5E755F6A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_L_Leg";
 	rename -uid "12B0C194-4782-B820-8B38-17B2D18C5646";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_R_Leg";
 	rename -uid "900EE3F9-4E12-BDA1-98C4-25BA2F7EB9A5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Spine";
 	rename -uid "DB5FCB2C-45FB-AEE8-6807-C2B67C77E6C4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Face";
 	rename -uid "CA01805B-46E5-C416-13B5-4FBCB0CC1616";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Face_Panel";
 	rename -uid "3E83B03B-400B-2254-66F5-C4B3D0E6C7BB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Geo_Cape";
 	rename -uid "217A667D-4C56-1FDD-0B96-90AADCEF7A1E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Ctrl_Cape";
 	rename -uid "BC0FBF5D-4F32-1F93-E42B-0E84895B1259";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Geo_Shirt";
 	rename -uid "5D0F51DB-4DE9-9470-1D09-2DBB4B12ABE3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Geo_Hands";
 	rename -uid "24B834BA-44E7-C7F0-848B-64944DA13874";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Geo_Face";
 	rename -uid "3D728A32-45E3-C8A6-F0F1-0D9AFE7C0022";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Geo_Pants";
 	rename -uid "4A730E0E-4295-C6A2-076D-D7A126C4904F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Geo_Legs";
 	rename -uid "8831B496-417D-9087-CACF-55A137B34D58";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTU -n "COG_Geo_Feet";
 	rename -uid "36A7931A-4523-8A10-2CC2-D4900AC6BA20";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  88 1 110 1 131 1 149 1;
+	setAttr -s 10 ".ktv[0:9]"  88 1 110 1 131 1 149 1 160 1 167 1 173 1
+		 180 1 185 1 190 1;
 createNode animCurveTL -n "IK_R_Arm_Ctrl_translateX";
 	rename -uid "82AA2625-4495-C936-736F-11BA62FD34FB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 -4.4724168419181023 109 -4.3848923735644787
-		 127 -4.3122414473259543 151 -4.3120956054454895;
+	setAttr -s 8 ".ktv[0:7]"  83 -4.4724168419181023 109 -4.3848923735644787
+		 127 -4.3122414473259543 151 -4.3120956054454895 162 -4.3120956054454869 180 -4.5375323780997787
+		 188 -4.1874701301854502 200 -4.2374784936977257;
 createNode animCurveTL -n "IK_R_Arm_Ctrl_translateY";
 	rename -uid "471ADCDE-4C95-C3CE-6128-B68C0B40AD0F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 3.8127786549133384 109 3.8603031741470226
-		 127 3.5862619341293493 151 3.2438255908043474;
+	setAttr -s 8 ".ktv[0:7]"  83 3.8127786549133384 109 3.8603031741470226
+		 127 3.5862619341293493 151 3.2438255908043474 162 3.2279249627572053 180 4.2556923882854223
+		 188 4.2556923882854214 200 4.0055980608056778;
 createNode animCurveTL -n "IK_R_Arm_Ctrl_translateZ";
 	rename -uid "E4080ACF-4326-34D2-E4C9-E98C9A578193";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 -0.043197958507202011 109 -0.14106563358825627
-		 127 -0.21077453665401191 151 0.005162910306734104;
+	setAttr -s 8 ".ktv[0:7]"  83 -0.043197958507202011 109 -0.14106563358825627
+		 127 -0.21077453665401191 151 0.005162910306734104 162 0.49712817283959204 180 1.4617748176802068
+		 188 1.4617748176801968 200 9.1996906479087706;
 createNode animCurveTA -n "IK_R_Arm_Ctrl_rotateX";
 	rename -uid "EE91B623-493F-E3F6-D8C6-A4BFAFEEFC93";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 0 109 0 127 0 151 0;
+	setAttr -s 8 ".ktv[0:7]"  83 0 109 0 127 0 151 0 162 0 180 -8.1535005527908382
+		 188 20.707730072333909 200 -31.496445837475314;
 createNode animCurveTA -n "IK_R_Arm_Ctrl_rotateY";
 	rename -uid "8C7B48A1-4258-08CA-D0E9-ADB16D0DC153";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 0 109 0 127 0 151 0;
+	setAttr -s 8 ".ktv[0:7]"  83 0 109 0 127 0 151 0 162 0 180 7.9513867036587939e-16
+		 188 -3.1805546814635168e-15 200 -9.7938924253214221;
 createNode animCurveTA -n "IK_R_Arm_Ctrl_rotateZ";
 	rename -uid "0ED10633-4E55-487D-7D5F-629E07067715";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 -74.455298331525228 109 -68.750944425695678
-		 127 -74.527945785281076 151 -64.943527741137601;
+	setAttr -s 8 ".ktv[0:7]"  83 -74.455298331525228 109 -68.750944425695678
+		 127 -74.527945785281076 151 -64.943527741137601 162 -64.943527741137601 180 -72.212046931154106
+		 188 -72.212046931154106 200 -80.176903077109515;
 createNode animCurveTU -n "IK_R_Arm_Ctrl_scaleX";
 	rename -uid "31105D05-4698-E182-D92A-6A8AC8602FF9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 1 109 1 127 1 151 1;
+	setAttr -s 8 ".ktv[0:7]"  83 1 109 1 127 1 151 1 162 1 180 1 188 1
+		 200 1;
 createNode animCurveTU -n "IK_R_Arm_Ctrl_scaleY";
 	rename -uid "7A569E95-480A-81EF-0F5B-4A995147F1DA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 1 109 1 127 1 151 1;
+	setAttr -s 8 ".ktv[0:7]"  83 1 109 1 127 1 151 1 162 1 180 1 188 1
+		 200 1;
 createNode animCurveTU -n "IK_R_Arm_Ctrl_scaleZ";
 	rename -uid "28D8B356-4A61-7FE2-C418-09A1B68A60F4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 1 109 1 127 1 151 1;
+	setAttr -s 8 ".ktv[0:7]"  83 1 109 1 127 1 151 1 162 1 180 1 188 1
+		 200 1;
 createNode animCurveTU -n "IK_R_Arm_Ctrl_PV_Fallow";
 	rename -uid "1D393B16-40B8-64BF-B7AD-F8B0FEAF9822";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 0 109 0 127 0 151 0;
+	setAttr -s 8 ".ktv[0:7]"  83 0 109 0 127 0 151 0 162 0 180 0 188 0
+		 200 0;
 createNode animCurveTU -n "IK_R_Arm_Ctrl_FallowRoot";
 	rename -uid "11442D0E-4152-A41A-6D9B-E99ECA89EEBD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  83 1 109 1 127 1 151 1;
+	setAttr -s 8 ".ktv[0:7]"  83 1 109 1 127 1 151 1 162 1 180 1 188 1
+		 200 1;
 createNode animCurveTL -n "IK_L_Wrist_jnt_Ctrl_translateX";
 	rename -uid "A8E88C97-4D0C-B2F7-6587-F2AD412FE7C1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 0 115 0 143 0;
+	setAttr -s 7 ".ktv[0:6]"  80 0 89 0 115 0 143 0 170 0 176 0 182 0;
 createNode animCurveTL -n "IK_L_Wrist_jnt_Ctrl_translateY";
 	rename -uid "357C8BE6-446C-C306-D312-049F4C5D49D4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 0 115 0 143 0;
+	setAttr -s 7 ".ktv[0:6]"  80 0 89 0 115 0 143 0 170 0 176 0 182 0;
 createNode animCurveTL -n "IK_L_Wrist_jnt_Ctrl_translateZ";
 	rename -uid "BCDD8DEB-4968-C533-CEA6-D086633C0DEA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 0 115 0 143 0;
+	setAttr -s 7 ".ktv[0:6]"  80 0 89 0 115 0 143 0 170 0 176 0 182 0;
 createNode animCurveTA -n "IK_L_Wrist_jnt_Ctrl_rotateX";
 	rename -uid "1B446947-4D37-34B6-1265-0986FE0CA9CD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 14.835101291417386 115 12.275360481685105
-		 143 13.927980978413343;
+	setAttr -s 7 ".ktv[0:6]"  80 0.94672054842079501 89 -4.6085020175363045
+		 115 -3.6835862093724225 143 4.1423201291930258 170 4.1423201291930258 176 4.1423201291930258
+		 182 3.9781453728549998;
 createNode animCurveTA -n "IK_L_Wrist_jnt_Ctrl_rotateY";
 	rename -uid "97874B7D-4BB3-6607-89CA-18866B83B652";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 0 115 0 143 0;
+	setAttr -s 7 ".ktv[0:6]"  80 0 89 0.99992211772228146 115 0 143 0
+		 170 0 176 0 182 -1.1555613144060204;
 createNode animCurveTA -n "IK_L_Wrist_jnt_Ctrl_rotateZ";
 	rename -uid "2755D0D5-4EE5-D5AC-2D44-F29AAD2F0036";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 0 115 0 143 0;
+	setAttr -s 7 ".ktv[0:6]"  80 0 89 1.8147273217185571 115 0 143 0 170 0
+		 176 0 182 16.171673437007662;
 createNode animCurveTU -n "IK_L_Wrist_jnt_Ctrl_scaleX";
 	rename -uid "D5C2B09E-4958-6853-A454-2481D1E167CD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 1 115 1 143 1;
+	setAttr -s 7 ".ktv[0:6]"  80 1 89 1 115 1 143 1 170 1 176 1 182 1;
 createNode animCurveTU -n "IK_L_Wrist_jnt_Ctrl_scaleY";
 	rename -uid "28AFDB17-46CF-57EB-9A8E-3AABBD046C94";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 1 115 1 143 1;
+	setAttr -s 7 ".ktv[0:6]"  80 1 89 1 115 1 143 1 170 1 176 1 182 1;
 createNode animCurveTU -n "IK_L_Wrist_jnt_Ctrl_scaleZ";
 	rename -uid "1BD32C70-451A-5C29-4371-08985B3B7CFE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 1.0000000000000002 115 1.0000000000000002
-		 143 1.0000000000000002;
+	setAttr -s 7 ".ktv[0:6]"  80 1.0000000000000002 89 1.0000000000000002
+		 115 1.0000000000000002 143 1.0000000000000002 170 1.0000000000000002 176 1.0000000000000002
+		 182 1.0000000000000002;
 createNode animCurveTU -n "IK_L_Wrist_jnt_Ctrl_RotLock";
 	rename -uid "D3A6C313-4697-CFBF-F98E-0CBEC2DA2EDC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 0 115 0 143 0;
+	setAttr -s 7 ".ktv[0:6]"  80 0 89 0 115 0 143 0 170 0 176 0 182 0;
 createNode animCurveTU -n "IK_L_Wrist_jnt_Ctrl_Hand";
 	rename -uid "A1ED25D3-40A7-C5AE-77E3-0893F2D27782";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  80 1 115 1 143 0;
+	setAttr -s 7 ".ktv[0:6]"  80 1 89 1 115 3 143 2 170 3 176 0 182 0;
 createNode animCurveTA -n "IK_R_Wrist_jnt_Ctrl_rotateX";
 	rename -uid "C910B517-410D-922D-D937-AE81B5A7C580";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 4.5812190118298224 148 2.6136558832998427;
+	setAttr -s 6 ".ktv[0:5]"  87 -1.9383544470128746 106 -0.35354306606927716
+		 130 3.3493807541441409 148 4.9337837143771059 169 4.9337837143771059 183 4.9337837143771059;
 createNode animCurveTA -n "IK_R_Wrist_jnt_Ctrl_rotateY";
 	rename -uid "8579DA6C-4CEC-3E6A-6AB9-EB84EC11AA8E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 148 9.8793294575178994;
+	setAttr -s 6 ".ktv[0:5]"  87 0 106 2.2783118430783857 130 7.6016047567033747
+		 148 9.8793294575179029 169 9.8793294575179029 183 9.8793294575179029;
 createNode animCurveTA -n "IK_R_Wrist_jnt_Ctrl_rotateZ";
 	rename -uid "5476BE2C-4B42-83DE-0AF5-A48D82D6E502";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 148 0.44873672322768227;
+	setAttr -s 6 ".ktv[0:5]"  87 0 106 0.10348497793803475 130 0.34527841433603257
+		 148 0.44873672322768265 169 0.44873672322768265 183 0.44873672322768265;
 createNode animCurveTL -n "IK_R_Wrist_jnt_Ctrl_translateX";
 	rename -uid "6FAFB168-4BB7-BCEC-CC06-9E86C9F84CFB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 148 0;
+	setAttr -s 6 ".ktv[0:5]"  87 0 106 0 130 0 148 0 169 0 183 0;
 createNode animCurveTL -n "IK_R_Wrist_jnt_Ctrl_translateY";
 	rename -uid "9591D40F-448A-1C2A-06F3-E5A25CD651E2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 148 0;
+	setAttr -s 6 ".ktv[0:5]"  87 0 106 0 130 0 148 0 169 0 183 0;
 createNode animCurveTL -n "IK_R_Wrist_jnt_Ctrl_translateZ";
 	rename -uid "A60C7766-4FFD-655D-EE76-FE92601108B1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 148 0;
+	setAttr -s 6 ".ktv[0:5]"  87 0 106 0 130 0 148 0 169 0 183 0;
 createNode animCurveTU -n "IK_R_Wrist_jnt_Ctrl_scaleX";
 	rename -uid "B9C6D899-4C33-060D-1CAE-C4A3CFA97FC4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 148 1;
+	setAttr -s 6 ".ktv[0:5]"  87 1 106 1 130 1 148 1 169 1 183 1;
 createNode animCurveTU -n "IK_R_Wrist_jnt_Ctrl_scaleY";
 	rename -uid "C7CA25FC-44F5-3A30-E676-B89146FE712A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 148 1;
+	setAttr -s 6 ".ktv[0:5]"  87 1 106 1 130 1 148 1 169 1 183 1;
 createNode animCurveTU -n "IK_R_Wrist_jnt_Ctrl_scaleZ";
 	rename -uid "94FE9A24-43E7-D76D-E864-6EA5596120E7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1.0000000000000002 148 1.0000000000000002;
+	setAttr -s 6 ".ktv[0:5]"  87 1.0000000000000002 106 1.0000000000000002
+		 130 1.0000000000000002 148 1.0000000000000002 169 1.0000000000000002 183 1.0000000000000002;
 createNode animCurveTU -n "IK_R_Wrist_jnt_Ctrl_RotLock";
 	rename -uid "8A0CD669-485D-58FD-B72D-1BAABC1BB49E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 148 0;
+	setAttr -s 6 ".ktv[0:5]"  87 0 106 0 130 0 148 0 169 0 183 0;
 createNode animCurveTU -n "IK_R_Wrist_jnt_Ctrl_Hand";
 	rename -uid "5A5D7CA1-4D9F-CDB0-85C1-47B823FBCDF1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 2 148 2;
+	setAttr -s 6 ".ktv[0:5]"  87 2 106 2 130 1 148 2 169 4 183 0;
 createNode animCurveTL -n "RK_Hip_Ctrl_translateX";
 	rename -uid "2E15F137-41EF-F6DA-D2AB-5DA7599F0F72";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 6 ".ktv[0:5]"  87 0 140 0 163 0 170 0 174 0 178 0;
 createNode animCurveTL -n "RK_Hip_Ctrl_translateY";
 	rename -uid "5D8E05C7-4BB6-17CC-D3C9-4EB3D76BD983";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 6 ".ktv[0:5]"  87 0 140 0 163 0 170 0 174 0 178 0;
 createNode animCurveTL -n "RK_Hip_Ctrl_translateZ";
 	rename -uid "6EA433D1-45AD-A4A5-CD1C-FB9F3F291000";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 6 ".ktv[0:5]"  87 0 140 0 163 0 170 0 174 0 178 0;
 createNode animCurveTL -n "RK_Spine_jnt_Ctrl1_translateX";
 	rename -uid "56A9FDCB-4F24-5957-97A7-03B8B7CA862E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0.0033212813160567005 140 0.0033212813160567005;
+	setAttr -s 7 ".ktv[0:6]"  87 0.0033212813160567005 140 0.0033212813160567005
+		 156 0.0033212813160567005 165 0.0033212813160567005 171 0.0033212813160567005 180 0.0033212813160567005
+		 187 0.0033212813160567005;
 createNode animCurveTL -n "RK_Spine_jnt_Ctrl1_translateY";
 	rename -uid "70D74F73-4BB6-5915-FF8B-6193EC00D891";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0.0043851476697905345 140 0.0043851476697905345;
+	setAttr -s 7 ".ktv[0:6]"  87 0.0043851476697905345 140 0.0043851476697905345
+		 156 0.0043851476697905345 165 0.0043851476697905345 171 0.0043851476697905345 180 0.0043851476697905345
+		 187 0.0043851476697905345;
 createNode animCurveTL -n "RK_Spine_jnt_Ctrl1_translateZ";
 	rename -uid "7EAD8290-4F83-0897-0D6C-1B82734EF805";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 -9.5245592269938592e-05 140 -9.5245592269938592e-05;
+	setAttr -s 7 ".ktv[0:6]"  87 -9.5245592269938592e-05 140 -9.5245592269938592e-05
+		 156 -9.5245592269938592e-05 165 -9.5245592269938592e-05 171 -9.5245592269938592e-05
+		 180 -9.5245592269938592e-05 187 -9.5245592269938592e-05;
 createNode animCurveTL -n "RK_Spine_jnt_Ctrl_translateX";
 	rename -uid "B189D620-4FCD-DD6A-55C2-A8853D7699B4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 7 ".ktv[0:6]"  87 0 140 0 156 0 165 0 171 0 180 0 187 0;
 createNode animCurveTL -n "RK_Spine_jnt_Ctrl_translateY";
 	rename -uid "CA0F4125-43C1-4017-F7CF-0BA3CC55E028";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 7 ".ktv[0:6]"  87 0 140 0 156 0 165 0 171 0 180 0 187 0;
 createNode animCurveTL -n "RK_Spine_jnt_Ctrl_translateZ";
 	rename -uid "158EA8F4-43A9-D035-0CAD-E88870515503";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 7 ".ktv[0:6]"  87 0 140 0 156 0 165 0 171 0 180 0 187 0;
 createNode animCurveTU -n "RK_Hip_Ctrl_visibility";
 	rename -uid "CB23EDC2-44D4-32F1-B516-90AC9422F9D7";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 6 ".ktv[0:5]"  87 1 140 1 163 1 170 1 174 1 178 1;
+	setAttr -s 6 ".kot[0:5]"  5 5 5 5 5 5;
 createNode animCurveTA -n "RK_Hip_Ctrl_rotateX";
 	rename -uid "5BFF1126-4E7B-2F03-669F-5FB9DD87B165";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 6 ".ktv[0:5]"  87 0 140 0 163 0 170 -0.25737476158981093
+		 174 0.77879113648843201 178 -1.5783048240369812;
 createNode animCurveTA -n "RK_Hip_Ctrl_rotateY";
 	rename -uid "A10AD951-4359-4B8F-FF03-E3AAB1FFC66F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 6 ".ktv[0:5]"  87 0 140 0 163 0 170 0 174 0 178 0;
 createNode animCurveTA -n "RK_Hip_Ctrl_rotateZ";
 	rename -uid "7403C784-4F2C-A83A-F460-D999F25D4D03";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 -0.42722601956824385 140 2.0716260575213852;
+	setAttr -s 6 ".ktv[0:5]"  87 -0.42722601956824385 140 2.0716260575213852
+		 163 2.0716260575213852 170 2.071626057521391 174 2.071626057521387 178 2.0716260575213892;
 createNode animCurveTU -n "RK_Hip_Ctrl_scaleX";
 	rename -uid "8A097EF2-43FC-7610-0EBD-71A79C8E861B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0.99999999999999989 140 0.99999999999999989;
+	setAttr -s 6 ".ktv[0:5]"  87 0.99999999999999989 140 0.99999999999999989
+		 163 0.99999999999999989 170 0.99999999999999989 174 0.99999999999999989 178 0.99999999999999989;
 createNode animCurveTU -n "RK_Hip_Ctrl_scaleY";
 	rename -uid "88D32C32-423A-3E23-0315-E18FD47E3BFD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0.99999999999999989 140 0.99999999999999989;
+	setAttr -s 6 ".ktv[0:5]"  87 0.99999999999999989 140 0.99999999999999989
+		 163 0.99999999999999989 170 0.99999999999999989 174 0.99999999999999989 178 0.99999999999999989;
 createNode animCurveTU -n "RK_Hip_Ctrl_scaleZ";
 	rename -uid "54D4B552-4FF0-0F1E-FEEB-BE9A07D1EF2D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
+	setAttr -s 6 ".ktv[0:5]"  87 1 140 1 163 1 170 1 174 1 178 1;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl_visibility";
 	rename -uid "F30728AD-4913-F53F-117E-94A089EA62EA";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 7 ".ktv[0:6]"  87 1 140 1 156 1 165 1 171 1 180 1 187 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
 createNode animCurveTA -n "RK_Spine_jnt_Ctrl_rotateX";
 	rename -uid "3BA59ED8-4DC7-6625-401D-C3916E5140C3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 7 ".ktv[0:6]"  87 0 140 0 156 0 165 0 171 0 180 0 187 0;
 createNode animCurveTA -n "RK_Spine_jnt_Ctrl_rotateY";
 	rename -uid "2BEC0EBC-40C2-1A20-AAE1-43A518211A9F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 7 ".ktv[0:6]"  87 0 140 0 156 0 165 0 171 0 180 0 187 0;
 createNode animCurveTA -n "RK_Spine_jnt_Ctrl_rotateZ";
 	rename -uid "2121CB14-44E9-1B1A-6C64-45A1B8DB96D7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 -0.42722601956824385 140 2.0716260575213852;
+	setAttr -s 7 ".ktv[0:6]"  87 -0.42722601956824385 140 2.0716260575213852
+		 156 2.0716260575213852 165 0.10467088027495615 171 -7.1682140705571209 180 1.0702943697270686
+		 187 -4.0364316881098574;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl_scaleX";
 	rename -uid "7706A163-4A8C-E85C-0ED3-69B8895DA5FA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
+	setAttr -s 7 ".ktv[0:6]"  87 1 140 1 156 1 165 1 171 1 180 1 187 1;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl_scaleY";
 	rename -uid "18B97D7E-4089-7AA4-5EAD-A9AFC6364251";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
+	setAttr -s 7 ".ktv[0:6]"  87 1 140 1 156 1 165 1 171 1 180 1 187 1;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl_scaleZ";
 	rename -uid "A61B2E83-4C69-1D5D-1383-E99B29B26001";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
+	setAttr -s 7 ".ktv[0:6]"  87 1 140 1 156 1 165 1 171 1 180 1 187 1;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl_Translate";
 	rename -uid "B278507D-4032-A8EF-8979-1AA3D626BCDC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
+	setAttr -s 7 ".ktv[0:6]"  87 1 140 1 156 1 165 1 171 1 180 1 187 1;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl_Rotate";
 	rename -uid "92C83D29-4316-F3D3-4436-BAB0654C8BF4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
+	setAttr -s 7 ".ktv[0:6]"  87 1 140 1 156 1 165 1 171 1 180 1 187 1;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl1_visibility";
 	rename -uid "3E9EEAFE-4AA5-DF85-5682-7E881175F1BD";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 7 ".ktv[0:6]"  87 1 140 1 156 1 165 1 171 1 180 1 187 1;
+	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
 createNode animCurveTA -n "RK_Spine_jnt_Ctrl1_rotateX";
 	rename -uid "21C9F8C3-4FC1-AC7B-1E79-A7973CD344AC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 7 ".ktv[0:6]"  87 0 140 0 156 0 165 0 171 -0.0018918237261042819
+		 180 0.52358437438655325 187 -0.018223940358585957;
 createNode animCurveTA -n "RK_Spine_jnt_Ctrl1_rotateY";
 	rename -uid "9DE09123-4481-495B-B4BD-96802D12D487";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 7 ".ktv[0:6]"  87 0 140 0 156 0 165 0 171 0.23081052057959853
+		 180 6.0410418016198335 187 6.0635780825620982;
 createNode animCurveTA -n "RK_Spine_jnt_Ctrl1_rotateZ";
 	rename -uid "6A9150F0-4963-1C22-1455-CAA997135A81";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 -0.42722601956824385 140 2.0716260575213852;
+	setAttr -s 7 ".ktv[0:6]"  87 -0.42722601956824385 140 2.0716260575213852
+		 156 2.0716260575213852 165 0.10467088027495615 171 1.6020140972234345 180 7.0344230091908733
+		 187 1.899103605759445;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl1_scaleX";
 	rename -uid "5140A8C5-4A44-863E-FDDD-D38596427752";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1.0000000000000002 140 1.0000000000000002;
+	setAttr -s 7 ".ktv[0:6]"  87 1.0000000000000002 140 1.0000000000000002
+		 156 1.0000000000000002 165 1.0000000000000002 171 1.0000000000000002 180 1.0000000000000002
+		 187 1.0000000000000002;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl1_scaleY";
 	rename -uid "07B40329-4803-CE3C-C810-DD929AF6C418";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1.0000000000000002 140 1.0000000000000002;
+	setAttr -s 7 ".ktv[0:6]"  87 1.0000000000000002 140 1.0000000000000002
+		 156 1.0000000000000002 165 1.0000000000000002 171 1.0000000000000002 180 1.0000000000000002
+		 187 1.0000000000000002;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl1_scaleZ";
 	rename -uid "1A7A47FC-41D1-626E-6EE4-ABAB7EC11710";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 1 140 1;
+	setAttr -s 7 ".ktv[0:6]"  87 1 140 1 156 1 165 1 171 1 180 1 187 1;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl1_Translate";
 	rename -uid "4DFD68EC-45CC-C58A-CF55-8CBF045D9268";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 7 ".ktv[0:6]"  87 0 140 0 156 0 165 0 171 0 180 0 187 0;
 createNode animCurveTU -n "RK_Spine_jnt_Ctrl1_Rotate";
 	rename -uid "F44D8D04-4B52-3CC8-D561-DA9635F66F91";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  87 0 140 0;
+	setAttr -s 7 ".ktv[0:6]"  87 0 140 0 156 0 165 0 171 0 180 0 187 0;
 createNode animCurveTL -n "Eye_Ctrl_translateX";
 	rename -uid "423587EE-4F75-737C-F524-B88067EBBAD1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  85 0.05794921869304738 115 0.49949273759014001;
+	setAttr -s 6 ".ktv[0:5]"  85 0.05794921869304738 115 0.49949273759014001
+		 156 0.49949273759014001 165 2.4470633307667926 175 3.7423505275331328 193 4.5487446751671605;
 createNode animCurveTL -n "Eye_Ctrl_translateY";
 	rename -uid "1973A2BE-4377-42F0-7198-188BB09F221A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  85 -0.01863383925908459 115 11.750095718783967;
+	setAttr -s 6 ".ktv[0:5]"  85 -0.01863383925908459 115 11.750095718783967
+		 156 11.750095718783967 165 48.883056328638823 175 56.406992389388485 193 59.428082099063445;
 createNode animCurveTL -n "Eye_Ctrl_translateZ";
 	rename -uid "69D402A4-458C-782E-E2C6-F69FA72530B5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  85 0.40306732774146686 115 -8.3040105645240736;
+	setAttr -s 6 ".ktv[0:5]"  85 0.40306732774146686 115 -8.3040105645240736
+		 156 -8.3040105645240736 165 0.61194732708446697 175 0.61194732708446431 193 0.61194732708446853;
 createNode animCurveTU -n "Eye_Ctrl_EyeLid_Fallow_Strength";
 	rename -uid "93919D3B-4C40-9A5C-ECA9-44A608E8A4B0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  85 0.2 115 0.2;
+	setAttr -s 6 ".ktv[0:5]"  85 0.2 115 0.2 156 0.2 165 0.2 175 0.2 193 0.2;
 createNode animCurveTU -n "Eye_Ctrl_Fallow_Head";
 	rename -uid "E0D35694-4E02-CC35-E289-65879C41D607";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  85 1 115 1;
+	setAttr -s 6 ".ktv[0:5]"  85 1 115 1 156 1 165 0 175 0 193 0;
 createNode reference -n "_House_setupRN";
 	rename -uid "D2C48D24-4A55-F22F-8554-0FAE18E2C887";
+	setAttr ".fn[0]" -type "string" "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Rooms/09_House setup.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"_House_setupRN"
-		"_House_setupRN" 3
+		"_House_setupRN" 11
 		2 "|_House_setup:ScaleHouse|_House_setup:Ladder_Rig_Final1:Transform_Grp|_House_setup:Ladder_Rig_Final1:Transfrom" 
 		"translate" " -type \"double3\" -2.35309347738691832 8.97539418965821767 9.79798435553071556"
 		
 		2 "|_House_setup:ScaleHouse|_House_setup:Ladder_Rig_Final1:Transform_Grp|_House_setup:Ladder_Rig_Final1:Transfrom" 
 		"rotate" " -type \"double3\" 0 90 0"
-		5 4 "_House_setupRN" "|_House_setup:ScaleHouse|_House_setup:Ladder_Rig_Final1:Transform_Grp|_House_setup:Ladder_Rig_Final1:Transfrom|_House_setup:Ladder_Rig_Final1:COG_Grp|_House_setup:Ladder_Rig_Final1:COG|_House_setup:Ladder_Rig_Final1:Ctrl_Grp|_House_setup:Ladder_Rig_Final1:Ladder_collapse_Grp|_House_setup:Ladder_Rig_Final1:group2|_House_setup:Ladder_Rig_Final1:Ladder_Box|_House_setup:Ladder_Rig_Final1:group3|_House_setup:Ladder_Rig_Final1:Ladder_collapse.translateZ" 
-		"_House_setupRN.placeHolderList[1]" ""
-		"_House_setupRN" 16
 		2 "|_House_setup:ScaleHouse" "translate" " -type \"double3\" 3.71619516061706445 -3.41219941763437085 4.74205153222918963"
 		
 		2 "|_House_setup:ScaleHouse" "rotate" " -type \"double3\" 0 -90 0"
-		2 "|_House_setup:ScaleHouse|_House_setup:House1" "visibility" " 0"
 		2 "|_House_setup:ScaleHouse|_House_setup:Second_Floor" "visibility" " 1"
 		2 "|_House_setup:ScaleHouse|_House_setup:Second_Floor|_House_setup:Interior_Door5" 
 		"visibility" " 1"
 		2 "|_House_setup:ScaleHouse|_House_setup:Second_Floor|_House_setup:Interior_Door2" 
 		"visibility" " 1"
-		2 "|_House_setup:ScaleHouse|_House_setup:Second_Floor|_House_setup:Walls_Second_Floor" 
-		"visibility" " 1"
-		2 "|_House_setup:ScaleHouse|_House_setup:Attic" "visibility" " 1"
 		2 "|_House_setup:ScaleHouse|_House_setup:Attic|_House_setup:Attic1" "visibility" 
 		" 0"
-		2 "|_House_setup:ScaleHouse|_House_setup:Living_Room" "visibility" " 0"
 		2 "|_House_setup:ScaleHouse|_House_setup:Props" "visibility" " 0"
-		2 "|_House_setup:ScaleHouse|_House_setup:Dining_Room" "visibility" " 0"
-		2 "|_House_setup:ScaleHouse|_House_setup:Misc" "visibility" " 0"
-		2 "|_House_setup:ScaleHouse|_House_setup:Kitchen" "visibility" " 0"
-		2 "|_House_setup:ScaleHouse|_House_setup:House" "visibility" " 0"
-		2 "_House_setup:ChairSides" "visibility" " 1";
+		2 "_House_setup:ChairSides" "visibility" " 1"
+		5 4 "_House_setupRN" "|_House_setup:ScaleHouse|_House_setup:Ladder_Rig_Final1:Transform_Grp|_House_setup:Ladder_Rig_Final1:Transfrom|_House_setup:Ladder_Rig_Final1:COG_Grp|_House_setup:Ladder_Rig_Final1:COG|_House_setup:Ladder_Rig_Final1:Ctrl_Grp|_House_setup:Ladder_Rig_Final1:Ladder_collapse_Grp|_House_setup:Ladder_Rig_Final1:group2|_House_setup:Ladder_Rig_Final1:Ladder_Box|_House_setup:Ladder_Rig_Final1:group3|_House_setup:Ladder_Rig_Final1:Ladder_collapse.translateZ" 
+		"_House_setupRN.placeHolderList[1]" ""
+		"_House_setupRN" 30
+		2 "|_House_setup:House" "visibility" " 1"
+		2 "|_House_setup:House" "translate" " -type \"double3\" 0.21235994023092408 0.043886438565035366 0.15827303237029111"
+		
+		2 "|_House_setup:House|_House_setup:Props" "visibility" " 0"
+		2 "|_House_setup:House|_House_setup:Second_Floor" "visibility" " 1"
+		2 "|_House_setup:House|_House_setup:Second_Floor" "translate" " -type \"double3\" 308.30610799393713251 -266.7989986023415554 366.07692083553070006"
+		
+		2 "|_House_setup:House|_House_setup:Second_Floor" "rotate" " -type \"double3\" 0 -90 0"
+		
+		2 "|_House_setup:House|_House_setup:Second_Floor|_House_setup:Second_Floor" 
+		"visibility" " 1"
+		2 "|_House_setup:House|_House_setup:Second_Floor|_House_setup:Walls_Second_Floor" 
+		"visibility" " 1"
+		2 "|_House_setup:House|_House_setup:Second_Floor|_House_setup:Ladder1" "visibility" 
+		" 0"
+		2 "|_House_setup:House|_House_setup:Attic" "visibility" " 1"
+		2 "|_House_setup:House|_House_setup:Attic" "translate" " -type \"double3\" 348.85663925171400024 -265.10531880301994079 370.18585688667201339"
+		
+		2 "|_House_setup:House|_House_setup:Attic" "rotate" " -type \"double3\" 0 -90 0"
+		
+		2 "|_House_setup:House|_House_setup:Attic" "rotatePivot" " -type \"double3\" -374.08647741099105133 518.6158105682114865 135.92537812262338548"
+		
+		2 "|_House_setup:House|_House_setup:Attic" "rotatePivotTranslate" " -type \"double3\" 203.26014573984491562 0 -514.71380078460902041"
+		
+		2 "|_House_setup:House|_House_setup:Attic" "scalePivot" " -type \"double3\" -374.08647741099105133 518.6158105682114865 135.92537812262338548"
+		
+		2 "|_House_setup:House|_House_setup:Living_Room_Setups" "visibility" " 0"
+		
+		2 "|_House_setup:House|_House_setup:Living_Room_Setups|_House_setup:Props" 
+		"visibility" " 0"
+		2 "|_House_setup:House|_House_setup:First_Floor" "visibility" " 1"
+		2 "|_House_setup:House|_House_setup:First_Floor" "translate" " -type \"double3\" 301.65702606394012264 -268.31887631808643846 363.98667698717105168"
+		
+		2 "|_House_setup:House|_House_setup:First_Floor" "rotate" " -type \"double3\" 0 -90 0"
+		
+		2 "|_House_setup:House|_House_setup:First_Floor" "rotatePivot" " -type \"double3\" -357.34519505901829461 281.0058223303940963 665.70270625370187645"
+		
+		2 "|_House_setup:House|_House_setup:First_Floor" "rotatePivotTranslate" " -type \"double3\" -308.35751119468358183 0 -1023.04790131272000053"
+		
+		2 "|_House_setup:House|_House_setup:First_Floor" "scalePivot" " -type \"double3\" -357.34519505901829461 281.0058223303940963 665.70270625370187645"
+		
+		2 "|_House_setup:House|_House_setup:First_Floor|_House_setup:House1" "visibility" 
+		" 1"
+		2 "|_House_setup:House|_House_setup:First_Floor|_House_setup:Dining_Room" 
+		"visibility" " 1"
+		2 "|_House_setup:House|_House_setup:First_Floor|_House_setup:Living_Room" 
+		"visibility" " 1"
+		2 "|_House_setup:House|_House_setup:First_Floor|_House_setup:Living_Room|_House_setup:Couch4" 
+		"visibility" " 1"
+		2 "|_House_setup:House|_House_setup:First_Floor|_House_setup:Misc" "visibility" 
+		" 0"
+		2 "|_House_setup:House|_House_setup:First_Floor|_House_setup:Kitchen" "visibility" 
+		" 0"
+		2 "|_House_setup:bottom" "visibility" " 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "Ladder_Rig_FinalRN";
@@ -5851,22 +6270,50 @@ createNode animCurveTL -n "R_Upper_Blink_translateY";
 	rename -uid "C482B21C-45BE-A536-1EC8-A884E4AB3E9D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  101 0 104 -4 108 0 126 -0.34248855352829716;
+	setAttr -s 7 ".ktv[0:6]"  101 0 104 -4 108 0 126 -0.34248855352829716
+		 161 0 163 -4 167 0;
+	setAttr -s 7 ".kit[6]"  1;
+	setAttr -s 7 ".kot[4:6]"  1 18 18;
+	setAttr -s 7 ".kix[6]"  1;
+	setAttr -s 7 ".kiy[6]"  0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTL -n "L_Upper_Blink_translateY";
 	rename -uid "8ED127C3-41AC-B92F-B589-2890A16487AE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  101 0 104 -4 108 0 126 -0.34248855352829716;
+	setAttr -s 7 ".ktv[0:6]"  101 0 104 -4 108 0 126 -0.34248855352829716
+		 161 0 163 -4 167 0;
+	setAttr -s 7 ".kit[6]"  1;
+	setAttr -s 7 ".kot[4:6]"  1 18 18;
+	setAttr -s 7 ".kix[6]"  1;
+	setAttr -s 7 ".kiy[6]"  0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTL -n "R_Lower_Blink_translateY";
 	rename -uid "38024E1B-49E6-62E8-BA44-AFB8CF774960";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  98 0 103 4.1000000000000005 108 0 126 1.8815744081950401;
+	setAttr -s 7 ".ktv[0:6]"  98 0 103 4.1000000000000005 108 0 126 1.8815744081950401
+		 158 0 162 4.1000000000000005 167 0;
+	setAttr -s 7 ".kit[6]"  1;
+	setAttr -s 7 ".kot[4:6]"  1 18 18;
+	setAttr -s 7 ".kix[6]"  1;
+	setAttr -s 7 ".kiy[6]"  0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTL -n "L_Lower_Blink_translateY";
 	rename -uid "BE05A641-49C5-087C-0BFE-9EBAE28C3131";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  98 0 103 4.1000000000000005 108 0 126 1.8815744081950401;
+	setAttr -s 7 ".ktv[0:6]"  98 0 103 4.1000000000000005 108 0 126 1.8815744081950401
+		 158 0 162 4.1000000000000005 167 0;
+	setAttr -s 7 ".kit[6]"  1;
+	setAttr -s 7 ".kot[4:6]"  1 18 18;
+	setAttr -s 7 ".kix[6]"  1;
+	setAttr -s 7 ".kiy[6]"  0;
+	setAttr -s 7 ".kox[4:6]"  1 1 1;
+	setAttr -s 7 ".koy[4:6]"  0 0 0;
 createNode animCurveTL -n "R_Emotion_Eyebrow_translateX";
 	rename -uid "CD07CE13-417A-34B5-3F71-12BD3029FF15";
 	setAttr ".tan" 18;
@@ -6261,7 +6708,7 @@ createNode reference -n "Ladder_Rig_FinalRN2";
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_1_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_1_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_1_Ctrl|Ladder_Rig_Final1:R_Hand_Placement_01|Ladder_Rig_Final1:R_Hand_Placement_01" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl" 
-		"translate" " -type \"double3\" -3.41280045692609724 -0.72227886305232092 0"
+		"translate" " -type \"double3\" -3.37889784587884323 -0.5 0"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl" 
 		"translateX" " -av"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl" 
@@ -6269,7 +6716,7 @@ createNode reference -n "Ladder_Rig_FinalRN2";
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_2_Ctrl" 
 		"translateZ" " -av"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl" 
-		"translate" " -type \"double3\" 0.033902611047254165 -0.47762743732142998 0"
+		"translate" " -type \"double3\" 0.067805222094508344 -0.5 0"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl" 
 		"translateX" " -av"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl" 
@@ -6279,7 +6726,7 @@ createNode reference -n "Ladder_Rig_FinalRN2";
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_3_Ctrl|Ladder_Rig_Final1:L_Hand_Placement_03|Ladder_Rig_Final1:L_Hand_Placement_03" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl" 
-		"translate" " -type \"double3\" 0.033902611047254214 -0.47762743732142998 0"
+		"translate" " -type \"double3\" 0.067805222094508427 -0.5 0"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl" 
 		"translateX" " -av"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl" 
@@ -6289,7 +6736,7 @@ createNode reference -n "Ladder_Rig_FinalRN2";
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_4_Ctrl|Ladder_Rig_Final1:R_Hand_Placement_04|Ladder_Rig_Final1:R_Hand_Placement_04" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_5_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_5_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_5_Ctrl" 
-		"translate" " -type \"double3\" 0.033902611047254214 -0.47762743732142998 0"
+		"translate" " -type \"double3\" 0.067805222094508427 -0.5 0"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_5_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_5_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_5_Ctrl" 
 		"translateX" " -av"
 		2 "|Ladder_Rig_Final1:Transform_Grp|Ladder_Rig_Final1:Transfrom|Ladder_Rig_Final1:COG_Grp|Ladder_Rig_Final1:COG|Ladder_Rig_Final1:Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_5_Ctrl_Grp|Ladder_Rig_Final1:RK_Step_jnt_5_Ctrl_Grp_Offset|Ladder_Rig_Final1:RK_Step_jnt_5_Ctrl" 
@@ -6486,455 +6933,487 @@ createNode animCurveTU -n "IK_L_Arm_3_scaleZ";
 	rename -uid "50627112-482C-6072-7A0D-708F43035B41";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
+	setAttr -s 27 ".ktv[0:26]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
 		 49 1 55 1 61 1 65 1 70 1 74 1 75 1 76 1 77 1 81 1 85 1 89 1 93 1 97 1 101 1 114 1
-		 123 1;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 0 0 0 0 0 0;
+		 123 1 180 1;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Arm_3_scaleY";
 	rename -uid "23AC3895-478F-094B-E98B-B9B85485175E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
+	setAttr -s 27 ".ktv[0:26]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
 		 49 1 55 1 61 1 65 1 70 1 74 1 75 1 76 1 77 1 81 1 85 1 89 1 93 1 97 1 101 1 114 1
-		 123 1;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 0 0 0 0 0 0;
+		 123 1 180 1;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Arm_3_scaleX";
 	rename -uid "8595EB4C-4289-7E56-EF53-EEA846D09039";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
+	setAttr -s 27 ".ktv[0:26]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
 		 49 1 55 1 61 1 65 1 70 1 74 1 75 1 76 1 77 1 81 1 85 1 89 1 93 1 97 1 101 1 114 1
-		 123 1;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 0 0 0 0 0 0;
+		 123 1 180 1;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "pairBlend2_inRotateZ1";
 	rename -uid "F08CBAFB-44F1-A5B2-E898-61A5B1DDCDC0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 8.7196880420369105 17 -47.032391871434498
+	setAttr -s 27 ".ktv[0:26]"  1 8.7196880420369105 17 -47.032391871434498
 		 23 -90.181390403551433 27 7.6617811298048943 31 7.670330147163396 34 4.5019806500505206
 		 38 1.5543501532711854 41 3.6810542337499839 45 7.205428091073153 49 3.3428254933502815
 		 55 29.306433988726255 61 -18.917549251069147 65 -11.576390190406155 70 35.56651405724692
 		 74 -2.6405866041621167 75 -2.1322828293203506 76 -2.339155116588358 77 -2.3979537366899755
 		 81 -2.6405866041621167 85 -2.6405866041621167 89 2.2045911271741265 93 32.452340764578089
-		 97 34.287703753558304 101 -2.6405866041621167 114 -2.6405866041621167 123 -2.6405866041621167;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 0.99968130386445808 1 1 0.54907246016876576 
-		0.86630810036270467 1 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 -0.025244617324435278 0 0 0.83577475044668548 
-		0.49951003518043757 0 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 0.99968130386445808 1 1 0.54907246016876565 
-		0.86630810036270467 1 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 -0.025244617324435281 0 0 0.83577475044668537 
-		0.49951003518043752 0 0 0 0;
+		 97 34.287703753558304 101 -2.6405866041621167 114 -2.6405866041621167 123 -2.6405866041621167
+		 180 -2.6405866041621167;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 0.99968130386445808 1 1 0.54907246016876576 
+		0.86630810036270467 1 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 -0.025244617324435278 0 0 0.83577475044668548 
+		0.49951003518043757 0 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 0.99968130386445808 1 1 0.54907246016876565 
+		0.86630810036270467 1 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 -0.025244617324435281 0 0 0.83577475044668537 
+		0.49951003518043752 0 0 0 0 0;
 createNode pairBlend -n "pairBlend2";
 	rename -uid "C4E31072-4583-E2B4-04E2-8087950CC5C7";
 createNode animCurveTU -n "IK_L_Arm_3_blendParent1";
 	rename -uid "E29823AB-44BD-629D-5F4E-029A75A96AB1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 0 17 0 23 0 27 0 31 0 34 0 38 0 41 0 45 0
+	setAttr -s 27 ".ktv[0:26]"  1 0 17 0 23 0 27 0 31 0 34 0 38 0 41 0 45 0
 		 49 0 55 0 61 0 65 0 70 0 74 0 75 0 76 0 77 0 81 0 85 0 89 0 93 0 97 0 101 0 114 0
-		 123 0;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 0 0 0 0 0 0;
+		 123 0 180 0;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "pairBlend2_inRotateY1";
 	rename -uid "D117DF8D-4068-C535-73D3-BBB1B0B4B27B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 31.988623624121303 17 -75.746261502540506
+	setAttr -s 27 ".ktv[0:26]"  1 31.988623624121303 17 -75.746261502540506
 		 23 -69.602671245906123 27 -42.586615011865085 31 -23.680655984312263 34 -58.182069184750347
 		 38 -22.824728557512287 41 -6.8943405474743749 45 10.681654480306324 49 1.2204467435079105
 		 55 70.990110546947236 61 42.408217611048592 65 -26.269983270213618 70 -72.294269513249873
 		 74 -32.529465222612515 75 -35.691438180917409 76 -34.439835159288556 77 -34.072109670964089
 		 81 -32.529465222612515 85 -32.529465222612515 89 -41.67121475494374 93 -71.136562893209813
-		 97 -67.00862553043271 101 -32.529465222612515 114 -32.529465222612515 123 -32.529465222612515;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 0.98743404135042112 1 1 0.44340285943474456 
-		1 0.610645895551712 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0.15803168664029016 0 0 -0.89632243319304028 
-		0 0.79190377587548333 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 0.98743404135042112 1 1 0.44340285943474456 
-		1 0.610645895551712 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0.15803168664029019 0 0 -0.89632243319304028 
-		0 0.79190377587548333 0 0 0;
+		 97 -67.00862553043271 101 -32.529465222612515 114 -32.529465222612515 123 -32.529465222612515
+		 180 -32.529465222612515;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 0.98743404135042112 1 1 0.44340285943474456 
+		1 0.610645895551712 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0.15803168664029016 0 0 -0.89632243319304028 
+		0 0.79190377587548333 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 0.98743404135042112 1 1 0.44340285943474456 
+		1 0.610645895551712 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0.15803168664029019 0 0 -0.89632243319304028 
+		0 0.79190377587548333 0 0 0 0;
 createNode animCurveTA -n "pairBlend2_inRotateX1";
 	rename -uid "4F85EB36-4576-C0E3-11E5-D88C57AB98B6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 -89.606538339964985 17 -14.472791502297497
+	setAttr -s 27 ".ktv[0:26]"  1 -89.606538339964985 17 -14.472791502297497
 		 23 88.014639973337538 27 -3.4206181402918094 31 -0.69925502209874846 34 1.2721152197859273
 		 38 1.822234910392778 41 1.6450804531302572 45 -0.54055636195580237 49 -22.059216838017186
 		 55 -37.371909377856952 61 -48.090016693398866 65 -35.659162343459329 70 -52.176987119574022
 		 74 -7.414220185765771 75 -7.7004145916195865 76 -7.5805474055581117 77 -7.547621024717265
 		 81 -7.414220185765771 85 -7.414220185765771 89 -12.546358447271697 93 -48.165962640373927
-		 97 -43.271818893143248 101 -7.414220185765771 114 -7.414220185765771 123 -7.414220185765771;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 0.99990293321758927 1 1 0.52707998005177892 
-		1 0.54521776521439369 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0.013932844033482598 0 0 -0.84981568273868457 
-		0 0.8382944521435306 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 0.99990293321758927 1 1 0.52707998005177892 
-		1 0.54521776521439369 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0.013932844033482597 0 0 -0.84981568273868446 
-		0 0.83829445214353071 0 0 0;
+		 97 -43.271818893143248 101 -7.414220185765771 114 -7.414220185765771 123 -7.414220185765771
+		 180 -7.414220185765771;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 0.99990293321758927 1 1 0.52707998005177892 
+		1 0.54521776521439369 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0.013932844033482598 0 0 -0.84981568273868457 
+		0 0.8382944521435306 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 0.99990293321758927 1 1 0.52707998005177892 
+		1 0.54521776521439369 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0.013932844033482597 0 0 -0.84981568273868446 
+		0 0.83829445214353071 0 0 0 0;
 createNode animCurveTL -n "pairBlend2_inTranslateZ1";
 	rename -uid "D24AF7A9-48E6-96AD-4905-43A9B7B619BA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 -36.450930327224604 17 19.010727137028681
+	setAttr -s 27 ".ktv[0:26]"  1 -36.450930327224604 17 19.010727137028681
 		 23 36.526302714124355 27 32.821508123757773 31 19.782725586451704 34 11.337544402542017
 		 38 -4.5223829875953303 41 -25.411769849862484 45 -51.925352630850533 49 -41.269324619995373
 		 55 -52.299788403895363 61 -38.385168845706104 65 -23.043333885424026 70 0.23732586464932126
 		 74 14.262597036532048 75 14.262597036532048 76 14.262597036532048 77 14.50015989610662
 		 81 14.105082080423887 85 14.22398470760721 89 16.152045083263708 93 43.014873738796332
-		 97 76.181963116115242 101 89.017718623326786 114 89.017718623326786 123 162.79870970553799;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 0.028802265660579338 0.0055527011441690666 
-		0.0072457384740908827 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 0.99958512868730565 0.9999845836361696 
-		0.99997374929243266 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 0.028802265660579338 0.0055527011441690666 
-		0.0072457384740908827 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 0.99958512868730565 0.9999845836361696 
-		0.99997374929243266 0 0 0;
+		 97 76.181963116115242 101 89.017718623326786 114 89.017718623326786 123 162.79870970553799
+		 180 249.61319068386968;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 0.028802265660579338 0.0055527011441690666 
+		0.0072457384740908827 1 1 0.017121260462910258 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 0.99958512868730565 0.9999845836361696 
+		0.99997374929243266 0 0 0.99985342047730241 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 0.028802265660579338 0.0055527011441690666 
+		0.0072457384740908827 1 1 0.017121260462910255 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 0.99958512868730565 0.9999845836361696 
+		0.99997374929243266 0 0 0.9998534204773023 0;
 createNode animCurveTL -n "pairBlend2_inTranslateY1";
 	rename -uid "0EF96912-450F-364F-D44D-C38E048D3012";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 36.289934825594173 17 34.759628274597681
+	setAttr -s 27 ".ktv[0:26]"  1 36.289934825594173 17 34.759628274597681
 		 23 29.228472067824608 27 27.927170527835173 31 27.34653186136363 34 27.931858566100367
 		 38 28.128359189848091 41 27.994148033082631 45 28.098007776190176 49 27.251719680165966
 		 55 24.198425809252925 61 25.090478259432487 65 26.144056042685889 70 28.039216862221608
 		 74 28.991052170564572 75 28.991052170564572 76 29.122645989565655 77 29.139986455487012
 		 81 29.117434422770611 85 29.232687808722922 89 27.793996015120054 93 27.759910622489326
-		 97 28.726221629810951 101 29.353394639370659 114 29.353394639370659 123 29.353394639370777;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 0.85236045544997363 1 0.2047533558518502 
-		1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 -0.52295473416454819 0 0.97881359985821903 
-		0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 0.85236045544997385 1 0.20475335585185017 
-		1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 -0.52295473416454819 0 0.97881359985821892 
-		0 0 0;
+		 97 28.726221629810951 101 29.353394639370659 114 29.353394639370659 123 29.353394639370777
+		 180 29.353394639371057;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 0.85236045544997363 1 0.2047533558518502 
+		1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 -0.52295473416454819 0 0.97881359985821903 
+		0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 0.85236045544997385 1 0.20475335585185017 
+		1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 -0.52295473416454819 0 0.97881359985821892 
+		0 0 0 0;
 createNode animCurveTL -n "pairBlend2_inTranslateX1";
 	rename -uid "F3D47153-4165-49B4-35F2-B1979A3FA4B1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 19.078400826521094 17 9.9004229229299234
+	setAttr -s 27 ".ktv[0:26]"  1 19.078400826521094 17 9.9004229229299234
 		 23 13.463294181943661 27 15.594173220026658 31 14.14455413077896 34 17.676355533039889
 		 38 18.360654494477199 41 17.339814197495262 45 16.618765638775297 49 11.543172490249471
 		 55 -6.7688863989728665 61 -1.4188226021073502 65 4.8999856184531341 70 16.266168501303625
 		 74 21.97477859784987 75 21.97477859784987 76 22.764009462904045 77 22.868008503462683
 		 81 22.732753212411609 85 23.423982710773117 89 14.795462181231668 93 14.591035832670405
-		 97 20.386463596748143 101 24.147919116702447 114 24.147919116702447 123 24.147919116702386;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 0.26225136386675152 1 0.034857678205160829 
-		1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 -0.96499959696884252 0 0.99939228647720968 
-		0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 0.26225136386675152 1 0.034857678205160843 
-		1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 -0.96499959696884263 0 0.9993922864772099 
-		0 0 0;
+		 97 20.386463596748143 101 24.147919116702447 114 24.147919116702447 123 24.147919116702386
+		 180 24.147919116702486;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 0.26225136386675152 1 0.034857678205160829 
+		1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 -0.96499959696884252 0 0.99939228647720968 
+		0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 0.26225136386675152 1 0.034857678205160843 
+		1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 -0.96499959696884263 0 0.9993922864772099 
+		0 0 0 0;
 createNode animCurveTU -n "IK_L_Arm_3_Stretch";
 	rename -uid "EFB85424-4D60-7513-EC27-069CDA3B332A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
+	setAttr -s 27 ".ktv[0:26]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
 		 49 1 55 1 61 1 65 1 70 1 74 1 75 1 76 1 77 1 81 1 85 1 89 1 93 1 97 1 101 1 114 1
-		 123 1;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 0 0 0 0 0 0;
+		 123 1 180 1;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Arm_3_Root_Fallow";
 	rename -uid "15AA57FE-4758-0008-94E4-4899ECDAEBB3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
+	setAttr -s 27 ".ktv[0:26]"  1 1 17 1 23 1 27 1 31 1 34 1 38 1 41 1 45 1
 		 49 1 55 1 61 1 65 1 70 1 74 1 75 1 76 1 77 1 81 1 85 1 89 1 93 1 97 1 101 1 114 1
-		 123 1;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 0 0 0 0 0 0;
+		 123 1 180 1;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_L_Arm_3_PV_Fallow";
 	rename -uid "7BF36D74-449E-5D10-4B6A-D9AAF7F5E306";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 26 ".ktv[0:25]"  1 0 17 0 23 0 27 0 31 0 34 0 38 0 41 0 45 0
+	setAttr -s 27 ".ktv[0:26]"  1 0 17 0 23 0 27 0 31 0 34 0 38 0 41 0 45 0
 		 49 0 55 0 61 0 65 0 70 0 74 0 75 0 76 0 77 0 81 0 85 0 89 0 93 0 97 0 101 0 114 0
-		 123 0;
-	setAttr -s 26 ".kit[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kot[16:25]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 26 ".kix[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".kiy[16:25]"  0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 26 ".kox[16:25]"  1 1 1 1 1 1 1 1 1 1;
-	setAttr -s 26 ".koy[16:25]"  0 0 0 0 0 0 0 0 0 0;
+		 123 0 180 0;
+	setAttr -s 27 ".kit[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kot[16:26]"  1 18 1 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 27 ".kix[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".kiy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 27 ".kox[16:26]"  1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 27 ".koy[16:26]"  0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Arm_3_scaleZ";
 	rename -uid "B6C1ABC5-43D2-2E80-A15D-CF947888B29B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
-		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 0 0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".ktv[0:24]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
+		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1 180 1;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Arm_3_scaleY";
 	rename -uid "CD7904E3-4C80-9B0F-BC9C-04971C43B225";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
-		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 0 0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".ktv[0:24]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
+		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1 180 1;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Arm_3_scaleX";
 	rename -uid "2F6EA6CC-4E85-6A5B-6D6C-3AA7C1328D00";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
-		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 0 0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".ktv[0:24]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
+		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1 180 1;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "pairBlend1_inRotateZ1";
 	rename -uid "3326A4FE-409E-47DA-5807-52B70FBDAF10";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 187.22281975713449 5 206.57218186550503
+	setAttr -s 25 ".ktv[0:24]"  1 187.22281975713449 5 206.57218186550503
 		 12 190.86300433813622 16 187.98152794834553 19 187.43076000814048 24 187.44144982614807
 		 26 187.56473107531437 29 188.10483345727852 32 190.67891831704219 37 188.68171832762565
 		 41 188.73690214481846 46 188.2113237040268 53 158.23341538603447 56 141.49538086586111
 		 61 173.81982915494157 66 173.81982915494157 75 173.81982915494157 77 150.13260437889994
 		 82 92.589745386317432 87 173.80398115814009 100 173.80398115814009 107 194.43409329280396
-		 124 194.43409329280396 133 194.43409329280396;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 0.20150749034782614 1 0.98945199438210718 
-		0.98945199438210718 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 -0.97948697353957737 0 0.14486114321401161 
-		0.14486114321401161 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 0.20150749034782614 1 0.98945199438210718 
-		0.98945199438210718 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 -0.97948697353957748 0 0.14486114321401161 
-		0.14486114321401161 0 0 0;
+		 124 194.43409329280396 133 194.43409329280396 180 194.43409329280396;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 0.20150749034782614 1 0.98945199438210718 
+		0.98945199438210718 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0 -0.97948697353957737 0 0.14486114321401161 
+		0.14486114321401161 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  1 0.20150749034782614 1 0.98945199438210718 
+		0.98945199438210718 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0 -0.97948697353957748 0 0.14486114321401161 
+		0.14486114321401161 0 0 0 0;
 createNode pairBlend -n "pairBlend1";
 	rename -uid "6FC9466A-4B7D-4917-069C-2C994FFCD262";
 createNode animCurveTU -n "IK_R_Arm_3_blendParent1";
 	rename -uid "C6CDC9CE-48FB-EEE7-B878-77AC99637BBB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 0 5 0 12 0 16 0 19 0 24 0 26 0 29 0 32 0
-		 37 0 41 0 46 0 53 0 56 0 61 0 66 0 75 0 77 0 82 0 87 0 100 0 107 0 124 0 133 0;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 0 0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".ktv[0:24]"  1 0 5 0 12 0 16 0 19 0 24 0 26 0 29 0 32 0
+		 37 0 41 0 46 0 53 0 56 0 61 0 66 0 75 0 77 0 82 0 87 0 100 0 107 0 124 0 133 0 180 0;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "pairBlend1_inRotateY1";
 	rename -uid "EA258E09-47C6-D47D-B094-1A9785FFA446";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 -54.093062261230301 5 -53.096795761210352
+	setAttr -s 25 ".ktv[0:24]"  1 -54.093062261230301 5 -53.096795761210352
 		 12 -43.671772212459487 16 -20.309923530370622 19 -9.5762194353629084 24 -6.9943689094207171
 		 26 -3.7495977493164663 29 14.159983036755259 32 60.103839005220195 37 58.02162922368889
 		 41 71.046239517817781 46 76.933077763265686 53 36.477319464208911 56 -53.840468794132754
 		 61 -33.152087325008793 66 -33.532371152497639 75 -33.152087325008793 77 -58.409536134066364
 		 82 -90.425027040367269 87 -31.6061631433356 100 -31.6061631433356 107 -42.024495502602953
-		 124 -42.024495502602953 133 -42.024495502602953;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  0.99050941425843531 0.28010290178445402 
-		1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0.13744489901561102 -0.95996998099520203 
-		0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  0.99050941425843519 0.28010290178445396 
-		1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0.13744489901561102 -0.95996998099520192 
-		0 0 0 0 0 0;
+		 124 -42.024495502602953 133 -42.024495502602953 180 -42.024495502602953;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  0.99050941425843531 0.28010290178445402 
+		1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0.13744489901561102 -0.95996998099520203 
+		0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  0.99050941425843519 0.28010290178445396 
+		1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0.13744489901561102 -0.95996998099520192 
+		0 0 0 0 0 0 0;
 createNode animCurveTA -n "pairBlend1_inRotateX1";
 	rename -uid "48C80ECD-4061-4FE5-D04A-B49DBD576B9E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 270.29623783674447 5 263.73569359957736
+	setAttr -s 25 ".ktv[0:24]"  1 270.29623783674447 5 263.73569359957736
 		 12 275.0714823351077 16 271.99293754299106 19 270.18212256177958 24 270.17503683223771
 		 26 270.35139284526002 29 271.26589589230389 32 274.73608635152738 37 275.18886912450279
 		 41 275.86065886968953 46 270.76845483584367 53 298.67110393276084 56 338.83176995727797
 		 61 359.49970934112156 66 359.49762144655404 75 359.49970934112156 77 381.47147202100115
 		 82 440.22205649823576 87 359.50819701918567 100 359.50819701918567 107 341.79392150075364
-		 124 341.79392150075364 133 341.79392150075364;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  0.99999970979073793 0.20272302272699944 
-		1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0.00076185198039773947 0.97923611864372551 
-		0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  0.99999970979073793 0.20272302272699946 
-		1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0.00076185198039773936 0.97923611864372551 
-		0 0 0 0 0 0;
+		 124 341.79392150075364 133 341.79392150075364 180 341.79392150075364;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  0.99999970979073793 0.20272302272699944 
+		1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0.00076185198039773947 0.97923611864372551 
+		0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  0.99999970979073793 0.20272302272699946 
+		1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0.00076185198039773936 0.97923611864372551 
+		0 0 0 0 0 0 0;
 createNode animCurveTL -n "pairBlend1_inTranslateZ1";
 	rename -uid "FB5AA2F1-416D-C148-2B15-10896E805E84";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 17.802608965612734 5 33.245054326173438
+	setAttr -s 25 ".ktv[0:24]"  1 17.802608965612734 5 33.245054326173438
 		 12 38.361792117696652 16 30.600878484472695 19 13.258008798321342 24 -15.420362190404026
 		 26 -20.5199132844938 29 -32.954642031314066 32 -43.118163483133557 37 -48.541324207867611
 		 41 -51.782329257331185 46 -49.975064382274837 53 -26.401606119553321 56 4.4256624364358101
 		 61 12.099803935461074 66 11.810688384105628 75 12.099803935461074 77 15.54380093339001
 		 82 36.061712447658039 87 50.509987524585711 100 50.509987524585711 107 123.97670967289416
-		 124 123.97670967289416 133 166.11777344583541;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 0.012171195055741947 0.011915428235184464 
-		1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 0.99992592826214644 0.99992900876510848 
-		0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 0.012171195055741945 0.011915428235184466 
-		1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 0.99992592826214621 0.99992900876510848 
-		0 0 0 0 0;
+		 124 123.97670967289416 133 166.11777344583541 180 252.93225442416704;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 0.012171195055741947 0.011915428235184464 
+		1 1 1 1 0.018091129539686293 1;
+	setAttr -s 25 ".kiy[16:24]"  0 0.99992592826214644 0.99992900876510848 
+		0 0 0 0 0.99983634212403905 0;
+	setAttr -s 25 ".kox[16:24]"  1 0.012171195055741945 0.011915428235184466 
+		1 1 1 1 0.018091129539686293 1;
+	setAttr -s 25 ".koy[16:24]"  0 0.99992592826214621 0.99992900876510848 
+		0 0 0 0 0.99983634212403893 0;
 createNode animCurveTL -n "pairBlend1_inTranslateY1";
 	rename -uid "769C7028-41B3-E19B-618A-F58D87A91319";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 -80.220320474063186 5 -79.104516718922213
+	setAttr -s 25 ".ktv[0:24]"  1 -80.220320474063186 5 -79.104516718922213
 		 12 -74.126538774150987 16 -73.503022979692275 19 -73.364746829516704 24 -73.167241023970107
 		 26 -73.445169988021519 29 -73.433601990844181 32 -72.095861705563095 37 -71.786746685210389
 		 41 -71.115836642951152 46 -70.175979575263966 53 -67.888493000472664 56 -61.046692772763912
 		 61 -54.945604147260845 66 -55.010897278831109 75 -54.945604147260845 77 -54.686818077998176
 		 82 -53.933008979311388 87 -54.680175476107046 100 -54.680175476107046 107 -55.880989171396976
-		 124 -55.880989171396976 133 -55.880989171396941;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  0.59096189558481638 0.27678558600203679 
-		1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0.80669947190189772 0.96093170380704429 
-		0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  0.59096189558481638 0.27678558600203679 
-		1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0.80669947190189772 0.96093170380704429 
-		0 0 0 0 0 0;
+		 124 -55.880989171396976 133 -55.880989171396941 180 -55.880989171396834;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  0.59096189558481638 0.27678558600203679 
+		1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0.80669947190189772 0.96093170380704429 
+		0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  0.59096189558481638 0.27678558600203679 
+		1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0.80669947190189772 0.96093170380704429 
+		0 0 0 0 0 0 0;
 createNode animCurveTL -n "pairBlend1_inTranslateX1";
 	rename -uid "A25F4281-4C09-2954-7072-C38D8AE8A96D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 -168.3280194604236 5 -176.02323677186786
+	setAttr -s 25 ".ktv[0:24]"  1 -168.3280194604236 5 -176.02323677186786
 		 12 -176.73026806341827 16 -173.50066102110745 19 -171.07743544844249 24 -168.01228910900366
 		 26 -169.67916159881352 29 -169.60978280512461 32 -167.34983800197762 37 -159.73280645965025
 		 41 -155.70903910457844 46 -150.07226822742967 53 -167.89458357326853 56 -171.33364893911354
 		 61 -187.95035766141612 66 -187.95035766141612 75 -187.95035766141612 77 -186.74637782498786
 		 82 -181.87734172178543 87 -186.35845538716754 100 -186.35845538716754 107 -193.56030756150574
-		 124 -193.56030756150574 133 -193.56030756150571;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 0.047971366618062054 1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 0.99884871125951569 0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 0.047971366618062054 1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 0.99884871125951569 0 0 0 0 0 0;
+		 124 -193.56030756150574 133 -193.56030756150571 180 -193.56030756150574;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 0.047971366618062054 1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0 0.99884871125951569 0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  1 0.047971366618062054 1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0 0.99884871125951569 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Arm_3_Stretch";
 	rename -uid "0023002A-4D4B-8848-2B2A-6EBB10EDBC56";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
-		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 0 0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".ktv[0:24]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
+		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1 180 1;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Arm_3_Root_Fallow";
 	rename -uid "107B598A-46EF-BAA6-4AE1-D59AF5A7B112";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
-		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 0 0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".ktv[0:24]"  1 1 5 1 12 1 16 1 19 1 24 1 26 1 29 1 32 1
+		 37 1 41 1 46 1 53 1 56 1 61 1 66 1 75 1 77 1 82 1 87 1 100 1 107 1 124 1 133 1 180 1;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "IK_R_Arm_3_PV_Fallow";
 	rename -uid "A44954A9-4CD6-ABBB-F80B-D28D47AD724B";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 24 ".ktv[0:23]"  1 0 5 0 12 0 16 0 19 0 24 0 26 0 29 0 32 0
-		 37 0 41 0 46 0 53 0 56 0 61 0 66 0 75 0 77 0 82 0 87 0 100 0 107 0 124 0 133 0;
-	setAttr -s 24 ".kit[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kot[16:23]"  1 18 18 1 1 18 18 18;
-	setAttr -s 24 ".kix[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".kiy[16:23]"  0 0 0 0 0 0 0 0;
-	setAttr -s 24 ".kox[16:23]"  1 1 1 1 1 1 1 1;
-	setAttr -s 24 ".koy[16:23]"  0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".ktv[0:24]"  1 0 5 0 12 0 16 0 19 0 24 0 26 0 29 0 32 0
+		 37 0 41 0 46 0 53 0 56 0 61 0 66 0 75 0 77 0 82 0 87 0 100 0 107 0 124 0 133 0 180 0;
+	setAttr -s 25 ".kit[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kot[16:24]"  1 18 18 1 1 18 18 18 
+		18;
+	setAttr -s 25 ".kix[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".kiy[16:24]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 25 ".kox[16:24]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 25 ".koy[16:24]"  0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "Ladder_collapse_translateZ1";
 	rename -uid "4A95CD2E-49AC-40CA-EC8C-03BEC92EB7BF";
 	setAttr ".tan" 18;
@@ -7446,117 +7925,117 @@ createNode animCurveTL -n "FollowUp_translateX";
 	rename -uid "9DC9AFE5-4094-A28F-44D3-2F9EF6C0929A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1.8217376039411952 95 1.8217376039411952
-		 96 2.0171488491097396 151 1.991585081079229;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".kix[1:3]"  1 1 1;
-	setAttr -s 4 ".kiy[1:3]"  0 0 0;
-	setAttr -s 4 ".kox[1:3]"  1 1 1;
-	setAttr -s 4 ".koy[1:3]"  0 0 0;
+	setAttr -s 3 ".ktv[0:2]"  95 1.7045276305210963 96 2.0171488491097396
+		 151 1.991585081079229;
+	setAttr -s 3 ".kit[0:2]"  1 18 18;
+	setAttr -s 3 ".kot[0:2]"  1 18 18;
+	setAttr -s 3 ".kix[0:2]"  1 1 1;
+	setAttr -s 3 ".kiy[0:2]"  0 0 0;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
 createNode animCurveTL -n "FollowUp_translateY";
 	rename -uid "8A18C89F-4353-15A1-FFB2-FFB8776566CF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1.886240976934664 95 1.886240976934664
-		 96 1.0933534918418149 151 2.14867975406308;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".kix[1:3]"  1 1 1;
-	setAttr -s 4 ".kiy[1:3]"  0 0 0;
-	setAttr -s 4 ".kox[1:3]"  1 1 1;
-	setAttr -s 4 ".koy[1:3]"  0 0 0;
+	setAttr -s 3 ".ktv[0:2]"  95 1.886240976934664 96 1.0933534918418149
+		 151 2.14867975406308;
+	setAttr -s 3 ".kit[0:2]"  1 18 18;
+	setAttr -s 3 ".kot[0:2]"  1 18 18;
+	setAttr -s 3 ".kix[0:2]"  1 1 1;
+	setAttr -s 3 ".kiy[0:2]"  0 0 0;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
 createNode animCurveTL -n "FollowUp_translateZ";
 	rename -uid "C5389178-481E-A794-572D-568F4603F54D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 2.1734484220947765 95 2.1734484220947765
-		 96 0.06165754143381702 151 0.029767519854173426;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".kix[1:3]"  1 0.99912973397541927 1;
-	setAttr -s 4 ".kiy[1:3]"  0 -0.041710606399426489 0;
-	setAttr -s 4 ".kox[1:3]"  1 0.99912973397541927 1;
-	setAttr -s 4 ".koy[1:3]"  0 -0.041710606399426489 0;
+	setAttr -s 3 ".ktv[0:2]"  95 1.7779731220575599 96 0.06165754143381702
+		 151 0.029767519854173426;
+	setAttr -s 3 ".kit[0:2]"  1 18 18;
+	setAttr -s 3 ".kot[0:2]"  1 18 18;
+	setAttr -s 3 ".kix[0:2]"  1 0.99912973397541927 1;
+	setAttr -s 3 ".kiy[0:2]"  0 -0.041710606399426489 0;
+	setAttr -s 3 ".kox[0:2]"  1 0.99912973397541927 1;
+	setAttr -s 3 ".koy[0:2]"  0 -0.041710606399426489 0;
 createNode animCurveTU -n "FollowUp_visibility";
 	rename -uid "ADE052D2-4612-C59C-51C1-9896D88A2A4A";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1 95 1 96 1 151 1;
-	setAttr -s 4 ".kit[0:3]"  9 1 9 9;
-	setAttr -s 4 ".kix[1:3]"  1 1 1;
-	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 3 ".ktv[0:2]"  95 1 96 1 151 1;
+	setAttr -s 3 ".kit[0:2]"  1 9 9;
+	setAttr -s 3 ".kix[0:2]"  1 1 1;
+	setAttr -s 3 ".kiy[0:2]"  0 0 0;
 createNode animCurveTA -n "FollowUp_rotateX";
 	rename -uid "692F8119-4F41-A82C-A61F-09A937882B0E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 -9.0000000000032987 95 -9.0000000000032987
-		 96 -5.4000000000000448 151 -17.40000000000294;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".kix[1:3]"  1 1 1;
-	setAttr -s 4 ".kiy[1:3]"  0 0 0;
-	setAttr -s 4 ".kox[1:3]"  1 1 1;
-	setAttr -s 4 ".koy[1:3]"  0 0 0;
+	setAttr -s 3 ".ktv[0:2]"  95 -9.0000000000032987 96 -5.4000000000000448
+		 151 -17.40000000000294;
+	setAttr -s 3 ".kit[0:2]"  1 18 18;
+	setAttr -s 3 ".kot[0:2]"  1 18 18;
+	setAttr -s 3 ".kix[0:2]"  1 1 1;
+	setAttr -s 3 ".kiy[0:2]"  0 0 0;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
 createNode animCurveTA -n "FollowUp_rotateY";
 	rename -uid "BDB93FE2-4BF9-4C37-C680-4E95D69A395F";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 23.200000000000841 95 23.200000000000841
-		 96 89.200000000000017 151 89.600000000000364;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".kix[1:3]"  1 0.99995824032294844 1;
-	setAttr -s 4 ".kiy[1:3]"  0 0.0091387969794846646 0;
-	setAttr -s 4 ".kox[1:3]"  1 0.99995824032294844 1;
-	setAttr -s 4 ".koy[1:3]"  0 0.0091387969794846646 0;
+	setAttr -s 3 ".ktv[0:2]"  95 23.200000000000841 96 89.200000000000017
+		 151 89.600000000000364;
+	setAttr -s 3 ".kit[0:2]"  1 18 18;
+	setAttr -s 3 ".kot[0:2]"  1 18 18;
+	setAttr -s 3 ".kix[0:2]"  1 0.99995824032294844 1;
+	setAttr -s 3 ".kiy[0:2]"  0 0.0091387969794846646 0;
+	setAttr -s 3 ".kox[0:2]"  1 0.99995824032294844 1;
+	setAttr -s 3 ".koy[0:2]"  0 0.0091387969794846646 0;
 createNode animCurveTA -n "FollowUp_rotateZ";
 	rename -uid "6A773FD9-4BB8-E772-82BB-B9BD5CFDC8C8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 95 0 96 0 151 0;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".kix[1:3]"  1 1 1;
-	setAttr -s 4 ".kiy[1:3]"  0 0 0;
-	setAttr -s 4 ".kox[1:3]"  1 1 1;
-	setAttr -s 4 ".koy[1:3]"  0 0 0;
+	setAttr -s 3 ".ktv[0:2]"  95 0 96 0 151 0;
+	setAttr -s 3 ".kit[0:2]"  1 18 18;
+	setAttr -s 3 ".kot[0:2]"  1 18 18;
+	setAttr -s 3 ".kix[0:2]"  1 1 1;
+	setAttr -s 3 ".kiy[0:2]"  0 0 0;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
 createNode animCurveTU -n "FollowUp_scaleX";
 	rename -uid "1FFD3532-4141-BEC3-8DAD-47AAAA390AE6";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0.19656491910753171 95 0.19656491910753171
-		 96 0.19656491910753171 151 0.19656491910753171;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".kix[1:3]"  1 1 1;
-	setAttr -s 4 ".kiy[1:3]"  0 0 0;
-	setAttr -s 4 ".kox[1:3]"  1 1 1;
-	setAttr -s 4 ".koy[1:3]"  0 0 0;
+	setAttr -s 3 ".ktv[0:2]"  95 0.19656491910753171 96 0.19656491910753171
+		 151 0.19656491910753171;
+	setAttr -s 3 ".kit[0:2]"  1 18 18;
+	setAttr -s 3 ".kot[0:2]"  1 18 18;
+	setAttr -s 3 ".kix[0:2]"  1 1 1;
+	setAttr -s 3 ".kiy[0:2]"  0 0 0;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
 createNode animCurveTU -n "FollowUp_scaleY";
 	rename -uid "19B4AA24-4276-62FD-BB80-E188F2A87E8E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0.19656491910753171 95 0.19656491910753171
-		 96 0.19656491910753171 151 0.19656491910753171;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".kix[1:3]"  1 1 1;
-	setAttr -s 4 ".kiy[1:3]"  0 0 0;
-	setAttr -s 4 ".kox[1:3]"  1 1 1;
-	setAttr -s 4 ".koy[1:3]"  0 0 0;
+	setAttr -s 3 ".ktv[0:2]"  95 0.19656491910753171 96 0.19656491910753171
+		 151 0.19656491910753171;
+	setAttr -s 3 ".kit[0:2]"  1 18 18;
+	setAttr -s 3 ".kot[0:2]"  1 18 18;
+	setAttr -s 3 ".kix[0:2]"  1 1 1;
+	setAttr -s 3 ".kiy[0:2]"  0 0 0;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
 createNode animCurveTU -n "FollowUp_scaleZ";
 	rename -uid "0A782F0A-4753-8365-90E9-F29149713565";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0.19656491910753171 95 0.19656491910753171
-		 96 0.19656491910753171 151 0.19656491910753171;
-	setAttr -s 4 ".kit[1:3]"  1 18 18;
-	setAttr -s 4 ".kot[1:3]"  1 18 18;
-	setAttr -s 4 ".kix[1:3]"  1 1 1;
-	setAttr -s 4 ".kiy[1:3]"  0 0 0;
-	setAttr -s 4 ".kox[1:3]"  1 1 1;
-	setAttr -s 4 ".koy[1:3]"  0 0 0;
+	setAttr -s 3 ".ktv[0:2]"  95 0.19656491910753171 96 0.19656491910753171
+		 151 0.19656491910753171;
+	setAttr -s 3 ".kit[0:2]"  1 18 18;
+	setAttr -s 3 ".kot[0:2]"  1 18 18;
+	setAttr -s 3 ".kix[0:2]"  1 1 1;
+	setAttr -s 3 ".kiy[0:2]"  0 0 0;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
 createNode animCurveTL -n "RK_Jaw_jnt_Ctrl_translateX";
 	rename -uid "ECDFA8DA-4107-B9BD-149B-5EBBF3D3AEE5";
 	setAttr ".tan" 18;
@@ -8503,14 +8982,14 @@ createNode historySwitch -n "cacheSwitch2";
 
 
 		"v"	686
-		-1.9303402	0.51799393	-0.032994028
-		-1.9322054	0.5189895	0.0090927267
-		-1.9342257	0.31155014	-0.033386577
-		-1.9373249	0.30558777	0.0033982736
-		-1.9197938	0.6091156	0.0039357701
-		-1.9197598	0.60800934	-0.031925086
-		-1.9345863	0.35713959	-0.033423003
-		-1.9372252	0.35330582	0.007659649
+		-1.5643957	0.52616751	-0.021241406
+		-1.5620573	0.52716261	0.020821724
+		-1.5882859	0.3210763	-0.020168044
+		-1.5883591	0.31528822	0.016774768
+		-1.5415314	0.61568171	0.014009434
+		-1.5450892	0.61472785	-0.021678913
+		-1.5842292	0.36648574	-0.02040926
+		-1.5832227	0.36275351	0.020755086
 		-1.9012541	0.65503305	-0.0035143038
 		-1.9042076	0.64876115	-0.030353881
 		-1.8940728	0.66177171	0.03152103
@@ -8523,18 +9002,18 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.8029552	0.67345268	0.020942992
 		-1.7885237	0.66135752	0.021429744
 		-1.7857331	0.66147351	0.0080394568
-		-1.9355285	0.34884262	0.12381209
-		-1.9375412	0.29837036	0.12926984
-		-1.9086056	0.62194824	0.076402962
-		-1.9294584	0.51449203	0.093670964
-		-1.9202292	0.61287689	0.040264383
-		-1.9316704	0.51845551	0.05082171
-		-1.9375472	0.35140228	0.064167865
-		-1.9377378	0.29073334	0.058785651
-		-1.9134279	0.62937164	-0.031285409
+		-1.5706882	0.35765955	0.1362156
+		-1.5770421	0.30759767	0.1421086
+		-1.522164	0.62706506	0.084978938
+		-1.5515536	0.52206516	0.10475588
+		-1.5380682	0.61931515	0.050188281
+		-1.5575242	0.5264042	0.062303722
+		-1.5782353	0.36065307	0.077036694
+		-1.5848255	0.30031151	0.072017848
+		-1.5366856	0.63537288	-0.021769622
 		-1.9107636	0.63606256	0.00013667806
-		-1.907495	0.64543915	0.036578044
-		-1.8783734	0.6568954	0.075742006
+		-1.5226576	0.65050459	0.045111332
+		-1.6232915	0.65826696	0.079363801
 		-1.8373517	0.66604078	0.068130031
 		-1.8011385	0.66710126	0.050806407
 		-1.7883495	0.66084588	0.035247531
@@ -8548,26 +9027,26 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.8197463	0.67109817	0.062839538
 		-1.7630928	0.65053535	-0.009731153
 		-1.7619977	0.65079635	-0.0063742232
-		-1.9334373	0.43516159	0.10843963
-		-1.9350474	0.4356575	0.059457149
-		-1.9355248	0.43701172	0.011635359
-		-1.9320728	0.4390831	-0.033169068
-		-1.928175	0.55993652	-0.032775272
-		-1.9291193	0.56197357	0.0061505586
-		-1.928453	0.5639267	0.044915359
-		-1.9240515	0.56402588	0.081652813
-		-1.9317189	0.47337341	0.10133607
-		-1.9332747	0.47621918	0.055597957
-		-1.9331188	0.47731781	0.010827889
-		-1.9307235	0.47706985	-0.033032756
-		-1.9353455	0.39386368	0.11610863
-		-1.9363708	0.39419174	0.062143445
-		-1.9378161	0.39569473	0.011136919
-		-1.9346119	0.3980751	-0.033425592
-		-1.9237498	0.5189895	-0.074603401
-		-1.9299046	0.30558777	-0.070047729
-		-1.9126205	0.6091156	-0.067067906
-		-1.9289547	0.35330582	-0.074203312
+		-1.5617467	0.4434329	0.12025853
+		-1.568053	0.44428805	0.071662031
+		-1.5730414	0.44588283	0.024106191
+		-1.5737749	0.44779778	-0.020831976
+		-1.5581656	0.56770134	-0.021454753
+		-1.5551213	0.56965703	0.017367531
+		-1.5505054	0.57137364	0.05587355
+		-1.5425662	0.57089156	0.092008866
+		-1.5570322	0.48132756	0.11282063
+		-1.562742	0.48450267	0.067435466
+		-1.5668312	0.48576885	0.022856716
+		-1.5687444	0.4854739	-0.021027299
+		-1.5668932	0.40248269	0.12829387
+		-1.5731206	0.40313503	0.074682377
+		-1.5793629	0.40498507	0.024050128
+		-1.5802884	0.40723056	-0.020624831
+		-1.5618141	0.52669406	-0.063298799
+		-1.5881457	0.314877	-0.057043653
+		-1.5413252	0.61528426	-0.057354279
+		-1.5829849	0.36229521	-0.061522976
 		-1.8959454	0.65503305	-0.056060351
 		-1.8791009	0.66738212	-0.082530469
 		-1.8642856	0.67409706	-0.07159888
@@ -8579,17 +9058,17 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.7947409	0.67345268	-0.060362056
 		-1.7805039	0.66135752	-0.057952229
 		-1.7804478	0.66147351	-0.044274598
-		-1.9040601	0.34884262	-0.18766879
-		-1.9049404	0.29837036	-0.19341882
-		-1.8871635	0.62194824	-0.13583358
-		-1.9041411	0.51449203	-0.15692353
-		-1.9057806	0.61287689	-0.1027497
-		-1.914879	0.51845551	-0.1153826
-		-1.9179677	0.35140228	-0.12963453
-		-1.9192308	0.29073334	-0.12439918
+		-1.5697834	0.3559157	-0.1768447
+		-1.5761048	0.30579111	-0.1822163
+		-1.5215476	0.62587696	-0.12833378
+		-1.5508257	0.52066225	-0.14710931
+		-1.5376527	0.61851442	-0.093550965
+		-1.5570414	0.52547365	-0.10474335
+		-1.5776724	0.35956806	-0.1177484
+		-1.5842934	0.29928595	-0.11209585
 		-1.9045326	0.63606256	-0.061539624
-		-1.8940411	0.64543915	-0.096590824
-		-1.8576267	0.65690535	-0.12913521
+		-1.5222708	0.64975905	-0.088732794
+		-1.6242157	0.6575039	-0.12629725
 		-1.8190043	0.66604078	-0.11347592
 		-1.7869879	0.66710126	-0.089258663
 		-1.7775693	0.66084588	-0.071456179
@@ -8603,18 +9082,18 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.8028127	0.67109817	-0.10477096
 		-1.7618192	0.65053546	-0.022334639
 		-1.760048	0.64740652	-0.024285732
-		-1.9050858	0.43516159	-0.17218867
-		-1.9164605	0.4356575	-0.12451901
-		-1.9264934	0.43701172	-0.07775858
-		-1.9213145	0.56197357	-0.071103647
-		-1.9129081	0.5639267	-0.1089511
-		-1.9012474	0.56402588	-0.1440668
-		-1.9048229	0.47337341	-0.16488497
-		-1.9154956	0.47621918	-0.12038324
-		-1.9242976	0.47731781	-0.076486185
-		-1.9054215	0.39386368	-0.18008445
-		-1.9172199	0.39419174	-0.12741572
-		-1.9288381	0.39569473	-0.077728517
+		-1.5609316	0.44186181	-0.16179274
+		-1.5675186	0.44325808	-0.113247
+		-1.5727818	0.44538239	-0.06574104
+		-1.554897	0.56922454	-0.060278401
+		-1.5500585	0.57051224	-0.098773099
+		-1.5419105	0.56962782	-0.1348553
+		-1.5562589	0.47983715	-0.15475032
+		-1.5622307	0.48351744	-0.10943808
+		-1.5665777	0.48528004	-0.064900093
+		-1.5660328	0.40082446	-0.16940109
+		-1.57257	0.40207377	-0.11583796
+		-1.5791048	0.40448758	-0.065265909
 		-1.894269	0.66836637	-0.0086901449
 		-1.8901367	0.66836637	-0.049591973
 		-1.8962384	0.66580206	-0.029548759
@@ -8622,20 +9101,20 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.7693435	0.6458497	0.0016855723
 		-1.7713213	0.65388674	-0.051614352
 		-1.7619144	0.64436394	-0.027471663
-		-1.9180764	0.60523987	-0.031755026
-		-1.926302	0.55825806	-0.032586049
-		-1.927225	0.56024933	0.0054541174
-		-1.9181106	0.60631561	0.0032896413
-		-1.9357234	0.39775467	0.010327046
-		-1.9351462	0.35632706	0.0069286646
-		-1.9325918	0.40007782	-0.033221506
-		-1.9325671	0.36007309	-0.03321901
+		-1.5436738	0.61180758	-0.021658555
+		-1.5564545	0.56584841	-0.021439491
+		-1.5534796	0.56776017	0.016499484
+		-1.5401982	0.6127345	0.013217628
+		-1.5771689	0.40683579	0.02303
+		-1.5809416	0.36556199	0.019809745
+		-1.5780736	0.4090271	-0.020628437
+		-1.5819252	0.36920878	-0.020417769
 		-1.9102645	0.62719727	-0.030965798
 		-1.9092966	0.63265383	-0.00042394656
 		-1.9000038	0.65119249	-0.0039918581
 		-1.9028898	0.64506358	-0.030220747
-		-1.9322141	0.31552124	-0.033183351
-		-1.935243	0.3096962	0.0027641258
+		-1.5858889	0.3248328	-0.020182041
+		-1.5859605	0.31917807	0.015919825
 		-1.8929859	0.65777451	0.030246247
 		-1.8799922	0.66997385	0.019626267
 		-1.8643636	0.66706467	0.044445686
@@ -8650,18 +9129,18 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.803941	0.66919595	0.019908808
 		-1.7898381	0.65737277	0.020384667
 		-1.7871115	0.65748161	0.0072989599
-		-1.9354609	0.3544693	0.062151019
-		-1.9356467	0.29517746	0.056891985
-		-1.9354548	0.30264282	0.12577201
-		-1.9334878	0.35196686	0.12043817
+		-1.5760676	0.36351183	0.074810654
+		-1.5825075	0.30453983	0.069906689
+		-1.5749012	0.31166238	0.13840225
+		-1.5686918	0.36058533	0.13264303
 		-1.9042352	0.6427114	0.035376601
 		-1.8763154	0.65329605	0.073595792
-		-1.9333086	0.39596558	0.11291067
-		-1.9343103	0.3962822	0.060172882
-		-1.9185357	0.60999298	0.038792077
-		-1.9265715	0.56215668	0.043336947
-		-1.9222716	0.56224823	0.079238862
-		-1.9071771	0.61885834	0.074108787
+		-1.5649827	0.4043906	0.1249022
+		-1.5710685	0.40502411	0.072510041
+		-1.5368133	0.61628681	0.04857368
+		-1.5489666	0.56943619	0.054129228
+		-1.5412099	0.56895977	0.089442849
+		-1.5212713	0.6238609	0.082573161
 		-1.8558146	0.6587345	0.070416138
 		-1.8375552	0.66194952	0.066022754
 		-1.8203506	0.66689056	0.060852796
@@ -8671,25 +9150,25 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.7776204	0.65236849	0.00045601526
 		-1.7649856	0.64680219	-0.010067234
 		-1.7639161	0.64704847	-0.0067867562
-		-1.9297647	0.47365952	0.098473869
-		-1.9312849	0.47644806	0.053776495
-		-1.9330169	0.43681335	0.057547759
-		-1.9314443	0.43632126	0.10541553
-		-1.9311332	0.47751617	0.010024923
-		-1.9334846	0.43812943	0.010813946
-		-1.9301106	0.44015503	-0.032970831
-		-1.9287916	0.47726822	-0.032837581
-		-1.9284168	0.51726532	-0.032799721
-		-1.93024	0.51824564	0.0083294064
-		-1.9297179	0.51771927	0.049109586
-		-1.9275559	0.51384354	0.090983748
-		-1.9111005	0.60631561	-0.066098154
-		-1.9195976	0.56024933	-0.070042357
-		-1.9270638	0.35632706	-0.07307148
-		-1.9269496	0.39775467	-0.076516405
+		-1.555347	0.48143488	0.1097807
+		-1.5609257	0.4845452	0.06542819
+		-1.5661154	0.44524962	0.069558434
+		-1.559954	0.44440657	0.11704911
+		-1.564923	0.48577714	0.021863664
+		-1.5709919	0.44680092	0.023084639
+		-1.5717082	0.44867358	-0.020830879
+		-1.5667926	0.4854832	-0.021021709
+		-1.5625422	0.52525502	-0.021230964
+		-1.5602567	0.52623492	0.019875061
+		-1.555828	0.52548933	0.060413964
+		-1.5499932	0.52124655	0.10190006
+		-1.5399966	0.61234605	-0.056522001
+		-1.5532603	0.56733751	-0.059379801
+		-1.5807092	0.36511412	-0.060596049
+		-1.5769167	0.4063496	-0.0642538
 		-1.8948159	0.65119249	-0.055342361
 		-1.9032073	0.63265383	-0.060696907
-		-1.9279917	0.3096962	-0.069010012
+		-1.585752	0.31877622	-0.056218252
 		-1.8638762	0.66982406	-0.070527107
 		-1.8409793	0.67476457	-0.080794081
 		-1.8502076	0.66706467	-0.095672518
@@ -8704,18 +9183,18 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.8043185	0.67030972	-0.083102167
 		-1.7819465	0.65748161	-0.04382477
 		-1.7820007	0.65737277	-0.057191413
-		-1.9163269	0.3544693	-0.12724115
-		-1.9027355	0.35196686	-0.18395391
-		-1.9035957	0.30264282	-0.18957442
-		-1.9175608	0.29517746	-0.12212458
+		-1.5755174	0.36245149	-0.11554185
+		-1.5678077	0.35888118	-0.17329253
+		-1.5739852	0.30989695	-0.1785432
+		-1.5819875	0.30353764	-0.11001759
 		-1.8560873	0.65329605	-0.12662363
 		-1.8910874	0.6427114	-0.094761655
-		-1.9040653	0.39596558	-0.17654465
-		-1.9155951	0.3962822	-0.12507284
-		-1.9044158	0.60999298	-0.10096843
-		-1.8862228	0.61885834	-0.1332991
-		-1.8999863	0.56224823	-0.14134562
-		-1.9113803	0.56215668	-0.10702874
+		-1.5641418	0.4027701	-0.16602084
+		-1.5705304	0.40398702	-0.11367498
+		-1.5364074	0.61550432	-0.091895491
+		-1.5206689	0.6226998	-0.1258864
+		-1.5405692	0.56772488	-0.13226013
+		-1.5485299	0.5685944	-0.096998915
 		-1.8196254	0.66194952	-0.11145098
 		-1.8366368	0.6587345	-0.11940774
 		-1.7883372	0.66299111	-0.08778514
@@ -8725,15 +9204,15 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.7728608	0.65251023	-0.044494633
 		-1.762876	0.64730012	-0.022024555
 		-1.7611161	0.64416367	-0.023930606
-		-1.9034805	0.47365952	-0.16169164
-		-1.903738	0.43632126	-0.1688261
-		-1.9148531	0.43681335	-0.12224209
-		-1.9139103	0.47644806	-0.11820058
-		-1.9246587	0.43812943	-0.076545671
-		-1.9225125	0.47751617	-0.075302273
-		-1.9219767	0.51824564	-0.073462389
-		-1.9133085	0.51771927	-0.11331359
-		-1.9028147	0.51384354	-0.15390915
+		-1.5545912	0.47997835	-0.15170401
+		-1.5591574	0.44287121	-0.1585831
+		-1.5655931	0.44424307	-0.11114307
+		-1.5604261	0.48358241	-0.10742093
+		-1.5707382	0.44631186	-0.064717948
+		-1.5646752	0.48529944	-0.063896187
+		-1.560019	0.52577698	-0.062331468
+		-1.5553561	0.52458	-0.10283279
+		-1.5492818	0.51987559	-0.14423463
 		-1.8931775	0.66422278	-0.0090500265
 		-1.8891392	0.66422278	-0.049021043
 		-1.895102	0.6617105	-0.029433951
@@ -8742,319 +9221,319 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.7730284	0.65007311	-0.050997693
 		-1.763834	0.64076787	-0.02740415
 		-1.8972299	0.65880477	0.016119149
-		-1.9097047	0.64085388	0.020480126
-		-1.9200372	0.61122131	0.024294075
-		-1.9287456	0.5630722	0.027873818
-		-1.9319061	0.5186882	0.032477494
-		-1.9332058	0.47669983	0.035915781
-		-1.935257	0.43625259	0.038434118
-		-1.937006	0.39485168	0.039720632
-		-1.9374061	0.35224152	0.039326034
-		-1.9375561	0.2972641	0.034435786
-		-1.9354693	0.30155945	0.033096209
-		-1.9353223	0.35528564	0.037874945
-		-1.9349318	0.39693069	0.038259953
-		-1.9332222	0.43738937	0.03700253
-		-1.9312185	0.47691727	0.034542639
-		-1.9299468	0.51795197	0.031182047
-		-1.9268588	0.56131744	0.026683202
-		-1.9183491	0.60837555	0.023184486
+		-1.5268549	0.64622271	0.029328462
+		-1.5395902	0.61771572	0.034283761
+		-1.552534	0.5706231	0.038945727
+		-1.5595177	0.52673554	0.044068146
+		-1.5645396	0.48505694	0.047837373
+		-1.5702457	0.44498891	0.050755888
+		-1.5758647	0.40394753	0.052424081
+		-1.580428	0.36157888	0.052294508
+		-1.5863788	0.30689597	0.047731418
+		-1.5840256	0.31097436	0.046172906
+		-1.57821	0.36441272	0.050631907
+		-1.5737505	0.40582177	0.050757945
+		-1.5682591	0.44592905	0.049127489
+		-1.5626835	0.48508644	0.04627661
+		-1.5577742	0.52581829	0.04259244
+		-1.5509506	0.56869864	0.037586752
+		-1.5383018	0.6147244	0.033030491
 		-1.9064602	0.63828903	0.019638499
 		-1.8960708	0.65488225	0.015194806
 		-1.8857882	0.66744637	0.0070202579
 		-1.8867085	0.67166317	0.0077540237
 		-1.8805569	0.6661545	0.038226016
-		-1.8943868	0.65065765	0.054618135
-		-1.9148645	0.61706543	0.056942232
-		-1.9264213	0.56397247	0.061868995
-		-1.9306501	0.51661712	0.070594758
-		-1.9325571	0.47490311	0.076705374
-		-1.934304	0.4354248	0.082061522
-		-1.9358981	0.39403915	0.087046824
-		-1.9366156	0.35022354	0.091692209
-		-1.9376475	0.29425812	0.091312863
-		-1.9355577	0.29862213	0.088678107
-		-1.9345499	0.35331345	0.08904928
-		-1.9338489	0.39613724	0.084509596
-		-1.9322912	0.43658447	0.079637557
-		-1.9305838	0.47515869	0.074402981
-		-1.9287198	0.51592284	0.068433709
-		-1.9245867	0.56220245	0.059905324
-		-1.9132938	0.61408234	0.055089928
+		-1.5074149	0.65435195	0.061765403
+		-1.530728	0.62289381	0.066244029
+		-1.5468411	0.57115108	0.072549269
+		-1.5547704	0.52439255	0.081893615
+		-1.5601076	0.48303467	0.088380054
+		-1.5651429	0.44388959	0.094088264
+		-1.5702473	0.40283287	0.099422589
+		-1.5747522	0.35927409	0.10434628
+		-1.581234	0.3036744	0.10436355
+		-1.578997	0.30782631	0.10151536
+		-1.5726634	0.36216024	0.10149901
+		-1.5682607	0.404733	0.096687324
+		-1.5632721	0.44485882	0.091474198
+		-1.558352	0.48310742	0.085895583
+		-1.5531356	0.52352351	0.079558998
+		-1.5453862	0.56921983	0.070426047
+		-1.529641	0.6197803	0.064263664
 		-1.8913511	0.64759082	0.053014472
 		-1.8797774	0.66206288	0.03679892
 		-1.8672343	0.6721797	0.025204584
 		-1.8677218	0.67651153	0.026361648
-		-1.9313083	0.51850516	-0.01114392
-		-1.9319669	0.47719193	-0.010261742
-		-1.933865	0.43800735	-0.0099081071
-		-1.9362754	0.39683914	-0.010290377
-		-1.935956	0.35514832	-0.012094179
-		-1.935835	0.30845642	-0.014289199
-		-1.9337872	0.31249619	-0.01452072
-		-1.9339061	0.35813141	-0.012375682
-		-1.9342175	0.39887238	-0.010612532
-		-1.9318618	0.43910599	-0.010239143
-		-1.9300066	0.47739792	-0.010584661
-		-1.9293635	0.51777273	-0.01144707
-		-1.9267813	0.55928802	-0.012836778
-		-1.9180943	0.60579681	-0.01356109
+		-1.563182	0.5266785	0.00059643877
+		-1.5677515	0.48562035	0.0017558546
+		-1.5733942	0.44680324	0.0024984193
+		-1.5798079	0.4060646	0.0025687604
+		-1.5837065	0.36454716	0.0009619568
+		-1.5883241	0.31807309	-0.00098863686
+		-1.5859267	0.32189626	-0.0014392
+		-1.5814142	0.3673186	0.00046700245
+		-1.5776037	0.40789008	0.0020375689
+		-1.5713357	0.44770387	0.0019686199
+		-1.5658213	0.48563671	0.0012430111
+		-1.5613561	0.52576226	0.00010971024
+		-1.5549105	0.56683713	-0.0017427196
+		-1.5418696	0.61228734	-0.0035520594
 		-1.909762	0.63002741	-0.015109491
 		-1.9013914	0.64824086	-0.016603591
 		-1.8941029	0.66301507	-0.018851276
 		-1.8952159	0.66713649	-0.018719641
 		-1.9026744	0.65201372	-0.016419655
-		-1.9129571	0.63230133	-0.015064334
-		-1.9197763	0.60858154	-0.013307222
-		-1.9286658	0.56099701	-0.012566349
-		-1.9248992	0.56091309	-0.051082082
-		-1.9163492	0.60853577	-0.048710272
-		-1.9100181	0.63206482	-0.045820512
+		-1.534359	0.63817495	-0.0056866081
+		-1.5432413	0.6152209	-0.0031507127
+		-1.5565853	0.56871963	-0.0012995591
+		-1.556605	0.56843257	-0.039998047
+		-1.543291	0.61499161	-0.038718514
+		-1.5344592	0.63778371	-0.036581159
 		-1.9002615	0.65175784	-0.042632241
 		-1.893324	0.66702455	-0.039121974
 		-1.8922541	0.66291076	-0.038789339
 		-1.8990333	0.64799249	-0.042219646
 		-1.9068936	0.62980098	-0.045166373
-		-1.9147447	0.60575104	-0.048158538
-		-1.9230999	0.55921173	-0.050476391
-		-1.9253409	0.51773071	-0.052221596
-		-1.9257927	0.47739029	-0.053119969
-		-1.9275066	0.43918228	-0.053783648
-		-1.9298968	0.39896774	-0.053900529
-		-1.9299387	0.358284	-0.052253686
-		-1.9301978	0.31274033	-0.050295591
-		-1.9321615	0.30870056	-0.050897151
-		-1.9318968	0.35530853	-0.052900929
-		-1.9318539	0.39693832	-0.054586135
-		-1.9294083	0.43809509	-0.054466546
-		-1.9276538	0.47719193	-0.0537875
-		-1.9271927	0.51847076	-0.05286793
+		-1.5419179	0.61206216	-0.038310554
+		-1.5549287	0.56656224	-0.039561018
+		-1.5613375	0.52550155	-0.040861946
+		-1.5657811	0.4853991	-0.041499838
+		-1.5712454	0.44754031	-0.041792799
+		-1.577521	0.40774778	-0.041465297
+		-1.5813444	0.36725315	-0.039608058
+		-1.5858238	0.32194138	-0.037394337
+		-1.5882187	0.31811357	-0.037781078
+		-1.5836352	0.36448431	-0.040046412
+		-1.5797228	0.40592054	-0.041946918
+		-1.5733008	0.4466455	-0.042282049
+		-1.5677086	0.48538488	-0.041982412
+		-1.5631628	0.5264203	-0.04132928
 		-1.8872319	0.6614176	-0.069753274
 		-1.8767643	0.67132866	-0.060975503
 		-1.8760709	0.66712052	-0.06014606
 		-1.8863004	0.65743452	-0.06872341
 		-1.896938	0.63785201	-0.0783187
-		-1.9076424	0.60822296	-0.08413624
-		-1.9153475	0.56123352	-0.089174867
-		-1.917492	0.5179711	-0.094076812
-		-1.9180628	0.47696304	-0.097492687
-		-1.9195867	0.43745041	-0.10018387
-		-1.9210763	0.39699173	-0.10163414
-		-1.9215096	0.35536575	-0.10109321
-		-1.9225962	0.30218506	-0.096486062
-		-1.9243833	0.29790497	-0.098162383
-		-1.9232713	0.35232162	-0.10287768
-		-1.9228282	0.39491653	-0.10343056
-		-1.9213036	0.43630981	-0.10194705
-		-1.9197443	0.47674942	-0.099193811
-		-1.919161	0.51871496	-0.095698074
-		-1.9169647	0.56298828	-0.090681627
-		-1.9090817	0.6110611	-0.085525826
-		-1.8999536	0.64040375	-0.079757303
+		-1.5381392	0.61398488	-0.074820459
+		-1.550814	0.56798524	-0.078839548
+		-1.5576065	0.52515554	-0.08328227
+		-1.5624772	0.48441061	-0.086410634
+		-1.5680768	0.44524351	-0.088733077
+		-1.5736135	0.40512627	-0.08981882
+		-1.5780236	0.36373648	-0.089019261
+		-1.5838051	0.31089276	-0.084048502
+		-1.5861528	0.30681312	-0.085520804
+		-1.5802369	0.36088499	-0.090608172
+		-1.5757245	0.40323824	-0.091425672
+		-1.5700593	0.44428214	-0.090315156
+		-1.5643288	0.48436815	-0.087939277
+		-1.5593451	0.52606446	-0.084737673
+		-1.5523924	0.56989479	-0.080191344
+		-1.5394249	0.61695498	-0.076078609
+		-1.5269794	0.64524996	-0.07137838
 		-1.8616221	0.6697458	-0.09151113
 		-1.8500669	0.6771614	-0.077974871
 		-1.8499811	0.67281669	-0.076757975
 		-1.8612732	0.6655646	-0.089986809
 		-1.8698468	0.64913213	-0.11409781
-		-1.893375	0.6153717	-0.12058885
-		-1.9044654	0.56221771	-0.12785442
-		-1.9069389	0.51536179	-0.13794936
-		-1.9075804	0.4747467	-0.14459351
-		-1.9081076	0.43651199	-0.15051298
-		-1.9085979	0.39609146	-0.1563089
-		-1.9080782	0.35295105	-0.16165864
-		-1.9090865	0.29970932	-0.16305839
-		-1.9105592	0.29536819	-0.16628505
-		-1.9095278	0.3498497	-0.16485228
-		-1.9100602	0.39399338	-0.15937822
-		-1.9095581	0.43535995	-0.15344788
-		-1.9090188	0.4744873	-0.14739108
-		-1.9083623	0.51604843	-0.14059299
-		-1.9058311	0.56398773	-0.13026218
-		-1.8944823	0.61838531	-0.12282672
+		-1.5268563	0.61986959	-0.11252345
+		-1.5436981	0.56807214	-0.11839774
+		-1.5516691	0.52171952	-0.12795796
+		-1.5568855	0.48138615	-0.13429451
+		-1.5616877	0.44340783	-0.13993344
+		-1.5666533	0.40324992	-0.14544149
+		-1.5708381	0.36028516	-0.15058927
+		-1.5771317	0.30739829	-0.15160416
+		-1.5793247	0.30323398	-0.15464969
+		-1.5728849	0.35735241	-0.15361065
+		-1.5686032	0.40131634	-0.14834321
+		-1.5635211	0.44241416	-0.1427075
+		-1.5586072	0.48127916	-0.13693775
+		-1.5532693	0.52255201	-0.13045445
+		-1.5451132	0.56997633	-0.12067077
+		-1.5278784	0.62298572	-0.11465906
 		-1.8703952	0.65292805	-0.11618433
-		-1.9344156	0.33552551	-0.033405747
-		-1.9320223	0.33321381	-0.051951382
-		-1.9294049	0.33068466	-0.072233245
-		-1.9237982	0.32652283	-0.10064241
-		-1.9185663	0.32264328	-0.12715204
-		-1.9100165	0.3240242	-0.16553237
-		-1.9044771	0.32491684	-0.19039482
-		-1.903143	0.32858658	-0.18661763
-		-1.9085556	0.3277092	-0.16232227
-		-1.9169117	0.32636261	-0.12481572
-		-1.9220246	0.33015442	-0.098908506
-		-1.9275037	0.33422089	-0.071145907
-		-1.9300611	0.33669281	-0.051325738
-		-1.9324002	0.33895493	-0.033202145
-		-1.9338495	0.33649826	-0.013392225
-		-1.9351921	0.33422089	0.0049547004
-		-1.9353915	0.32981873	0.035609655
-		-1.9355488	0.32636261	0.059657626
-		-1.9350277	0.32738876	0.08887352
-		-1.93442	0.32858658	0.12296654
-		-1.9364823	0.32491684	0.12639771
-		-1.9371051	0.32369232	0.091512404
-		-1.9376374	0.32264328	0.06161673
-		-1.9374768	0.3261795	0.037008364
-		-1.9372722	0.33068466	0.0056391018
-		-1.9358989	0.33301163	-0.013134875
-		-1.9354248	0.3741684	0.11947852
-		-1.9362117	0.3748703	0.089079805
-		-1.9368849	0.37546921	0.063028954
-		-1.9371811	0.37620926	0.039548129
-		-1.9375581	0.37714767	0.0096154548
-		-1.9361362	0.37859726	-0.011079565
-		-1.9346005	0.3801651	-0.033424441
-		-1.9318728	0.37872314	-0.053848781
-		-1.9288895	0.37714767	-0.076186158
-		-1.9230224	0.37628174	-0.10318897
-		-1.9175464	0.37546921	-0.12838615
-		-1.9098268	0.37467957	-0.16177492
-		-1.9048251	0.3741684	-0.183403
-		-1.9034828	0.37671661	-0.17978601
-		-1.9083707	0.37721634	-0.15864967
-		-1.9159157	0.37798691	-0.12602158
-		-1.9212652	0.37878036	-0.10139634
-		-1.9269994	0.37963104	-0.075008877
-		-1.929915	0.38116837	-0.053180106
-		-1.9325805	0.38257599	-0.033220354
-		-1.9340811	0.3810463	-0.011384025
-		-1.9354706	0.37963104	0.0088400217
-		-1.9351026	0.37870789	0.038091723
-		-1.9348141	0.37798691	0.061038334
-		-1.9341549	0.37739944	0.086496361
-		-1.9333864	0.37671661	0.11620499
-		-1.9342986	0.41650772	0.111903
-		-1.9350233	0.41673279	0.084313288
-		-1.9356455	0.41692734	0.060670625
-		-1.9360471	0.41754913	0.039014734
-		-1.9365603	0.41834641	0.011409976
-		-1.9349537	0.41941071	-0.010080643
-		-1.93322	0.42055893	-0.033284966
-		-1.9305128	0.41950226	-0.054520387
-		-1.9275532	0.41834641	-0.077744856
-		-1.9219919	0.41761017	-0.10261808
-		-1.9168037	0.41692734	-0.12582757
-		-1.9097844	0.41667175	-0.15612683
-		-1.905237	0.41650772	-0.17575431
-		-1.9038854	0.41809082	-0.17231083
-		-1.9083282	0.41825104	-0.15313096
-		-1.9151878	0.41849899	-0.12352008
-		-1.9202595	0.41917038	-0.10083894
-		-1.9256934	0.41989136	-0.076532304
-		-1.9285862	0.42101669	-0.053836416
-		-1.9312313	0.42204666	-0.033084039
-		-1.9329259	0.42092514	-0.010407767
-		-1.9344957	0.41989136	0.010593903
-		-1.9339948	0.41911316	0.037571017
-		-1.9336008	0.41849899	0.058733925
-		-1.9329944	0.41831207	0.081839181
-		-1.9322858	0.41809082	0.10880135
-		-1.9325341	0.45524597	0.1047073
-		-1.9333864	0.4561615	0.079246037
-		-1.9341155	0.45697021	0.057430074
-		-1.9341792	0.45750427	0.037111454
-		-1.9342608	0.45819092	0.011210949
-		-1.9328675	0.45859909	-0.010093939
-		-1.931363	0.45903778	-0.033097368
-		-1.9284868	0.45863724	-0.054109849
-		-1.9253399	0.45819092	-0.077089921
-		-1.9204845	0.45755386	-0.10049983
-		-1.915953	0.45697021	-0.12234556
-		-1.9092748	0.45591736	-0.15026474
-		-1.9049473	0.45524597	-0.1683511
-		-1.9036015	0.45594025	-0.16507788
-		-1.907831	0.456604	-0.14740239
-		-1.9143574	0.45763016	-0.12011775
-		-1.9187853	0.45820999	-0.098770551
-		-1.9235305	0.45882416	-0.075892508
-		-1.9266053	0.45925903	-0.053434994
-		-1.929417	0.45965576	-0.032900758
-		-1.9308877	0.45922089	-0.010420873
-		-1.9322484	0.45882416	0.010399662
-		-1.9321685	0.45815277	0.035710488
-		-1.9321065	0.45763016	0.055566456
-		-1.9313927	0.45685577	0.076887242
-		-1.9305606	0.45594025	0.1017675
-		-1.932636	0.49934006	0.009910468
-		-1.9316187	0.49903488	-0.010728125
-		-1.9305205	0.498703	-0.033012241
-		-1.9274096	0.49901199	-0.053301297
-		-1.9240081	0.49934006	-0.075490735
-		-1.9194363	0.49893188	-0.097345807
-		-1.9151698	0.49853897	-0.11774026
-		-1.9086715	0.49644852	-0.14379795
-		-1.9044622	0.49509811	-0.16067509
-		-1.9031285	0.49489975	-0.15757753
-		-1.9072425	0.49622345	-0.14108184
-		-1.9135914	0.49826813	-0.11561771
-		-1.9177611	0.49863052	-0.095687009
-		-1.9222294	0.49904251	-0.074329503
-		-1.9255542	0.49871063	-0.052645229
-		-1.9285934	0.49841309	-0.03281755
-		-1.9296672	0.49873734	-0.011040426
-		-1.9306611	0.49904251	0.0091284653
-		-1.9305464	0.49860382	0.032766342
-		-1.9304558	0.49826813	0.051309612
-		-1.9295983	0.4967041	0.071247377
-		-1.9285971	0.49489975	0.094515204
-		-1.9305238	0.49509811	0.097285286
-		-1.9315479	0.49695587	0.073476449
-		-1.9324269	0.49853897	0.053073537
-		-1.9325186	0.49889755	0.034099311
-		-1.9306208	0.54107666	0.007581159
-		-1.9302822	0.54149246	0.030112518
-		-1.9300176	0.5418129	0.047788162
-		-1.928477	0.54095078	0.066112697
-		-1.9266808	0.53993225	0.087497801
-		-1.9248414	0.53870773	0.084949918
-		-1.9265963	0.53969574	0.06405209
-		-1.9281012	0.54055023	0.046143793
-		-1.9283609	0.54023361	0.028870743
-		-1.9286914	0.53982544	0.0068520624
-		-1.9280367	0.53910452	-0.01216084
-		-1.9273305	0.53832245	-0.032689959
-		-1.9241893	0.53903961	-0.051325005
-		-1.9207548	0.53982544	-0.071705364
-		-1.9163911	0.54019547	-0.091558725
-		-1.9123176	0.54055023	-0.11008436
-		-1.9056685	0.53943634	-0.13276286
-		-1.9013618	0.53870773	-0.14745431
-		-1.9026546	0.53993225	-0.15031768
-		-1.9070618	0.54067612	-0.13528557
-		-1.9138664	0.5418129	-0.11207882
-		-1.9180329	0.54146194	-0.093120687
-		-1.9224994	0.54107666	-0.072805397
-		-1.9260144	0.54027176	-0.051950671
-		-1.9292281	0.53954697	-0.032881681
-		-1.929951	0.54033667	-0.011874742
-		-1.9229374	0.58985138	-0.032246124
-		-1.9195775	0.59055328	-0.049606159
-		-1.9159038	0.59130859	-0.068591788
-		-1.9120597	0.59290314	-0.087472953
-		-1.9084712	0.59439087	-0.10509195
-		-1.8987684	0.59783936	-0.12563497
-		-1.8924823	0.60007477	-0.13894266
-		-1.8914211	0.59748077	-0.13633847
-		-1.8975637	0.59529877	-0.12333261
-		-1.9070463	0.59192657	-0.10325714
-		-1.9105515	0.59047699	-0.086039037
-		-1.9143091	0.58891296	-0.067587413
-		-1.9179008	0.58817291	-0.049034066
-		-1.9211833	0.5874939	-0.032068927
-		-1.9213756	0.58823395	-0.01328776
-		-1.9215523	0.58891296	0.0041065374
-		-1.9215624	0.59060669	0.024506133
-		-1.9215708	0.59192657	0.040508386
-		-1.9175594	0.59449005	0.056908641
-		-1.912878	0.59748077	0.076046079
-		-1.9144386	0.60007477	0.078386329
-		-1.9192293	0.59701538	0.05880269
-		-1.9233339	0.59439087	0.042021096
-		-1.9233267	0.59304047	0.025645865
-		-1.9233156	0.59130859	0.0047721392
-		-1.9231344	0.59060669	-0.013027525
+		-1.5861527	0.34495702	-0.020294901
+		-1.5858082	0.34250203	-0.038972855
+		-1.5854313	0.33981615	-0.059399452
+		-1.5830413	0.3352496	-0.088196538
+		-1.5808109	0.3309924	-0.11506815
+		-1.5759375	0.33169898	-0.15410411
+		-1.5727798	0.33215469	-0.17939137
+		-1.5707357	0.33566192	-0.17578097
+		-1.5738214	0.33521149	-0.15107051
+		-1.5785844	0.33452398	-0.11292318
+		-1.5807643	0.33868486	-0.086662203
+		-1.5830998	0.34314683	-0.058520518
+		-1.5834676	0.34577185	-0.038558953
+		-1.5838044	0.34817401	-0.020306034
+		-1.583553	0.34578633	-0.00043635967
+		-1.5833209	0.34357288	0.017965976
+		-1.5809662	0.33908221	0.048518136
+		-1.5791203	0.33555675	0.072485581
+		-1.5756658	0.33640498	0.10150694
+		-1.5716349	0.33739513	0.13537301
+		-1.5737	0.33392826	0.13900752
+		-1.5778252	0.33291629	0.10435452
+		-1.5813593	0.33204925	0.074657805
+		-1.5832484	0.33565646	0.050131872
+		-1.5856575	0.34025213	0.018867759
+		-1.5858959	0.34251377	3.7166119e-05
+		-1.5685526	0.38287392	0.13175917
+		-1.5722179	0.38377634	0.1015773
+		-1.5753579	0.38454702	0.075712167
+		-1.5778613	0.38541079	0.052367546
+		-1.5810522	0.38650692	0.022608439
+		-1.5815142	0.38789865	0.0018658225
+		-1.5820124	0.38940394	-0.020530514
+		-1.5814348	0.38779005	-0.041115336
+		-1.5808029	0.38602656	-0.063628249
+		-1.5776988	0.38470915	-0.091068283
+		-1.5748019	0.38347536	-0.11667353
+		-1.5704761	0.38208115	-0.15064955
+		-1.5676728	0.38117823	-0.17265816
+		-1.565745	0.38356909	-0.16920209
+		-1.5684843	0.38445166	-0.14769387
+		-1.5727129	0.38581315	-0.11449179
+		-1.5755421	0.38701814	-0.089467943
+		-1.5785756	0.38831002	-0.062653184
+		-1.5791936	0.39003113	-0.040652841
+		-1.5797579	0.39160678	-0.020536268
+		-1.5792708	0.39013815	0.0013503248
+		-1.5788193	0.38877943	0.021620883
+		-1.5757018	0.38770223	0.05070303
+		-1.5732563	0.38686043	0.073516622
+		-1.5701865	0.38610497	0.098793052
+		-1.5666047	0.38522625	0.12828979
+		-1.5640707	0.424936	0.12388732
+		-1.5674475	0.42534605	0.096497603
+		-1.5703423	0.4256992	0.073026419
+		-1.5727842	0.42644787	0.05150893
+		-1.5758976	0.42740694	0.024080686
+		-1.5762912	0.42840064	0.002530325
+		-1.5767174	0.42947271	-0.020738402
+		-1.5762017	0.42824772	-0.042130493
+		-1.5756385	0.42690784	-0.065526217
+		-1.5726184	0.4257403	-0.090817705
+		-1.5698005	0.42465508	-0.11441743
+		-1.5658165	0.42384732	-0.14525339
+		-1.5632352	0.42332557	-0.16522861
+		-1.5614083	0.42475572	-0.16194105
+		-1.5639299	0.4252654	-0.14242147
+		-1.5678234	0.42605299	-0.11228609
+		-1.5705782	0.42711774	-0.089223482
+		-1.5735289	0.42826012	-0.064508155
+		-1.5740801	0.42956537	-0.041644834
+		-1.5745838	0.43075979	-0.020739406
+		-1.5741677	0.42971271	0.0019998478
+		-1.573782	0.42874786	0.023059839
+		-1.57074	0.42781159	0.049864504
+		-1.5683529	0.42707333	0.070892058
+		-1.5655252	0.42673156	0.09382987
+		-1.5622249	0.42632952	0.12059655
+		-1.5592685	0.46335059	0.11635046
+		-1.5624982	0.46445128	0.09108787
+		-1.5652618	0.4654184	0.069441877
+		-1.5672475	0.46604133	0.049222957
+		-1.5697784	0.46684134	0.023449551
+		-1.570429	0.46720189	0.0021082088
+		-1.5711315	0.4675892	-0.020934578
+		-1.5703629	0.46699986	-0.042124666
+		-1.5695219	0.46634698	-0.065299064
+		-1.5670489	0.46534047	-0.08906617
+		-1.5647396	0.46441191	-0.11124533
+		-1.5609394	0.46283373	-0.13967517
+		-1.5584753	0.46182188	-0.15809254
+		-1.5567569	0.46236867	-0.15496919
+		-1.5591646	0.46336514	-0.13697024
+		-1.5628786	0.4649047	-0.10918654
+		-1.5651342	0.4658215	-0.087513566
+		-1.5675519	0.46679679	-0.064286396
+		-1.5683734	0.46743351	-0.041639
+		-1.5691248	0.46801478	-0.020931145
+		-1.5684395	0.46763021	0.0015872793
+		-1.5678025	0.46727988	0.022443334
+		-1.5653292	0.46649772	0.047629956
+		-1.5633889	0.46588826	0.067388505
+		-1.5606852	0.46495888	0.088542968
+		-1.5575321	0.4638626	0.11322927
+		-1.5643083	0.50764424	0.021780835
+		-1.5653356	0.50732845	0.0011428972
+		-1.5664452	0.50698519	-0.02114048
+		-1.5653054	0.50707626	-0.041637089
+		-1.5640602	0.50716609	-0.064053409
+		-1.561695	0.50640833	-0.086246714
+		-1.5594885	0.50568926	-0.10695674
+		-1.5557863	0.503088	-0.13351099
+		-1.5533876	0.50140673	-0.15070979
+		-1.5517846	0.50106698	-0.1477554
+		-1.5541288	0.50271404	-0.13094535
+		-1.557745	0.50525773	-0.10499614
+		-1.5599036	0.50593901	-0.084756881
+		-1.5622144	0.50669265	-0.063068859
+		-1.5634327	0.50659364	-0.041162752
+		-1.5645455	0.50650895	-0.021132339
+		-1.5634618	0.50684446	0.00064412243
+		-1.5624567	0.50715989	0.020812301
+		-1.560089	0.50661296	0.044329297
+		-1.5582299	0.50619227	0.062777616
+		-1.5555947	0.50446886	0.082545817
+		-1.5525169	0.50247836	0.10561561
+		-1.554137	0.50285095	0.10855862
+		-1.5572848	0.50489908	0.08495234
+		-1.5599847	0.5066455	0.064723186
+		-1.5618845	0.50709093	0.045845918
+		-1.5584942	0.5489983	0.01904715
+		-1.5559293	0.54928476	0.041436624
+		-1.5539187	0.54950386	0.059001084
+		-1.5506958	0.54841954	0.077093691
+		-1.5469373	0.54714197	0.098208316
+		-1.5454814	0.54575557	0.09550032
+		-1.5491546	0.54699671	0.074866802
+		-1.5523025	0.54806828	0.05718505
+		-1.5542688	0.54785079	0.040020775
+		-1.5567752	0.54756898	0.01814072
+		-1.5580441	0.54686773	-0.00084182405
+		-1.5594151	0.54610705	-0.021338079
+		-1.5580449	0.5465945	-0.040193617
+		-1.556547	0.54712915	-0.06081504
+		-1.5541178	0.5471577	-0.081000015
+		-1.5518488	0.54719359	-0.099835292
+		-1.547574	0.5455355	-0.12304614
+		-1.5448064	0.54445446	-0.13808236
+		-1.5462465	0.54581058	-0.14081304
+		-1.5490792	0.54691505	-0.12542811
+		-1.5534544	0.54860878	-0.10167652
+		-1.5557731	0.54858392	-0.082401797
+		-1.5582607	0.54854822	-0.061747022
+		-1.5597941	0.5480004	-0.040645562
+		-1.5611948	0.54751056	-0.021351043
+		-1.5597931	0.54827845	-0.00037765197
+		-1.5500276	0.59696501	-0.021594239
+		-1.5483183	0.59741074	-0.039201971
+		-1.546451	0.59788603	-0.058458332
+		-1.5443232	0.59917951	-0.077631727
+		-1.5423368	0.60038626	-0.095523506
+		-1.5343877	0.6029641	-0.11692959
+		-1.5292374	0.6046353	-0.13079643
+		-1.5281845	0.6019398	-0.12829401
+		-1.5332168	0.60030907	-0.11474177
+		-1.5409858	0.59778774	-0.093822815
+		-1.5429251	0.59661257	-0.076338299
+		-1.5450059	0.59534287	-0.057600975
+		-1.5468326	0.59487665	-0.038782891
+		-1.5485014	0.59444791	-0.021575807
+		-1.5467951	0.59512424	-0.0028689143
+		-1.5452142	0.59574425	0.014456514
+		-1.5430779	0.59734535	0.034751464
+		-1.5414034	0.5985927	0.050671723
+		-1.535588	0.60068637	0.066591159
+		-1.5288017	0.60312873	0.085167482
+		-1.5298687	0.60585201	0.087634549
+		-1.5368134	0.60335374	0.068625107
+		-1.5427642	0.60120994	0.052335512
+		-1.544479	0.59993392	0.036044322
+		-1.5466641	0.5982967	0.015277596
+		-1.5482821	0.59765524	-0.0024515898
 		-1.8992219	0.65487814	0.033869695
 		-1.9019852	0.65121156	0.018152939
 		-1.9055078	0.64654785	-0.0018812991
@@ -9109,32 +9588,32 @@ createNode historySwitch -n "cacheSwitch2";
 		-1.8506171	0.66917992	0.059972785
 		-1.8702548	0.66497034	0.059393052
 		-1.8858546	0.65953028	0.045648497
-		-1.9159061	0.62296295	0.0018097801
-		-1.9145132	0.62706757	0.022255016
-		-1.9134209	0.63028717	0.038293719
-		-1.9039172	0.63502502	0.055699829
-		-1.8928258	0.64055634	0.076011077
-		-1.891757	0.63703918	0.073725618
-		-1.9025956	0.63163757	0.053876035
-		-1.9118835	0.62700653	0.036866032
-		-1.9129509	0.62385559	0.02119218
-		-1.9143111	0.61985016	0.001212005
-		-1.9145308	0.61818695	-0.014478899
-		-1.9147693	0.61640167	-0.031420913
-		-1.9114374	0.61804199	-0.046648767
-		-1.9077933	0.61985016	-0.063302763
-		-1.9028739	0.62355042	-0.081122532
-		-1.8982834	0.62700653	-0.097750761
-		-1.8818417	0.63309479	-0.11722478
-		-1.8711911	0.63703918	-0.12983941
-		-1.8717811	0.64055634	-0.13229343
-		-1.8826803	0.63652039	-0.11938471
-		-1.8995042	0.63028717	-0.099457115
-		-1.9042019	0.62674713	-0.082441919
-		-1.9092364	0.62296295	-0.064207487
-		-1.9129648	0.62111664	-0.047165528
-		-1.9163737	0.61943054	-0.031583007
-		-1.9161309	0.6212616	-0.014246615
+		-1.5365453	0.62909573	0.01144306
+		-1.5327812	0.6329602	0.031634491
+		-1.5298289	0.63599139	0.047474135
+		-1.5182648	0.63971251	0.063849822
+		-1.5047687	0.64405727	0.082958512
+		-1.5042728	0.6404627	0.080598593
+		-1.5174612	0.63622063	0.061924152
+		-1.5287626	0.6325832	0.04592118
+		-1.5316482	0.62961638	0.030441871
+		-1.5353251	0.62584549	0.010709597
+		-1.5372285	0.62427735	-0.0048768297
+		-1.539284	0.62259465	-0.021705952
+		-1.5373043	0.62396812	-0.037193827
+		-1.5351377	0.62548435	-0.054132294
+		-1.5316378	0.62876499	-0.072364815
+		-1.5283716	0.63182956	-0.08937823
+		-1.5133878	0.6363768	-0.1103887
+		-1.5036815	0.639323	-0.12399866
+		-1.5041637	0.64289105	-0.12640226
+		-1.5140964	0.6398766	-0.11247499
+		-1.5294288	0.63522023	-0.090975195
+		-1.5327716	0.63208091	-0.073565796
+		-1.5363535	0.62872618	-0.054908954
+		-1.5385697	0.62717849	-0.037575986
+		-1.5405955	0.62576544	-0.021727405
+		-1.5384932	0.62749159	-0.0045064166
 		-1.886975	0.66843545	0.025720114
 		-1.8737051	0.67168581	0.031892706
 		-1.8582196	0.67548162	0.039096214
@@ -15461,272 +15940,272 @@ createNode historySwitch -n "cacheSwitch3";
 
 
 		"v"	266
-		85.853249	128.93921	12.145183
-		85.24942	118.92313	13.121069
-		87.022499	153.66513	9.8266773
-		84.342644	129.00203	11.828746
-		89.40976	149.20691	9.3428288
-		83.704018	119.43949	12.23265
-		91.345009	155.09138	9.6307259
-		92.234428	151.75789	9.9935532
-		90.715889	152.98651	11.897442
-		90.98349	154.5023	11.576138
-		90.124748	156.34637	11.648695
-		85.569122	118.75245	7.668406
-		86.057945	128.82245	7.7233891
-		91.666092	148.55975	7.6803088
-		92.518387	151.86461	7.7147579
-		91.676399	154.98819	7.5948019
-		85.211853	112.98742	7.628221
-		85.224121	115.98888	10.763883
-		83.598541	119.27822	7.4467554
-		84.068588	128.84126	7.4996281
-		89.569839	149.2878	7.4764619
-		84.798164	114.0631	7.5816889
-		84.297134	116.78773	9.947401
-		90.46785	154.64435	7.4875488
-		90.206413	154.9408	9.5656624
-		89.233452	156.12022	11.573096
-		88.965714	153.45813	11.658796
-		89.076508	157.25696	13.411424
-		88.174545	157.08182	13.325167
-		89.795334	156.48514	13.499694
-		89.530731	155.31085	13.351821
-		87.883957	155.63591	13.209058
-		87.851585	156.40388	13.126719
-		88.950584	154.84578	11.51849
-		89.977455	152.12723	9.5044775
-		90.258942	152.0018	7.5037513
-		85.054047	148.55176	7.6104684
-		85.348816	148.50009	9.8635216
-		86.95932	148.36629	10.222849
-		87.087624	148.5118	7.8392062
-		84.812111	143.75366	7.5832582
-		85.175713	143.76862	10.301383
-		86.771439	143.59601	10.586509
-		86.814262	143.71907	7.8255987
-		84.544418	138.38338	7.5531464
-		84.861031	138.46138	10.847505
-		86.378777	138.36139	11.214656
-		86.549782	138.35439	7.7787099
-		84.343346	134.32954	7.5305309
-		84.625587	134.5067	11.250434
-		86.225357	134.46996	11.428696
-		86.335052	134.30511	7.7545576
-		85.826836	124.18228	7.6973939
-		85.564133	124.22954	12.624434
-		83.770325	124.58907	12.060382
-		83.853905	124.43431	7.4754791
-		85.430527	116.08598	7.6528177
-		85.245911	117.55277	12.011536
-		83.982971	118.19659	11.18123
-		83.971413	116.82447	7.4886971
-		85.695045	121.46703	7.68257
-		85.344345	121.43839	12.9914
-		83.613052	121.93823	12.343004
-		83.726883	121.85579	7.4611917
-		85.014389	113.51486	7.6060104
-		84.709221	116.34393	10.401901
-		84.506081	117.83239	11.725549
-		84.38765	119.22652	12.860189
-		84.360626	121.65839	12.738256
-		84.709785	124.40375	12.498869
-		85.096352	128.96162	12.050696
-		85.359871	134.50375	11.451197
-		85.632401	138.4151	11.050676
-		85.974449	143.68365	10.500343
-		86.164917	148.43736	10.105558
-		90.279297	148.8376	9.7146807
-		89.839142	153.16772	11.852446
-		88.716873	155.45245	13.32934
-		88.780136	156.41602	13.768135
-		88.635582	157.17322	13.370411
-		89.68911	156.23996	11.6092
-		90.777565	155.08574	9.5730953
-		91.03421	155.06967	7.5342574
-		85.378502	118.69912	9.9320011
-		85.312263	116.68182	9.5300865
-		85.227844	114.29005	9.0989599
-		84.860001	114.77103	8.8952255
-		84.573509	115.28093	8.6735191
-		83.828285	117.37202	9.1222334
-		83.455788	119.2608	9.4803915
-		83.592323	121.8997	9.5402784
-		83.733421	124.51379	9.4943619
-		83.955223	128.96384	9.3899469
-		84.278862	134.41034	9.1565819
-		84.474075	138.43494	8.995616
-		84.767242	143.76714	8.7841759
-		85.054733	148.5266	8.5780659
-		89.492767	149.25276	8.3460865
-		90.146156	152.05579	8.4355354
-		90.354904	154.7724	8.4530973
-		90.917427	155.0773	8.4677382
-		91.515785	155.02335	8.5391092
-		92.442337	151.81697	8.7771358
-		91.574539	148.53331	8.6037817
-		87.003685	148.4471	8.8393784
-		86.743141	143.66617	9.105443
-		86.451775	138.36592	9.3044472
-		86.249428	134.38327	9.4170218
-		85.925537	128.91087	9.6304636
-		85.672859	124.20942	9.763917
-		85.524834	121.45382	9.8257113
-		86.84671	129.1692	3.5069079
-		86.445343	118.56891	2.4866276
-		87.465637	153.66513	5.886929
-		85.304649	129.14209	3.4730077
-		89.754829	149.15678	5.6152501
-		84.772881	119.24982	3.0200825
-		91.724564	155.03624	5.5306268
-		92.657234	151.69646	5.4262257
-		91.51696	152.87013	3.2438958
-		91.724785	154.39459	3.5683193
-		90.898506	156.23396	3.2902365
-		85.920395	115.98888	4.5736346
-		84.835197	116.78773	5.1637864
-		90.593002	154.88461	5.3896003
-		90.007919	156.00771	3.2069674
-		89.753891	153.34361	3.1446018
-		90.193855	157.09462	1.3414168
-		89.290955	156.9196	1.2653031
-		90.914764	156.32251	1.4071901
-		90.624619	155.15193	1.5352465
-		88.980423	155.47661	1.3646195
-		88.935379	156.24641	1.4191085
-		89.71669	154.73447	3.2426946
-		90.349762	152.07314	5.4827275
-		85.876328	148.4863	5.7015371
-		87.470284	148.3631	5.7251272
-		85.779251	143.7552	5.2420468
-		87.363426	143.59763	5.3179812
-		85.606323	138.47092	4.6407766
-		87.143654	138.42326	4.6461086
-		85.471169	134.4958	4.0833344
-		86.923607	134.50708	4.0407228
-		86.65316	124.17638	2.8848734
-		84.862709	124.56874	3.0117619
-		86.207863	117.38412	3.431716
-		84.80986	118.11202	4.0012927
-		86.555222	121.37331	2.7458963
-		84.614204	121.93415	2.8722532
-		85.337952	116.34393	4.8121886
-		85.470657	117.67783	3.6035237
-		85.621124	118.88743	2.6053391
-		85.631599	121.64293	2.5571949
-		85.812225	124.35895	2.87514
-		86.097191	129.16748	3.4328187
-		86.209785	134.5036	4.0570192
-		86.39357	138.44928	4.6205997
-		86.592087	143.67996	5.2294631
-		86.694511	148.42653	5.6559739
-		90.676926	148.77983	5.4192905
-		90.647301	153.05031	3.1223629
-		89.820808	155.29207	1.4041874
-		89.965912	156.24374	0.95892173
-		89.752693	157.01093	1.3030242
-		90.462769	156.12756	3.2519281
-		91.156174	155.03073	5.4832597
-		85.895065	118.69638	5.4279819
-		85.732246	116.68182	5.7961822
-		85.554169	114.29005	6.1977844
-		85.150253	114.77103	6.3147116
-		84.821671	115.28093	6.4672341
-		84.194748	117.37202	5.8641806
-		83.911125	119.2608	5.4322228
-		84.057556	121.8997	5.4041624
-		84.184921	124.51379	5.4802771
-		84.397194	128.965	5.644865
-		84.641701	134.41034	5.9307866
-		84.823288	138.43495	6.1426058
-		85.065063	143.76547	6.4270425
-		85.269661	148.5266	6.6672053
-		89.653595	149.22939	6.6087127
-		90.319229	152.03065	6.5659924
-		90.534355	154.74632	6.514607
-		91.090759	155.05211	6.5953336
-		91.691917	154.99776	6.6364613
-		92.638496	151.78848	6.6581225
-		91.745522	148.50847	6.7567577
-		87.243164	148.44626	6.8636308
-		87.031242	143.6667	6.660459
-		86.802628	138.38615	6.3449912
-		86.62088	134.38327	6.1146126
-		86.35984	128.94859	5.8642678
-		86.146584	124.20244	5.6460786
-		86.017693	121.44932	5.5440578
-		85.189445	151.36256	7.6256976
-		85.13929	151.32794	8.53932
-		85.193993	151.27975	9.6315193
-		86.107323	151.21008	10.022814
-		87.067657	151.20117	9.9747362
-		87.175224	151.26834	8.8088188
-		87.260849	151.32043	7.8586907
-		87.39109	151.2682	6.9135127
-		87.538628	151.20123	5.7557116
-		86.61261	151.2095	5.5974193
-		85.672508	151.28021	5.7128568
-		85.350456	151.32785	6.7256622
-		86.039719	131.95483	11.832894
-		86.093491	131.95309	9.5096416
-		86.209335	131.87434	7.740418
-		86.504807	131.98952	5.9802442
-		86.912613	132.19553	3.7837126
-		86.170311	132.18143	3.7854705
-		85.345657	132.14629	3.8212831
-		84.521599	131.99672	5.8003664
-		84.219711	131.89624	7.5166259
-		84.121315	131.99742	9.2579603
-		84.401848	132.08385	11.463583
-		85.259827	132.05139	11.720611
-		84.668327	140.95863	7.5670853
-		84.614632	140.99294	8.8873539
-		84.907768	141.03163	10.543567
-		85.8097	140.98004	10.785501
-		86.612038	140.89488	10.842632
-		86.593872	140.91948	9.1101408
-		86.677063	140.92679	7.7930269
-		86.900009	140.91881	6.4937901
-		87.280884	140.90601	4.9449453
-		86.492271	140.96944	4.8097177
-		85.628853	141.01759	4.8282132
-		84.921898	140.99207	6.272563
-		84.939919	146.42221	7.5976334
-		84.910332	146.41476	8.6853209
-		85.219238	146.39616	10.007577
-		86.099289	146.32048	10.246025
-		86.873512	146.24681	10.383881
-		86.88382	146.32378	9.0308285
-		86.953781	146.38461	7.85495
-		87.134262	146.32536	6.7704644
-		87.457809	146.2489	5.5195241
-		86.651711	146.3255	5.3997636
-		85.791222	146.39377	5.4248891
-		85.161697	146.41422	6.5536184
-		85.728958	126.51509	12.286857
-		84.918442	126.61885	12.286635
-		83.996338	126.74117	11.9549
-		83.831551	126.67908	9.440134
-		83.956909	126.57678	7.4870667
-		84.278984	126.67838	5.5579391
-		85.030113	126.751	3.2294278
-		85.985413	126.61786	3.1355934
-		86.716301	126.52375	3.1242757
-		86.254623	126.49421	5.7304559
-		85.935211	126.43826	7.7095838
-		85.797241	126.495	9.6851177
-		84.455177	136.65482	7.5431094
-		84.379974	136.72037	9.064045
-		84.664116	136.78799	10.978331
-		85.52121	136.76146	11.221425
-		86.342056	136.72635	11.318545
-		86.356812	136.67419	9.3312807
-		86.457626	136.62761	7.7683449
-		86.713943	136.67981	6.2448144
-		87.120842	136.74701	4.3708873
-		86.315292	136.77031	4.3197312
-		85.487144	136.7827	4.3479414
-		84.731392	136.7196	6.0474057
+		101.83269	404.73297	12.387685
+		99.978882	394.85852	13.222977
+		106.0901	429.14816	10.416535
+		100.34212	404.9888	12.073502
+		89.595673	155.35251	9.5968523
+		98.511063	395.57669	12.343281
+		91.53418	161.2355	9.8925552
+		92.422783	157.90091	10.247072
+		90.908531	159.12648	12.156346
+		91.176193	160.64278	11.837508
+		90.318443	162.48709	11.915378
+		100.27953	394.72592	7.7681689
+		102.02507	404.65375	7.9645066
+		91.848465	154.70761	7.9286475
+		92.702332	158.01199	7.9679399
+		91.861542	161.13618	7.8557878
+		99.203415	389.05212	7.6471276
+		99.588539	391.98398	10.824729
+		98.390465	395.49731	7.555687
+		100.05392	404.92462	7.7427902
+		89.752144	155.437	7.7303395
+		98.927673	390.17169	7.6161127
+		98.769577	392.90402	10.020398
+		90.652634	160.79311	7.7502232
+		90.395401	161.08557	9.8294249
+		89.426903	162.26149	11.841079
+		89.158112	159.59935	11.922057
+		89.274078	163.39468	13.681946
+		88.371872	163.22011	13.597109
+		89.992714	162.62236	13.767288
+		89.727287	161.44849	13.61762
+		88.080383	161.77457	13.478722
+		88.04821	162.54271	13.39796
+		89.143341	160.98727	11.784515
+		90.165031	158.27225	9.7631445
+		90.442551	158.15063	7.7616272
+		103.49897	424.35312	8.1302891
+		103.78297	424.23328	10.38213
+		105.36373	423.89383	10.738112
+		105.51134	424.05569	8.3566418
+		102.65833	419.62399	8.0357342
+		103.01852	419.55493	10.753478
+		104.57985	419.17996	11.034733
+		104.64018	419.3356	8.2757931
+		101.72049	414.33038	7.9302487
+		102.04145	414.32178	11.225095
+		103.53443	414.02737	11.589458
+		103.70625	414.04739	8.1536045
+		101.01354	410.33432	7.8507299
+		101.31243	410.4223	11.572507
+		102.89487	410.18314	11.748818
+		102.98632	410.05762	8.0726271
+		101.21492	400.07983	7.8733821
+		100.95584	400.09021	12.80083
+		99.221672	400.67941	12.243484
+		99.289261	400.57999	7.6567855
+		99.808235	392.09827	7.7151589
+		99.804832	393.51514	12.09426
+		98.633156	394.32361	11.27422
+		98.453194	393.01587	7.5627427
+		100.74427	397.40292	7.8204432
+		100.38805	397.34366	13.128652
+		98.733513	398.06537	12.488891
+		98.840462	398.03809	7.6063046
+		99.073547	389.6004	7.6325207
+		99.122467	392.40579	10.468239
+		99.106079	393.88916	11.812893
+		99.162102	395.271	12.967155
+		99.439835	397.68863	12.879501
+		100.13014	400.37177	12.678487
+		101.08465	404.85126	12.294193
+		102.0404	410.32465	11.772558
+		102.80079	414.17642	11.426912
+		103.80017	419.36789	10.950515
+		104.58459	424.06546	10.622538
+		90.465775	154.98209	9.9662743
+		90.031784	159.30818	12.113424
+		88.913452	161.59048	13.597011
+		88.978012	162.55316	14.03758
+		88.833031	163.31122	13.641631
+		89.88269	162.38095	11.876527
+		90.966621	161.23026	9.8360243
+		91.219269	161.21808	7.7966609
+		100.08173	394.66504	10.030955
+		99.763824	392.67776	9.6007357
+		99.381042	390.32166	9.1360483
+		99.076485	390.84775	8.9394321
+		98.856277	391.39258	8.7251816
+		98.378288	393.55399	9.2039537
+		98.24485	395.4693	9.5889988
+		98.710617	398.06921	9.6859188
+		99.177879	400.64548	9.6766911
+		99.955109	405.03375	9.6347466
+		100.95823	410.39963	9.4778128
+		101.65587	414.37	9.3733635
+		102.61443	419.62601	9.2367659
+		103.49565	424.31448	9.0974379
+		89.676758	155.40028	8.6000423
+		90.331604	158.20284	8.6937351
+		90.541626	160.9193	8.7162409
+		91.104324	161.22392	8.730382
+		91.702789	161.16957	8.8004751
+		92.628334	157.96231	9.0303688
+		91.758705	154.6794	8.8522453
+		105.41909	423.98795	9.3558788
+		104.56186	419.27396	9.5548267
+		103.6091	414.04959	9.6794386
+		102.90967	410.12241	9.7361012
+		101.90308	404.7312	9.8727531
+		101.06372	400.09695	9.940217
+		100.57185	397.38095	9.963336
+		102.85477	404.95837	3.75263
+		101.13046	394.50714	2.5835464
+		106.53325	429.14816	6.4767876
+		101.32147	405.12491	3.7197161
+		89.933434	155.30957	5.8685145
+		99.555923	395.38449	3.1280165
+		91.905693	161.18828	5.7916203
+		92.836624	157.8483	5.6788135
+		91.692627	159.02678	3.5010366
+		91.901779	160.55051	3.8280556
+		91.075798	162.39081	3.5552156
+		100.28481	391.98398	4.6344814
+		99.307648	392.90402	5.2367835
+		90.773781	161.03746	5.6525106
+		90.184952	162.1651	3.4732447
+		89.929581	159.50127	3.406127
+		90.367729	163.25562	1.6094787
+		89.4646	163.08116	1.5347878
+		91.088409	162.48305	1.6723193
+		90.797974	161.31236	1.7986367
+		89.153603	161.63811	1.6318684
+		89.109024	162.40784	1.6879622
+		89.893211	160.89194	3.5070326
+		90.529442	158.22591	5.7405744
+		104.30829	424.21219	6.2198987
+		105.87425	423.89005	6.2403412
+		103.62012	419.53735	5.693923
+		105.17204	419.18164	5.7662287
+		102.78757	414.32529	5.0184584
+		104.30684	414.08551	5.0217586
+		102.15634	410.40656	4.4052191
+		103.59882	410.2366	4.361485
+		102.03827	400.03833	3.0605266
+		100.31089	400.64987	3.1945102
+		100.7457	393.34821	3.512068
+		99.44931	394.23727	4.0930738
+		101.59032	397.27176	2.88218
+		99.73468	398.0694	3.0181391
+		99.751198	392.40579	4.8785267
+		100.05091	393.72943	3.6886461
+		100.35249	394.92465	2.7074606
+		100.70789	397.65753	2.6981113
+		101.22681	400.32483	3.0541081
+		102.11099	405.05148	3.6791868
+		102.89015	410.32224	4.3783627
+		103.56593	414.20557	4.997282
+		104.41716	419.36115	5.6795616
+		105.11259	424.05109	6.1727743
+		90.85498	154.93259	5.6700082
+		90.822815	159.2076	3.3815618
+		89.99398	161.45311	1.6694275
+		90.138649	162.40559	1.2257547
+		89.926453	163.1722	1.5717849
+		90.639938	162.28467	3.5175507
+		91.337204	161.18314	5.7453556
+		100.59786	394.66107	5.5268898
+		100.18382	392.67776	5.8668308
+		99.707367	390.32166	6.2348728
+		99.366737	390.84775	6.3589177
+		99.104439	391.39258	6.5188951
+		98.744766	393.55399	5.9459038
+		98.700188	395.4693	5.5408363
+		99.175842	398.06921	5.5498066
+		99.629379	400.64548	5.6626072
+		100.39706	405.03232	5.8896675
+		101.32107	410.39963	6.2520194
+		102.00486	414.36649	6.520328
+		102.91179	419.62027	6.8795743
+		103.71059	424.31448	7.1865749
+		89.834183	155.38026	6.8623142
+		90.501007	158.1813	6.8238115
+		90.71727	160.89697	6.7773557
+		91.273979	161.20236	6.857595
+		91.875191	161.14764	6.897438
+		92.820343	157.9379	6.9109244
+		91.926064	154.65811	7.0048437
+		105.65833	423.98495	7.3801036
+		104.84993	419.27286	7.1098399
+		103.96234	414.06744	6.7202516
+		103.28113	410.12241	6.4336929
+		102.34202	404.76724	6.10708
+		101.53648	400.08868	5.8222713
+		101.06405	397.37506	5.6816087
+		103.98518	427.12442	8.1849747
+		103.93026	427.08347	9.0980616
+		103.97752	427.01343	10.189426
+		104.87461	426.82446	10.578894
+		105.82633	426.69608	10.529846
+		105.94249	426.76569	9.3648958
+		106.03481	426.82004	8.4155197
+		106.15831	426.76517	7.4695845
+		106.29734	426.69662	6.3108258
+		105.37978	426.82297	6.1534843
+		104.45582	427.00912	6.2707372
+		104.14137	427.08246	7.2843976
+		102.39548	407.7056	12.117725
+		102.45067	407.7298	9.794632
+		102.55731	407.66211	8.0243721
+		102.86643	407.76419	6.2657347
+		103.29877	407.94843	4.0719619
+		102.56053	408.02737	4.0741777
+		101.73793	408.09528	4.1102214
+		100.89989	408.02213	6.0877318
+		100.58628	407.93607	7.8026729
+		100.49978	408.02423	9.5453386
+		100.78698	408.04376	11.751718
+		101.63391	407.90057	12.007503
+		102.16579	416.86942	7.9803352
+		102.11565	416.89157	9.3010054
+		102.40984	416.86993	10.957335
+		103.29802	416.70242	11.197722
+		104.08334	416.51669	11.252938
+		104.06992	416.56778	9.5209818
+		104.15453	416.58319	8.2040281
+		104.37588	416.56561	6.9046111
+		104.75352	416.52707	5.3554029
+		103.97919	416.69061	5.2217798
+		103.12859	416.84619	5.2417169
+		102.4227	416.88904	6.6861887
+		103.11918	422.25504	8.0875702
+		103.08792	422.23602	9.1750727
+		103.39089	422.16034	10.496661
+		104.25434	421.97168	10.73324
+		105.01313	421.79974	10.86936
+		105.03419	421.89386	9.5175171
+		105.11227	421.96204	8.3425512
+		105.28487	421.89587	7.2571788
+		105.59741	421.79718	6.0050001
+		104.80734	421.97574	5.887044
+		103.96215	422.15085	5.9138894
+		103.33913	422.23404	7.0433478
+		101.40578	402.34167	12.495321
+		100.61464	402.54608	12.497279
+		99.715385	402.78754	12.168116
+		99.546349	402.78198	9.6528702
+		99.659653	402.69232	7.6984439
+		99.993622	402.77994	5.7706556
+		100.74999	402.79068	3.4427347
+		101.68119	402.54037	3.3461897
+		102.39456	402.35571	3.3329015
+		101.93051	402.3475	5.9388142
+		101.60485	402.30414	7.9172401
+		101.47331	402.34982	9.8934984
+		101.41556	412.62689	7.8959513
+		101.34782	412.6799	9.4177284
+		101.6365	412.68454	11.33252
+		102.48331	412.54745	11.574457
+		103.29321	412.40845	11.670345
+		103.30309	412.38284	9.6825323
+		103.39865	412.34607	8.1190071
+		103.66084	412.38721	6.596137
+		104.07461	412.42932	4.7229819
+		103.27836	412.55399	4.6728725
+		102.45826	412.66956	4.7019882
+		101.69904	412.67767	6.4010611
 
 		"vt"	318
 		0.9405629	0.5884732
@@ -17647,17 +18126,338 @@ createNode groupParts -n "historySwitch3GroupParts";
 createNode cacheFile -n "Tie_retopoShapeDeformedCache1";
 	rename -uid "E7337262-4727-49EF-1F42-65B7A3C18C93";
 	setAttr ".cn" -type "string" "Tie_retopoShapeDeformed";
-	setAttr ".cp" -type "string" "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Rigs/Rooms/Bilton Project Folder//cache/nCache/Shot314/";
+	setAttr ".cp" -type "string" "C:/Users/e20la/OneDrive/Desktop/AnimationSchool/AnimationsSeniorProject/Shots/";
 	setAttr ".ch[0]" -type "string" "Tie_retopoShapeDeformed";
 	setAttr ".os" 1;
 	setAttr ".oe" 150;
 	setAttr ".ss" 1;
 	setAttr ".se" 150;
 	setAttr ".sf" 1;
+createNode animCurveTL -n "IK_R_Leg_Ctrl_translateX";
+	rename -uid "E3F9FF31-4BAB-3F38-6CD8-2EBED3886412";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  166 0 168 -2.1758509049134225 172 -0.39914306597837274;
+createNode animCurveTL -n "IK_R_Leg_Ctrl_translateY";
+	rename -uid "F5BB6F47-45AB-5E99-6994-BB804005DA94";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  166 0 168 -5.2260658002872873 172 -20.593909845973549;
+createNode animCurveTL -n "IK_R_Leg_Ctrl_translateZ";
+	rename -uid "313F50EF-4966-DA5A-E938-A298E582BDF2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  166 0 168 0.35146980088023577 172 4.5971813599351128;
+createNode animCurveTA -n "IK_R_Leg_Ctrl_rotateX";
+	rename -uid "F6BDB7F1-47C3-67B1-57B0-2E973C92CFDC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  166 0 168 0 172 0;
+createNode animCurveTA -n "IK_R_Leg_Ctrl_rotateY";
+	rename -uid "5465C121-4379-C611-FE8A-8E93747D7934";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  166 0 168 0 172 0;
+createNode animCurveTA -n "IK_R_Leg_Ctrl_rotateZ";
+	rename -uid "AAC375AF-449A-91E3-75E7-F3AA825CEBCA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  166 0 168 22.940635219558278 172 0;
+createNode animCurveTU -n "IK_R_Leg_Ctrl_PV_Fallow";
+	rename -uid "9EB851FE-4077-71BD-D600-8DB7118F6BA2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  166 0 168 0 172 0;
+createNode animCurveTU -n "IK_R_Leg_Ctrl_FallowHip";
+	rename -uid "C41889C7-4161-BB78-5208-56BA458581B0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  166 0 168 0 172 0;
+createNode animCurveTL -n "IK_L_Leg_Ctrl_translateX";
+	rename -uid "22D22A57-40BA-0692-0BEA-68872C44A4B8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  174 0 176 -3.4592964767705094 180 0.22634498748567825;
+createNode animCurveTL -n "IK_L_Leg_Ctrl_translateY";
+	rename -uid "E4E8A5A5-4F0A-EEAA-1CE6-4AB933FF423B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  174 0 176 -14.140432382346617 180 -44.394787633386372;
+createNode animCurveTL -n "IK_L_Leg_Ctrl_translateZ";
+	rename -uid "81724393-4A05-11E7-2E4A-718833A60519";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  174 0 176 -1.6731773703228838 180 -0.87589664315013915;
+createNode animCurveTA -n "IK_L_Leg_Ctrl_rotateX";
+	rename -uid "79B7E8AF-41AA-A4D6-7723-D1BF2F3C4C6C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  174 0 176 0 180 0;
+createNode animCurveTA -n "IK_L_Leg_Ctrl_rotateY";
+	rename -uid "423C34B6-4CC4-648A-D532-979FEBE74BFE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  174 0 176 0 180 0;
+createNode animCurveTA -n "IK_L_Leg_Ctrl_rotateZ";
+	rename -uid "1E1FF937-4F1D-F0B8-772A-ECAF8E193E84";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  174 0 176 42.10515469570548 180 0;
+createNode animCurveTU -n "IK_L_Leg_Ctrl_PV_Fallow";
+	rename -uid "4824CA91-4BC3-6CCE-1482-598E5C4F5399";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  174 0 176 0 180 0;
+createNode animCurveTU -n "IK_L_Leg_Ctrl_FallowHip";
+	rename -uid "CC6E5862-4427-6213-DE68-09BFE3941D3B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  174 0 176 0 180 0;
+createNode animCurveTU -n "L_Arm_IK_Switch_IK";
+	rename -uid "7EA9A91C-4FA1-A4BB-94EA-E99FBA5833AD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  86 0;
+createNode animCurveTU -n "R_Arm_IK_Switch_IK";
+	rename -uid "4065A19C-4E09-1B1A-4C5C-40B843AA8E36";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  86 0;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl_translateX";
+	rename -uid "47EDF259-4968-B1B9-E11C-B29417A94C9D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 -8.8817841970012523e-16 123 -8.8817841970012523e-16
+		 135 -8.8817841970012523e-16 149 -8.8817841970012523e-16 163 0 171 0 183 0 193 0;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl_translateY";
+	rename -uid "2C33BB8C-4B96-4510-7501-53B1D0947DC0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 2.2204460492503131e-16 123 2.2204460492503131e-16
+		 135 2.2204460492503131e-16 149 2.2204460492503131e-16 163 0 171 0 183 0 193 0;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl_translateZ";
+	rename -uid "22E6C32A-41BA-E1B8-CD8B-11B1203F6496";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 1.4210854715202004e-14 123 1.4210854715202004e-14
+		 135 1.4210854715202004e-14 149 1.4210854715202004e-14 163 0 171 0 183 0 193 0;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl_rotateX";
+	rename -uid "C2BE4052-4ABF-5968-6A7B-BE98C9BACB2F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 62.102687744440352 123 62.102687744440459
+		 135 61.137753887293293 149 60.098545645152313 163 60.060390850941367 171 59.526882469096407
+		 183 59.1099269973368 193 58.890519975347082;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl_rotateY";
+	rename -uid "62C06983-4F26-3FF2-78EE-48BCC3CF59BC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 0 123 0 135 -4.769417770114476 149 0
+		 163 -2.7557737677077201 171 10.581701282412933 183 -13.829625297435861 193 15.238082829055621;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl_rotateZ";
+	rename -uid "3AE011F0-4A55-0124-B0E9-8EBB1F99A2AE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 0 123 0 135 2.623890465216403 149 0 163 1.5861590221277899
+		 171 -6.1671493696271158 183 8.1383250343273676 193 -9.0125418438815608;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl_scaleX";
+	rename -uid "A04563D7-4D62-BCC2-045F-F0B26FC3D988";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 1 123 1 135 1 149 1 163 1 171 1 183 1
+		 193 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl_scaleY";
+	rename -uid "58D07F0B-4D16-03BE-C854-7B9B72893CB0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 1 123 1 135 1 149 1 163 1 171 1 183 1
+		 193 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl_scaleZ";
+	rename -uid "6FDA355F-4D23-BD3F-5F75-349FCF536FEA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 1 123 1 135 1 149 1 163 1 171 1 183 1
+		 193 1;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl_translateX1";
+	rename -uid "5A4EE1DF-4733-5B3A-20DB-ED84349BB246";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 -8.8817841970012523e-16 104 -8.8817841970012523e-16
+		 127 -8.8817841970012523e-16 156 0 165 0 174 0 182 0 193 0;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl_translateY1";
+	rename -uid "ABBBEE85-4D4D-42CB-4CC5-D5BD194A52E5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 2.2204460492503131e-16 104 2.2204460492503131e-16
+		 127 2.2204460492503131e-16 156 0 165 0 174 0 182 0 193 0;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl_translateZ1";
+	rename -uid "7A027982-4C4F-F590-82D1-91B98468C773";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 1.4210854715202004e-14 104 1.4210854715202004e-14
+		 127 1.4210854715202004e-14 156 0 165 0 174 0 182 0 193 0;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl_rotateX1";
+	rename -uid "3B5885D6-4159-FDD2-159F-29BC78CB353B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 64.981261050876483 104 64.940992250110156
+		 127 64.976436414404475 156 64.969319573236504 165 64.852927477693655 174 63.927964382944594
+		 182 64.979668365391078 193 61.889675520857438;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl_rotateY1";
+	rename -uid "CECB4F4A-4C25-7D01-2705-A9A12574BA5D";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 0 104 -3.142180319683511 127 1.088303578440404
+		 156 -1.7119550374874999 165 -5.6007336464741648 174 -15.790872182349197 182 0.62532745584578453
+		 193 -26.157915554275018;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl_rotateZ1";
+	rename -uid "44323C0A-45B0-D21A-8C4C-A2AA7CF5E27F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 0 104 1.4681066592503453 127 -0.50798543946510843
+		 156 0.79924327492329117 165 2.623169154467202 174 7.5842640927057383 182 -0.29185685811123785
+		 193 13.251279091664355;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl_scaleX1";
+	rename -uid "E299B1F6-4809-8DCC-C76C-268BC133AB3E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 1 104 1 127 1 156 1 165 1 174 1 182 1
+		 193 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl_scaleY1";
+	rename -uid "635355E4-41F4-89DC-0319-2FB915784B00";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 1 104 1 127 1 156 1 165 1 174 1 182 1
+		 193 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl_scaleZ1";
+	rename -uid "24E3F83C-4C21-3674-D9AD-26BA1039B932";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 8 ".ktv[0:7]"  89 1 104 1 127 1 156 1 165 1 174 1 182 1
+		 193 1;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl1_translateX";
+	rename -uid "6258C4A8-4B2D-104C-0E1A-2EACEA80FCD3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 0 118 0 166 0 174 0 183 0;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl1_translateY";
+	rename -uid "89CF6D3D-4A2E-42C1-95DD-A88B41BEE76F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 4.4408920985006262e-16 118 4.4408920985006262e-16
+		 166 0 174 0 183 0;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl1_translateZ";
+	rename -uid "625CF4A7-447A-0DE0-BC54-17A306ABF1E5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 1.4210854715202004e-14 118 1.4210854715202004e-14
+		 166 0 174 0 183 0;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl1_rotateX";
+	rename -uid "58A41827-4B5E-1468-174A-0288C91D89C9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 14.601178554921344 118 20.205252629248935
+		 166 20.205252629248935 174 19.509716836297621 183 20.111065980879239;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl1_rotateY";
+	rename -uid "534A3B9B-4CEA-43A9-B15C-D89D9E544514";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 0 118 0 166 0 174 5.3612867925524466
+		 183 -1.9903031855615525;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl1_rotateZ";
+	rename -uid "E6C607D8-47CD-D612-D31E-BC8EB6490DBE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 0 118 0 166 0 174 -14.773245355276266
+		 183 5.4182038751484587;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_scaleX";
+	rename -uid "D61550B9-4080-3524-E34C-4F9FB8C2CEEC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 1 118 1 166 1 174 1 183 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_scaleY";
+	rename -uid "1673F292-471C-708E-F968-7F8E579669E6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 1 118 1 166 1 174 1 183 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_scaleZ";
+	rename -uid "53135F90-448D-855E-15FD-76B105DFDE43";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 1.0000000000000002 118 1.0000000000000002
+		 166 1.0000000000000002 174 1.0000000000000002 183 1.0000000000000002;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_Translate";
+	rename -uid "0FD757C2-4A85-A2C8-7D4E-B999E60B2D05";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 1 118 1 166 1 174 1 183 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_Rotate";
+	rename -uid "09E7F781-4B03-F0BC-4A6E-208DE3E13064";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 5 ".ktv[0:4]"  89 1 118 1 166 1 174 1 183 1;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl1_translateX1";
+	rename -uid "1775F766-40EC-2923-CCB4-0E995B673431";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 0 118 0 148 0 163 0 170 0 178 0;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl1_translateY1";
+	rename -uid "C4AC0A7B-420E-A3DE-42BE-C5BF58213C15";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 0 118 0 148 0 163 0 170 0 178 0;
+createNode animCurveTL -n "FK_L_Arm_jnt_Ctrl1_translateZ1";
+	rename -uid "5E861E36-4B20-7C64-CEB7-9DAED5B28265";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 0 118 0 148 0 163 0 170 0 178 0;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl1_rotateX1";
+	rename -uid "A5987975-4EEE-CF8F-DFB6-81B0EB69BBA5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 12.459586108406457 118 16.271532472009383
+		 148 16.647257580753354 163 16.647257580753354 170 16.498792499589765 178 16.078710430893704;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl1_rotateY1";
+	rename -uid "3CA19D42-43F9-67C1-78EA-13A0200CD3B7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 0 118 0 148 0 163 0 170 -2.2498290805312835
+		 178 4.3715862791474045;
+createNode animCurveTA -n "FK_L_Arm_jnt_Ctrl1_rotateZ1";
+	rename -uid "DD34E192-4F78-A546-C252-C483A371DEA7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 0 118 0 148 0 163 0 170 7.5499279897277667
+		 178 -14.813044617597836;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_scaleX1";
+	rename -uid "2CFAA0AE-4F13-3E1C-2949-0FBF4587FE11";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 1 118 1 148 1 163 1 170 1 178 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_scaleY1";
+	rename -uid "2E6A1DFF-411F-F089-8958-DC9314599722";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 1 118 1 148 1 163 1 170 1 178 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_scaleZ1";
+	rename -uid "EB1EF335-449A-4D39-2030-6AB607C7F9FF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 1 118 1 148 1 163 1 170 1 178 1;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_Translate1";
+	rename -uid "A38F436A-4B0D-FF9B-6466-C9B169A11AE2";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 0 118 0 148 0 163 0 170 0 178 0;
+createNode animCurveTU -n "FK_L_Arm_jnt_Ctrl1_Rotate1";
+	rename -uid "88D3944B-421B-3A3E-C46A-14A74046F37B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 6 ".ktv[0:5]"  89 0 118 0 148 0 163 0 170 0 178 0;
 select -ne :time1;
 	setAttr ".ihi" 0;
-	setAttr ".o" 81;
-	setAttr ".unw" 81;
+	setAttr ".o" 132;
+	setAttr ".unw" 132;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -17666,22 +18466,22 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".aasc" 16;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 110 ".st";
+	setAttr -s 165 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 46 ".s";
+	setAttr -s 86 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 406 ".u";
+	setAttr -s 463 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 15 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 40 ".tx";
+	setAttr -s 96 ".tx";
 select -ne :initialShadingGroup;
-	setAttr -s 164 ".dsm";
+	setAttr -s 45 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 60 ".gn";
+	setAttr -s 29 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -18207,180 +19007,238 @@ connectAttr "COG_scaleX1.o" "Boy_Rig_FinalRN.phl[22]";
 connectAttr "COG_scaleY1.o" "Boy_Rig_FinalRN.phl[23]";
 connectAttr "COG_scaleZ1.o" "Boy_Rig_FinalRN.phl[24]";
 connectAttr "COG_visibility1.o" "Boy_Rig_FinalRN.phl[25]";
-connectAttr "IK_L_Arm_Ctrl_PV_Fallow.o" "Boy_Rig_FinalRN.phl[26]";
-connectAttr "IK_L_Arm_Ctrl_FallowRoot.o" "Boy_Rig_FinalRN.phl[27]";
-connectAttr "IK_L_Arm_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[28]";
-connectAttr "IK_L_Arm_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[29]";
-connectAttr "IK_L_Arm_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[30]";
-connectAttr "IK_L_Arm_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[31]";
-connectAttr "IK_L_Arm_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[32]";
-connectAttr "IK_L_Arm_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[33]";
-connectAttr "IK_L_Arm_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[34]";
-connectAttr "IK_L_Arm_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[35]";
-connectAttr "IK_L_Arm_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[36]";
-connectAttr "IK_R_Arm_Ctrl_PV_Fallow.o" "Boy_Rig_FinalRN.phl[37]";
-connectAttr "IK_R_Arm_Ctrl_FallowRoot.o" "Boy_Rig_FinalRN.phl[38]";
-connectAttr "IK_R_Arm_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[39]";
-connectAttr "IK_R_Arm_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[40]";
-connectAttr "IK_R_Arm_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[41]";
-connectAttr "IK_R_Arm_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[42]";
-connectAttr "IK_R_Arm_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[43]";
-connectAttr "IK_R_Arm_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[44]";
-connectAttr "IK_R_Arm_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[45]";
-connectAttr "IK_R_Arm_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[46]";
-connectAttr "IK_R_Arm_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[47]";
-connectAttr "RK_Hip_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[48]";
-connectAttr "RK_Hip_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[49]";
-connectAttr "RK_Hip_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[50]";
-connectAttr "RK_Hip_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[51]";
-connectAttr "RK_Hip_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[52]";
-connectAttr "RK_Hip_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[53]";
-connectAttr "RK_Hip_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[54]";
-connectAttr "RK_Hip_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[55]";
-connectAttr "RK_Hip_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[56]";
-connectAttr "RK_Hip_Ctrl_visibility.o" "Boy_Rig_FinalRN.phl[57]";
-connectAttr "RK_Spine_jnt_Ctrl_Translate.o" "Boy_Rig_FinalRN.phl[58]";
-connectAttr "RK_Spine_jnt_Ctrl_Rotate.o" "Boy_Rig_FinalRN.phl[59]";
-connectAttr "RK_Spine_jnt_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[60]";
-connectAttr "RK_Spine_jnt_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[61]";
-connectAttr "RK_Spine_jnt_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[62]";
-connectAttr "RK_Spine_jnt_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[63]";
-connectAttr "RK_Spine_jnt_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[64]";
-connectAttr "RK_Spine_jnt_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[65]";
-connectAttr "RK_Spine_jnt_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[66]";
-connectAttr "RK_Spine_jnt_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[67]";
-connectAttr "RK_Spine_jnt_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[68]";
-connectAttr "RK_Spine_jnt_Ctrl_visibility.o" "Boy_Rig_FinalRN.phl[69]";
-connectAttr "RK_Spine_jnt_Ctrl1_translateX.o" "Boy_Rig_FinalRN.phl[70]";
-connectAttr "RK_Spine_jnt_Ctrl1_translateY.o" "Boy_Rig_FinalRN.phl[71]";
-connectAttr "RK_Spine_jnt_Ctrl1_translateZ.o" "Boy_Rig_FinalRN.phl[72]";
-connectAttr "RK_Spine_jnt_Ctrl1_rotateX.o" "Boy_Rig_FinalRN.phl[73]";
-connectAttr "RK_Spine_jnt_Ctrl1_rotateY.o" "Boy_Rig_FinalRN.phl[74]";
-connectAttr "RK_Spine_jnt_Ctrl1_rotateZ.o" "Boy_Rig_FinalRN.phl[75]";
-connectAttr "RK_Spine_jnt_Ctrl1_scaleX.o" "Boy_Rig_FinalRN.phl[76]";
-connectAttr "RK_Spine_jnt_Ctrl1_scaleY.o" "Boy_Rig_FinalRN.phl[77]";
-connectAttr "RK_Spine_jnt_Ctrl1_scaleZ.o" "Boy_Rig_FinalRN.phl[78]";
-connectAttr "RK_Spine_jnt_Ctrl1_visibility.o" "Boy_Rig_FinalRN.phl[79]";
-connectAttr "RK_Spine_jnt_Ctrl1_Translate.o" "Boy_Rig_FinalRN.phl[80]";
-connectAttr "RK_Spine_jnt_Ctrl1_Rotate.o" "Boy_Rig_FinalRN.phl[81]";
-connectAttr "RK_Head_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[82]";
-connectAttr "RK_Head_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[83]";
-connectAttr "RK_Head_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[84]";
-connectAttr "RK_Head_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[85]";
-connectAttr "RK_Head_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[86]";
-connectAttr "RK_Head_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[87]";
-connectAttr "RK_Head_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[88]";
-connectAttr "RK_Head_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[89]";
-connectAttr "RK_Head_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[90]";
-connectAttr "RK_Head_Ctrl_Translate.o" "Boy_Rig_FinalRN.phl[91]";
-connectAttr "RK_Head_Ctrl_Rotate.o" "Boy_Rig_FinalRN.phl[92]";
-connectAttr "RK_Head_Ctrl_visibility.o" "Boy_Rig_FinalRN.phl[93]";
-connectAttr "Nose_FallowOffset.o" "Boy_Rig_FinalRN.phl[94]";
-connectAttr "Nose_RotateOffset.o" "Boy_Rig_FinalRN.phl[95]";
-connectAttr "Nose_translateX.o" "Boy_Rig_FinalRN.phl[96]";
-connectAttr "Nose_translateY.o" "Boy_Rig_FinalRN.phl[97]";
-connectAttr "Nose_translateZ.o" "Boy_Rig_FinalRN.phl[98]";
-connectAttr "Nose_rotateX.o" "Boy_Rig_FinalRN.phl[99]";
-connectAttr "Nose_rotateY.o" "Boy_Rig_FinalRN.phl[100]";
-connectAttr "Nose_rotateZ.o" "Boy_Rig_FinalRN.phl[101]";
-connectAttr "R_Upper_Blink_translateY.o" "Boy_Rig_FinalRN.phl[102]";
-connectAttr "R_Lower_Blink_translateY.o" "Boy_Rig_FinalRN.phl[103]";
-connectAttr "L_EyeBrow_1_FallowOffset.o" "Boy_Rig_FinalRN.phl[104]";
-connectAttr "L_EyeBrow_1_translateX.o" "Boy_Rig_FinalRN.phl[105]";
-connectAttr "L_EyeBrow_1_translateY.o" "Boy_Rig_FinalRN.phl[106]";
-connectAttr "L_EyeBrow_1_translateZ.o" "Boy_Rig_FinalRN.phl[107]";
-connectAttr "L_Nostrol_FallowOffset.o" "Boy_Rig_FinalRN.phl[108]";
-connectAttr "L_Nostrol_RotateOffset.o" "Boy_Rig_FinalRN.phl[109]";
-connectAttr "L_Nostrol_translateX.o" "Boy_Rig_FinalRN.phl[110]";
-connectAttr "L_Nostrol_translateY.o" "Boy_Rig_FinalRN.phl[111]";
-connectAttr "L_Nostrol_translateZ.o" "Boy_Rig_FinalRN.phl[112]";
-connectAttr "L_Nostrol_rotateX.o" "Boy_Rig_FinalRN.phl[113]";
-connectAttr "L_Nostrol_rotateY.o" "Boy_Rig_FinalRN.phl[114]";
-connectAttr "L_Nostrol_rotateZ.o" "Boy_Rig_FinalRN.phl[115]";
-connectAttr "R_EyeBrow_1_FallowOffset.o" "Boy_Rig_FinalRN.phl[116]";
-connectAttr "R_EyeBrow_1_translateX.o" "Boy_Rig_FinalRN.phl[117]";
-connectAttr "R_EyeBrow_1_translateY.o" "Boy_Rig_FinalRN.phl[118]";
-connectAttr "R_EyeBrow_1_translateZ.o" "Boy_Rig_FinalRN.phl[119]";
-connectAttr "R_Nostrol_FallowOffset.o" "Boy_Rig_FinalRN.phl[120]";
-connectAttr "R_Nostrol_RotateOffset.o" "Boy_Rig_FinalRN.phl[121]";
-connectAttr "R_Nostrol_translateX.o" "Boy_Rig_FinalRN.phl[122]";
-connectAttr "R_Nostrol_translateY.o" "Boy_Rig_FinalRN.phl[123]";
-connectAttr "R_Nostrol_translateZ.o" "Boy_Rig_FinalRN.phl[124]";
-connectAttr "R_Nostrol_rotateX.o" "Boy_Rig_FinalRN.phl[125]";
-connectAttr "R_Nostrol_rotateY.o" "Boy_Rig_FinalRN.phl[126]";
-connectAttr "R_Nostrol_rotateZ.o" "Boy_Rig_FinalRN.phl[127]";
-connectAttr "L_Upper_Blink_translateY.o" "Boy_Rig_FinalRN.phl[128]";
-connectAttr "L_Lower_Blink_translateY.o" "Boy_Rig_FinalRN.phl[129]";
-connectAttr "W_Shape_translateX.o" "Boy_Rig_FinalRN.phl[130]";
-connectAttr "L_Emotion_Eyebrow_translateY.o" "Boy_Rig_FinalRN.phl[131]";
-connectAttr "L_Emotion_Eyebrow_translateX.o" "Boy_Rig_FinalRN.phl[132]";
-connectAttr "L_Emotion_Eyebrow_translateZ.o" "Boy_Rig_FinalRN.phl[133]";
-connectAttr "L_Emotion_Eyebrow_visibility.o" "Boy_Rig_FinalRN.phl[134]";
-connectAttr "L_Emotion_Eyebrow_rotateX.o" "Boy_Rig_FinalRN.phl[135]";
-connectAttr "L_Emotion_Eyebrow_rotateY.o" "Boy_Rig_FinalRN.phl[136]";
-connectAttr "L_Emotion_Eyebrow_rotateZ.o" "Boy_Rig_FinalRN.phl[137]";
-connectAttr "L_Emotion_Eyebrow_scaleX.o" "Boy_Rig_FinalRN.phl[138]";
-connectAttr "L_Emotion_Eyebrow_scaleY.o" "Boy_Rig_FinalRN.phl[139]";
-connectAttr "L_Emotion_Eyebrow_scaleZ.o" "Boy_Rig_FinalRN.phl[140]";
-connectAttr "R_Emotion_Eyebrow_rotateY.o" "Boy_Rig_FinalRN.phl[141]";
-connectAttr "R_Emotion_Eyebrow_rotateX.o" "Boy_Rig_FinalRN.phl[142]";
-connectAttr "R_Emotion_Eyebrow_rotateZ.o" "Boy_Rig_FinalRN.phl[143]";
-connectAttr "R_Emotion_Eyebrow_translateY.o" "Boy_Rig_FinalRN.phl[144]";
-connectAttr "R_Emotion_Eyebrow_translateX.o" "Boy_Rig_FinalRN.phl[145]";
-connectAttr "R_Emotion_Eyebrow_translateZ.o" "Boy_Rig_FinalRN.phl[146]";
-connectAttr "R_Emotion_Eyebrow_visibility.o" "Boy_Rig_FinalRN.phl[147]";
-connectAttr "R_Emotion_Eyebrow_scaleX.o" "Boy_Rig_FinalRN.phl[148]";
-connectAttr "R_Emotion_Eyebrow_scaleY.o" "Boy_Rig_FinalRN.phl[149]";
-connectAttr "R_Emotion_Eyebrow_scaleZ.o" "Boy_Rig_FinalRN.phl[150]";
-connectAttr "RK_Mouth_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[151]";
-connectAttr "RK_Mouth_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[152]";
-connectAttr "RK_Mouth_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[153]";
-connectAttr "RK_Mouth_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[154]";
-connectAttr "RK_Mouth_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[155]";
-connectAttr "RK_Mouth_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[156]";
-connectAttr "RK_Mouth_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[157]";
-connectAttr "RK_Mouth_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[158]";
-connectAttr "RK_Mouth_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[159]";
-connectAttr "RK_Mouth_Ctrl_visibility.o" "Boy_Rig_FinalRN.phl[160]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_RotLock.o" "Boy_Rig_FinalRN.phl[161]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_Hand.o" "Boy_Rig_FinalRN.phl[162]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[163]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[164]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[165]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[166]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[167]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[168]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[169]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[170]";
-connectAttr "IK_R_Wrist_jnt_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[171]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_RotLock.o" "Boy_Rig_FinalRN.phl[172]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_Hand.o" "Boy_Rig_FinalRN.phl[173]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[174]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[175]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[176]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[177]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[178]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[179]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[180]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[181]";
-connectAttr "IK_L_Wrist_jnt_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[182]";
-connectAttr "Cape_Att_Ctrl_CapeSimStartFrame.o" "Boy_Rig_FinalRN.phl[183]";
-connectAttr "Eye_Ctrl_EyeLid_Fallow_Strength.o" "Boy_Rig_FinalRN.phl[184]";
-connectAttr "Eye_Ctrl_Fallow_Head.o" "Boy_Rig_FinalRN.phl[185]";
-connectAttr "Eye_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[186]";
-connectAttr "Eye_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[187]";
-connectAttr "Eye_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[188]";
-connectAttr "Cape.di" "Boy_Rig_FinalRN.phl[189]";
-connectAttr "Boy_Rig_FinalRN.phl[190]" "groupParts6.ig";
-connectAttr "Cape_RetopoShapeDeformed.iog" "Boy_Rig_FinalRN.phl[191]";
-connectAttr "Boy_Rig_FinalRN.phl[192]" "Cape_RetopoShapeDeformed.iog.og[2].gco";
-connectAttr "Boy_Rig_FinalRN.phl[193]" "Boy_Rig_FinalRN.phl[194]";
-connectAttr "Cape_RetopoShapeDeformed.iog.og[2]" "Boy_Rig_FinalRN.phl[195]";
-connectAttr "Boy_Rig_FinalRN.phl[196]" "Cape_RetopoShapeDeformed.iog.og[2].gid";
-connectAttr "Boy_Rig_FinalRN.phl[197]" "Cape_RetopoShapeDeformed.iog.og[3].gco";
-connectAttr "Boy_Rig_FinalRN.phl[198]" "Boy_Rig_FinalRN.phl[199]";
-connectAttr "Cape_RetopoShapeDeformed.iog.og[3]" "Boy_Rig_FinalRN.phl[200]";
-connectAttr "Boy_Rig_FinalRN.phl[201]" "Cape_RetopoShapeDeformed.iog.og[3].gid";
+connectAttr "IK_L_Leg_Ctrl_PV_Fallow.o" "Boy_Rig_FinalRN.phl[26]";
+connectAttr "IK_L_Leg_Ctrl_FallowHip.o" "Boy_Rig_FinalRN.phl[27]";
+connectAttr "IK_L_Leg_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[28]";
+connectAttr "IK_L_Leg_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[29]";
+connectAttr "IK_L_Leg_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[30]";
+connectAttr "IK_L_Leg_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[31]";
+connectAttr "IK_L_Leg_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[32]";
+connectAttr "IK_L_Leg_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[33]";
+connectAttr "IK_L_Arm_Ctrl_PV_Fallow.o" "Boy_Rig_FinalRN.phl[34]";
+connectAttr "IK_L_Arm_Ctrl_FallowRoot.o" "Boy_Rig_FinalRN.phl[35]";
+connectAttr "IK_L_Arm_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[36]";
+connectAttr "IK_L_Arm_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[37]";
+connectAttr "IK_L_Arm_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[38]";
+connectAttr "IK_L_Arm_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[39]";
+connectAttr "IK_L_Arm_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[40]";
+connectAttr "IK_L_Arm_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[41]";
+connectAttr "IK_L_Arm_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[42]";
+connectAttr "IK_L_Arm_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[43]";
+connectAttr "IK_L_Arm_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[44]";
+connectAttr "IK_R_Arm_Ctrl_PV_Fallow.o" "Boy_Rig_FinalRN.phl[45]";
+connectAttr "IK_R_Arm_Ctrl_FallowRoot.o" "Boy_Rig_FinalRN.phl[46]";
+connectAttr "IK_R_Arm_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[47]";
+connectAttr "IK_R_Arm_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[48]";
+connectAttr "IK_R_Arm_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[49]";
+connectAttr "IK_R_Arm_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[50]";
+connectAttr "IK_R_Arm_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[51]";
+connectAttr "IK_R_Arm_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[52]";
+connectAttr "IK_R_Arm_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[53]";
+connectAttr "IK_R_Arm_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[54]";
+connectAttr "IK_R_Arm_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[55]";
+connectAttr "IK_R_Leg_Ctrl_PV_Fallow.o" "Boy_Rig_FinalRN.phl[56]";
+connectAttr "IK_R_Leg_Ctrl_FallowHip.o" "Boy_Rig_FinalRN.phl[57]";
+connectAttr "IK_R_Leg_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[58]";
+connectAttr "IK_R_Leg_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[59]";
+connectAttr "IK_R_Leg_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[60]";
+connectAttr "IK_R_Leg_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[61]";
+connectAttr "IK_R_Leg_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[62]";
+connectAttr "IK_R_Leg_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[63]";
+connectAttr "FK_L_Arm_jnt_Ctrl_translateX1.o" "Boy_Rig_FinalRN.phl[64]";
+connectAttr "FK_L_Arm_jnt_Ctrl_translateY1.o" "Boy_Rig_FinalRN.phl[65]";
+connectAttr "FK_L_Arm_jnt_Ctrl_translateZ1.o" "Boy_Rig_FinalRN.phl[66]";
+connectAttr "FK_L_Arm_jnt_Ctrl_rotateX1.o" "Boy_Rig_FinalRN.phl[67]";
+connectAttr "FK_L_Arm_jnt_Ctrl_rotateY1.o" "Boy_Rig_FinalRN.phl[68]";
+connectAttr "FK_L_Arm_jnt_Ctrl_rotateZ1.o" "Boy_Rig_FinalRN.phl[69]";
+connectAttr "FK_L_Arm_jnt_Ctrl_scaleX1.o" "Boy_Rig_FinalRN.phl[70]";
+connectAttr "FK_L_Arm_jnt_Ctrl_scaleY1.o" "Boy_Rig_FinalRN.phl[71]";
+connectAttr "FK_L_Arm_jnt_Ctrl_scaleZ1.o" "Boy_Rig_FinalRN.phl[72]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_translateX1.o" "Boy_Rig_FinalRN.phl[73]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_translateY1.o" "Boy_Rig_FinalRN.phl[74]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_translateZ1.o" "Boy_Rig_FinalRN.phl[75]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_rotateX1.o" "Boy_Rig_FinalRN.phl[76]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_rotateY1.o" "Boy_Rig_FinalRN.phl[77]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_rotateZ1.o" "Boy_Rig_FinalRN.phl[78]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_scaleX1.o" "Boy_Rig_FinalRN.phl[79]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_scaleY1.o" "Boy_Rig_FinalRN.phl[80]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_scaleZ1.o" "Boy_Rig_FinalRN.phl[81]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_Translate1.o" "Boy_Rig_FinalRN.phl[82]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_Rotate1.o" "Boy_Rig_FinalRN.phl[83]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_Translate.o" "Boy_Rig_FinalRN.phl[84]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_Rotate.o" "Boy_Rig_FinalRN.phl[85]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_translateX.o" "Boy_Rig_FinalRN.phl[86]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_translateY.o" "Boy_Rig_FinalRN.phl[87]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_translateZ.o" "Boy_Rig_FinalRN.phl[88]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_rotateX.o" "Boy_Rig_FinalRN.phl[89]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_rotateY.o" "Boy_Rig_FinalRN.phl[90]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_rotateZ.o" "Boy_Rig_FinalRN.phl[91]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_scaleX.o" "Boy_Rig_FinalRN.phl[92]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_scaleY.o" "Boy_Rig_FinalRN.phl[93]";
+connectAttr "FK_L_Arm_jnt_Ctrl1_scaleZ.o" "Boy_Rig_FinalRN.phl[94]";
+connectAttr "FK_L_Arm_jnt_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[95]";
+connectAttr "FK_L_Arm_jnt_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[96]";
+connectAttr "FK_L_Arm_jnt_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[97]";
+connectAttr "FK_L_Arm_jnt_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[98]";
+connectAttr "FK_L_Arm_jnt_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[99]";
+connectAttr "FK_L_Arm_jnt_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[100]";
+connectAttr "FK_L_Arm_jnt_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[101]";
+connectAttr "FK_L_Arm_jnt_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[102]";
+connectAttr "FK_L_Arm_jnt_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[103]";
+connectAttr "L_Arm_IK_Switch_IK.o" "Boy_Rig_FinalRN.phl[104]";
+connectAttr "R_Arm_IK_Switch_IK.o" "Boy_Rig_FinalRN.phl[105]";
+connectAttr "RK_Hip_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[106]";
+connectAttr "RK_Hip_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[107]";
+connectAttr "RK_Hip_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[108]";
+connectAttr "RK_Hip_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[109]";
+connectAttr "RK_Hip_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[110]";
+connectAttr "RK_Hip_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[111]";
+connectAttr "RK_Hip_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[112]";
+connectAttr "RK_Hip_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[113]";
+connectAttr "RK_Hip_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[114]";
+connectAttr "RK_Hip_Ctrl_visibility.o" "Boy_Rig_FinalRN.phl[115]";
+connectAttr "RK_Spine_jnt_Ctrl_Translate.o" "Boy_Rig_FinalRN.phl[116]";
+connectAttr "RK_Spine_jnt_Ctrl_Rotate.o" "Boy_Rig_FinalRN.phl[117]";
+connectAttr "RK_Spine_jnt_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[118]";
+connectAttr "RK_Spine_jnt_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[119]";
+connectAttr "RK_Spine_jnt_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[120]";
+connectAttr "RK_Spine_jnt_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[121]";
+connectAttr "RK_Spine_jnt_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[122]";
+connectAttr "RK_Spine_jnt_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[123]";
+connectAttr "RK_Spine_jnt_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[124]";
+connectAttr "RK_Spine_jnt_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[125]";
+connectAttr "RK_Spine_jnt_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[126]";
+connectAttr "RK_Spine_jnt_Ctrl_visibility.o" "Boy_Rig_FinalRN.phl[127]";
+connectAttr "RK_Spine_jnt_Ctrl1_translateX.o" "Boy_Rig_FinalRN.phl[128]";
+connectAttr "RK_Spine_jnt_Ctrl1_translateY.o" "Boy_Rig_FinalRN.phl[129]";
+connectAttr "RK_Spine_jnt_Ctrl1_translateZ.o" "Boy_Rig_FinalRN.phl[130]";
+connectAttr "RK_Spine_jnt_Ctrl1_rotateX.o" "Boy_Rig_FinalRN.phl[131]";
+connectAttr "RK_Spine_jnt_Ctrl1_rotateY.o" "Boy_Rig_FinalRN.phl[132]";
+connectAttr "RK_Spine_jnt_Ctrl1_rotateZ.o" "Boy_Rig_FinalRN.phl[133]";
+connectAttr "RK_Spine_jnt_Ctrl1_scaleX.o" "Boy_Rig_FinalRN.phl[134]";
+connectAttr "RK_Spine_jnt_Ctrl1_scaleY.o" "Boy_Rig_FinalRN.phl[135]";
+connectAttr "RK_Spine_jnt_Ctrl1_scaleZ.o" "Boy_Rig_FinalRN.phl[136]";
+connectAttr "RK_Spine_jnt_Ctrl1_visibility.o" "Boy_Rig_FinalRN.phl[137]";
+connectAttr "RK_Spine_jnt_Ctrl1_Translate.o" "Boy_Rig_FinalRN.phl[138]";
+connectAttr "RK_Spine_jnt_Ctrl1_Rotate.o" "Boy_Rig_FinalRN.phl[139]";
+connectAttr "RK_Head_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[140]";
+connectAttr "RK_Head_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[141]";
+connectAttr "RK_Head_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[142]";
+connectAttr "RK_Head_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[143]";
+connectAttr "RK_Head_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[144]";
+connectAttr "RK_Head_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[145]";
+connectAttr "RK_Head_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[146]";
+connectAttr "RK_Head_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[147]";
+connectAttr "RK_Head_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[148]";
+connectAttr "RK_Head_Ctrl_Translate.o" "Boy_Rig_FinalRN.phl[149]";
+connectAttr "RK_Head_Ctrl_Rotate.o" "Boy_Rig_FinalRN.phl[150]";
+connectAttr "RK_Head_Ctrl_visibility.o" "Boy_Rig_FinalRN.phl[151]";
+connectAttr "Nose_FallowOffset.o" "Boy_Rig_FinalRN.phl[152]";
+connectAttr "Nose_RotateOffset.o" "Boy_Rig_FinalRN.phl[153]";
+connectAttr "Nose_translateX.o" "Boy_Rig_FinalRN.phl[154]";
+connectAttr "Nose_translateY.o" "Boy_Rig_FinalRN.phl[155]";
+connectAttr "Nose_translateZ.o" "Boy_Rig_FinalRN.phl[156]";
+connectAttr "Nose_rotateX.o" "Boy_Rig_FinalRN.phl[157]";
+connectAttr "Nose_rotateY.o" "Boy_Rig_FinalRN.phl[158]";
+connectAttr "Nose_rotateZ.o" "Boy_Rig_FinalRN.phl[159]";
+connectAttr "R_Upper_Blink_translateY.o" "Boy_Rig_FinalRN.phl[160]";
+connectAttr "R_Lower_Blink_translateY.o" "Boy_Rig_FinalRN.phl[161]";
+connectAttr "L_EyeBrow_1_FallowOffset.o" "Boy_Rig_FinalRN.phl[162]";
+connectAttr "L_EyeBrow_1_translateX.o" "Boy_Rig_FinalRN.phl[163]";
+connectAttr "L_EyeBrow_1_translateY.o" "Boy_Rig_FinalRN.phl[164]";
+connectAttr "L_EyeBrow_1_translateZ.o" "Boy_Rig_FinalRN.phl[165]";
+connectAttr "L_Nostrol_FallowOffset.o" "Boy_Rig_FinalRN.phl[166]";
+connectAttr "L_Nostrol_RotateOffset.o" "Boy_Rig_FinalRN.phl[167]";
+connectAttr "L_Nostrol_translateX.o" "Boy_Rig_FinalRN.phl[168]";
+connectAttr "L_Nostrol_translateY.o" "Boy_Rig_FinalRN.phl[169]";
+connectAttr "L_Nostrol_translateZ.o" "Boy_Rig_FinalRN.phl[170]";
+connectAttr "L_Nostrol_rotateX.o" "Boy_Rig_FinalRN.phl[171]";
+connectAttr "L_Nostrol_rotateY.o" "Boy_Rig_FinalRN.phl[172]";
+connectAttr "L_Nostrol_rotateZ.o" "Boy_Rig_FinalRN.phl[173]";
+connectAttr "R_EyeBrow_1_FallowOffset.o" "Boy_Rig_FinalRN.phl[174]";
+connectAttr "R_EyeBrow_1_translateX.o" "Boy_Rig_FinalRN.phl[175]";
+connectAttr "R_EyeBrow_1_translateY.o" "Boy_Rig_FinalRN.phl[176]";
+connectAttr "R_EyeBrow_1_translateZ.o" "Boy_Rig_FinalRN.phl[177]";
+connectAttr "R_Nostrol_FallowOffset.o" "Boy_Rig_FinalRN.phl[178]";
+connectAttr "R_Nostrol_RotateOffset.o" "Boy_Rig_FinalRN.phl[179]";
+connectAttr "R_Nostrol_translateX.o" "Boy_Rig_FinalRN.phl[180]";
+connectAttr "R_Nostrol_translateY.o" "Boy_Rig_FinalRN.phl[181]";
+connectAttr "R_Nostrol_translateZ.o" "Boy_Rig_FinalRN.phl[182]";
+connectAttr "R_Nostrol_rotateX.o" "Boy_Rig_FinalRN.phl[183]";
+connectAttr "R_Nostrol_rotateY.o" "Boy_Rig_FinalRN.phl[184]";
+connectAttr "R_Nostrol_rotateZ.o" "Boy_Rig_FinalRN.phl[185]";
+connectAttr "L_Upper_Blink_translateY.o" "Boy_Rig_FinalRN.phl[186]";
+connectAttr "L_Lower_Blink_translateY.o" "Boy_Rig_FinalRN.phl[187]";
+connectAttr "W_Shape_translateX.o" "Boy_Rig_FinalRN.phl[188]";
+connectAttr "L_Emotion_Eyebrow_translateY.o" "Boy_Rig_FinalRN.phl[189]";
+connectAttr "L_Emotion_Eyebrow_translateX.o" "Boy_Rig_FinalRN.phl[190]";
+connectAttr "L_Emotion_Eyebrow_translateZ.o" "Boy_Rig_FinalRN.phl[191]";
+connectAttr "L_Emotion_Eyebrow_visibility.o" "Boy_Rig_FinalRN.phl[192]";
+connectAttr "L_Emotion_Eyebrow_rotateX.o" "Boy_Rig_FinalRN.phl[193]";
+connectAttr "L_Emotion_Eyebrow_rotateY.o" "Boy_Rig_FinalRN.phl[194]";
+connectAttr "L_Emotion_Eyebrow_rotateZ.o" "Boy_Rig_FinalRN.phl[195]";
+connectAttr "L_Emotion_Eyebrow_scaleX.o" "Boy_Rig_FinalRN.phl[196]";
+connectAttr "L_Emotion_Eyebrow_scaleY.o" "Boy_Rig_FinalRN.phl[197]";
+connectAttr "L_Emotion_Eyebrow_scaleZ.o" "Boy_Rig_FinalRN.phl[198]";
+connectAttr "R_Emotion_Eyebrow_rotateY.o" "Boy_Rig_FinalRN.phl[199]";
+connectAttr "R_Emotion_Eyebrow_rotateX.o" "Boy_Rig_FinalRN.phl[200]";
+connectAttr "R_Emotion_Eyebrow_rotateZ.o" "Boy_Rig_FinalRN.phl[201]";
+connectAttr "R_Emotion_Eyebrow_translateY.o" "Boy_Rig_FinalRN.phl[202]";
+connectAttr "R_Emotion_Eyebrow_translateX.o" "Boy_Rig_FinalRN.phl[203]";
+connectAttr "R_Emotion_Eyebrow_translateZ.o" "Boy_Rig_FinalRN.phl[204]";
+connectAttr "R_Emotion_Eyebrow_visibility.o" "Boy_Rig_FinalRN.phl[205]";
+connectAttr "R_Emotion_Eyebrow_scaleX.o" "Boy_Rig_FinalRN.phl[206]";
+connectAttr "R_Emotion_Eyebrow_scaleY.o" "Boy_Rig_FinalRN.phl[207]";
+connectAttr "R_Emotion_Eyebrow_scaleZ.o" "Boy_Rig_FinalRN.phl[208]";
+connectAttr "RK_Mouth_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[209]";
+connectAttr "RK_Mouth_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[210]";
+connectAttr "RK_Mouth_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[211]";
+connectAttr "RK_Mouth_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[212]";
+connectAttr "RK_Mouth_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[213]";
+connectAttr "RK_Mouth_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[214]";
+connectAttr "RK_Mouth_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[215]";
+connectAttr "RK_Mouth_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[216]";
+connectAttr "RK_Mouth_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[217]";
+connectAttr "RK_Mouth_Ctrl_visibility.o" "Boy_Rig_FinalRN.phl[218]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_RotLock.o" "Boy_Rig_FinalRN.phl[219]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_Hand.o" "Boy_Rig_FinalRN.phl[220]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[221]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[222]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[223]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[224]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[225]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[226]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[227]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[228]";
+connectAttr "IK_R_Wrist_jnt_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[229]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_RotLock.o" "Boy_Rig_FinalRN.phl[230]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_Hand.o" "Boy_Rig_FinalRN.phl[231]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[232]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[233]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[234]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_rotateY.o" "Boy_Rig_FinalRN.phl[235]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_rotateX.o" "Boy_Rig_FinalRN.phl[236]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_rotateZ.o" "Boy_Rig_FinalRN.phl[237]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_scaleX.o" "Boy_Rig_FinalRN.phl[238]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_scaleY.o" "Boy_Rig_FinalRN.phl[239]";
+connectAttr "IK_L_Wrist_jnt_Ctrl_scaleZ.o" "Boy_Rig_FinalRN.phl[240]";
+connectAttr "Cape_Att_Ctrl_CapeSimStartFrame.o" "Boy_Rig_FinalRN.phl[241]";
+connectAttr "Eye_Ctrl_EyeLid_Fallow_Strength.o" "Boy_Rig_FinalRN.phl[242]";
+connectAttr "Eye_Ctrl_Fallow_Head.o" "Boy_Rig_FinalRN.phl[243]";
+connectAttr "Eye_Ctrl_translateX.o" "Boy_Rig_FinalRN.phl[244]";
+connectAttr "Eye_Ctrl_translateY.o" "Boy_Rig_FinalRN.phl[245]";
+connectAttr "Eye_Ctrl_translateZ.o" "Boy_Rig_FinalRN.phl[246]";
+connectAttr "Cape.di" "Boy_Rig_FinalRN.phl[247]";
+connectAttr "Boy_Rig_FinalRN.phl[248]" "groupParts6.ig";
+connectAttr "Cape_RetopoShapeDeformed.iog" "Boy_Rig_FinalRN.phl[249]";
+connectAttr "Boy_Rig_FinalRN.phl[250]" "Cape_RetopoShapeDeformed.iog.og[2].gco";
+connectAttr "Boy_Rig_FinalRN.phl[251]" "Boy_Rig_FinalRN.phl[252]";
+connectAttr "Cape_RetopoShapeDeformed.iog.og[2]" "Boy_Rig_FinalRN.phl[253]";
+connectAttr "Boy_Rig_FinalRN.phl[254]" "Cape_RetopoShapeDeformed.iog.og[2].gid";
+connectAttr "Boy_Rig_FinalRN.phl[255]" "Cape_RetopoShapeDeformed.iog.og[3].gco";
+connectAttr "Boy_Rig_FinalRN.phl[256]" "Boy_Rig_FinalRN.phl[257]";
+connectAttr "Cape_RetopoShapeDeformed.iog.og[3]" "Boy_Rig_FinalRN.phl[258]";
+connectAttr "Boy_Rig_FinalRN.phl[259]" "Cape_RetopoShapeDeformed.iog.og[3].gid";
 connectAttr "COG_rotateX2.o" "Ladder_Rig_FinalRN2.phl[1]";
 connectAttr "COG_rotateY2.o" "Ladder_Rig_FinalRN2.phl[2]";
 connectAttr "COG_rotateZ2.o" "Ladder_Rig_FinalRN2.phl[3]";
@@ -18536,6 +19394,7 @@ connectAttr "groupId1.id" "groupParts1.gi";
 connectAttr "polyMirror1.out" "groupParts2.ig";
 connectAttr "groupId19.id" "groupParts2.gi";
 connectAttr "Ladder_collapse_translateZ.o" "_House_setupRN.phl[1]";
+connectAttr "sharedReferenceNode.sr" "_House_setupRN.sr";
 connectAttr "sharedReferenceNode.sr" "Ladder_Rig_FinalRN.sr";
 connectAttr "sharedReferenceNode.sr" "Ladder_Rig_FinalRN1.sr";
 connectAttr "sharedReferenceNode.sr" "Ladder_Rig_FinalRN2.sr";
